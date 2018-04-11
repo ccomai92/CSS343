@@ -1,0 +1,3 @@
+/home/ccomai92/WorkSpace/CSS343/WordCount/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ccomai92/WorkSpace/CSS343/WordCount/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ccomai92/WorkSpace/CSS343/WordCount/cmake-build-debug/CMakeFiles/WordCount.dir

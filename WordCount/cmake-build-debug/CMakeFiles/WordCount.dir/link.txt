@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/WordCount.dir/WordCount.cpp.o CMakeFiles/WordCount.dir/BST.cpp.o  -o WordCount 

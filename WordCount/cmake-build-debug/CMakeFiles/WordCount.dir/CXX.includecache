@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ccomai92/WorkSpace/CSS343/WordCount/BST.cpp
+BST.h
+/home/ccomai92/WorkSpace/CSS343/WordCount/BST.h
+
+/home/ccomai92/WorkSpace/CSS343/WordCount/BST.h
+stack
+-
+iostream
+-
+string
+-
+
+/home/ccomai92/WorkSpace/CSS343/WordCount/WordCount.cpp
+iostream
+-
+BST.h
+/home/ccomai92/WorkSpace/CSS343/WordCount/BST.h
+string
+-
+
