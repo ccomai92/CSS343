@@ -26,8 +26,8 @@
       <file leaf-file-name="WordCount.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WordCount.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="700">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -35,32 +35,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BST.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BST.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BST.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="204" column="23" lean-forward="true" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
-              <folding>
-                <element signature="e#90#106#0" expanded="true" />
-                <element signature="e#1124#1148#0" expanded="true" />
-                <element signature="e#1195#1219#0" expanded="true" />
-                <element signature="e#1260#1284#0" expanded="true" />
-                <element signature="e#1476#1500#0" expanded="true" />
-                <element signature="e#1621#1645#0" expanded="true" />
-                <element signature="e#1719#1743#0" expanded="true" />
-                <element signature="e#1914#1938#0" expanded="true" />
-                <element signature="e#1038#1062#0" expanded="true" />
-                <element signature="e#1139#1163#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="656">
+              <caret line="185" column="9" lean-forward="true" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BST.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BST.cpp">
+      <file leaf-file-name="Treap.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Treap.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="4406">
+              <caret line="257" column="48" lean-forward="true" selection-start-line="257" selection-start-column="48" selection-end-line="257" selection-end-column="48" />
+              <folding>
+                <element signature="e#96#112#0" expanded="true" />
+                <element signature="e#2266#2290#0" expanded="true" />
+                <element signature="e#5918#5942#0" expanded="true" />
+                <element signature="e#6042#6066#0" expanded="true" />
+                <element signature="e#6463#6487#0" expanded="true" />
+                <element signature="e#6534#6558#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,9 +68,10 @@
       <list>
         <option value="$PROJECT_DIR$/Node.h" />
         <option value="$PROJECT_DIR$/Node.cpp" />
-        <option value="$PROJECT_DIR$/WordCount.cpp" />
         <option value="$PROJECT_DIR$/BST.cpp" />
         <option value="$PROJECT_DIR$/BST.h" />
+        <option value="$PROJECT_DIR$/WordCount.cpp" />
+        <option value="$PROJECT_DIR$/Treap.h" />
       </list>
     </option>
   </component>
@@ -85,9 +82,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="1162" />
+    <option name="x" value="938" />
     <option name="y" value="-8" />
-    <option name="width" value="1398" />
+    <option name="width" value="1622" />
     <option name="height" value="1448" />
   </component>
   <component name="ProjectView">
@@ -95,7 +92,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,6 +103,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,23 +157,25 @@
       <workItem from="1523395927386" duration="2447000" />
       <workItem from="1523405138930" duration="3574000" />
       <workItem from="1523421738140" duration="638000" />
-      <workItem from="1523433337260" duration="3396000" />
+      <workItem from="1523433337260" duration="4164000" />
+      <workItem from="1523497535987" duration="9232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33869000" />
+    <option name="totallyTimeSpent" value="43869000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1162" y="-8" width="1398" height="1448" extended-state="4" />
+    <frame x="938" y="-8" width="1622" height="1448" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14449213" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10912454" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.36790392" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21153846" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3830645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -185,29 +184,28 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.36790392" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1578125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.21153846" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3286026" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="CMake" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3286026" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -218,6 +216,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WordCount.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4975">
+          <caret line="199" column="29" lean-forward="true" selection-start-line="199" selection-start-column="29" selection-end-line="199" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WordCount.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -232,18 +247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#90#106#0" expanded="true" />
-            <element signature="e#1124#1148#0" expanded="true" />
-            <element signature="e#1195#1219#0" expanded="true" />
-            <element signature="e#1260#1284#0" expanded="true" />
-            <element signature="e#1476#1500#0" expanded="true" />
-            <element signature="e#1621#1645#0" expanded="true" />
-            <element signature="e#1719#1743#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1038#1062#0" expanded="true" />
-            <element signature="e#1139#1163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -261,18 +264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#90#106#0" expanded="true" />
-            <element signature="e#1124#1148#0" expanded="true" />
-            <element signature="e#1195#1219#0" expanded="true" />
-            <element signature="e#1260#1284#0" expanded="true" />
-            <element signature="e#1476#1500#0" expanded="true" />
-            <element signature="e#1621#1645#0" expanded="true" />
-            <element signature="e#1719#1743#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1038#1062#0" expanded="true" />
-            <element signature="e#1139#1163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -290,28 +281,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2300">
           <caret line="92" column="56" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
-          <folding>
-            <element signature="e#90#106#0" expanded="true" />
-            <element signature="e#1124#1148#0" expanded="true" />
-            <element signature="e#1195#1219#0" expanded="true" />
-            <element signature="e#1260#1284#0" expanded="true" />
-            <element signature="e#1476#1500#0" expanded="true" />
-            <element signature="e#1621#1645#0" expanded="true" />
-            <element signature="e#1719#1743#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1038#1062#0" expanded="true" />
-            <element signature="e#1139#1163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BST.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BST.cpp" />
     <entry file="file://$PROJECT_DIR$/WordCount.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -326,28 +299,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1475">
           <caret line="59" column="2" lean-forward="true" selection-start-line="7" selection-end-line="59" selection-end-column="2" />
-          <folding>
-            <element signature="e#90#106#0" expanded="true" />
-            <element signature="e#1124#1148#0" expanded="true" />
-            <element signature="e#1195#1219#0" expanded="true" />
-            <element signature="e#1260#1284#0" expanded="true" />
-            <element signature="e#1476#1500#0" expanded="true" />
-            <element signature="e#1621#1645#0" expanded="true" />
-            <element signature="e#1719#1743#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1038#1062#0" expanded="true" />
-            <element signature="e#1139#1163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BST.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BST.cpp" />
     <entry file="file://$PROJECT_DIR$/WordCount.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -362,28 +317,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1175">
           <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-          <folding>
-            <element signature="e#90#106#0" expanded="true" />
-            <element signature="e#1124#1148#0" expanded="true" />
-            <element signature="e#1195#1219#0" expanded="true" />
-            <element signature="e#1260#1284#0" expanded="true" />
-            <element signature="e#1476#1500#0" expanded="true" />
-            <element signature="e#1621#1645#0" expanded="true" />
-            <element signature="e#1719#1743#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1038#1062#0" expanded="true" />
-            <element signature="e#1139#1163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BST.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BST.cpp" />
     <entry file="file://$PROJECT_DIR$/WordCount.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -398,18 +335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="775">
           <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="e#90#106#0" expanded="true" />
-            <element signature="e#1124#1148#0" expanded="true" />
-            <element signature="e#1195#1219#0" expanded="true" />
-            <element signature="e#1260#1284#0" expanded="true" />
-            <element signature="e#1476#1500#0" expanded="true" />
-            <element signature="e#1621#1645#0" expanded="true" />
-            <element signature="e#1719#1743#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1038#1062#0" expanded="true" />
-            <element signature="e#1139#1163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -427,18 +352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="e#90#106#0" expanded="true" />
-            <element signature="e#1124#1148#0" expanded="true" />
-            <element signature="e#1195#1219#0" expanded="true" />
-            <element signature="e#1260#1284#0" expanded="true" />
-            <element signature="e#1476#1500#0" expanded="true" />
-            <element signature="e#1621#1645#0" expanded="true" />
-            <element signature="e#1719#1743#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1038#1062#0" expanded="true" />
-            <element signature="e#1139#1163#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,38 +493,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Node.cpp" />
     <entry file="file://$PROJECT_DIR$/Node.h" />
+    <entry file="file://$PROJECT_DIR$/BST.cpp" />
+    <entry file="file://$PROJECT_DIR$/BST.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="185" column="9" lean-forward="true" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WordCount.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="700">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BST.cpp">
+    <entry file="file://$PROJECT_DIR$/Treap.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BST.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="204" column="23" lean-forward="true" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
+        <state relative-caret-position="4406">
+          <caret line="257" column="48" lean-forward="true" selection-start-line="257" selection-start-column="48" selection-end-line="257" selection-end-column="48" />
           <folding>
-            <element signature="e#90#106#0" expanded="true" />
-            <element signature="e#1124#1148#0" expanded="true" />
-            <element signature="e#1195#1219#0" expanded="true" />
-            <element signature="e#1260#1284#0" expanded="true" />
-            <element signature="e#1476#1500#0" expanded="true" />
-            <element signature="e#1621#1645#0" expanded="true" />
-            <element signature="e#1719#1743#0" expanded="true" />
-            <element signature="e#1914#1938#0" expanded="true" />
-            <element signature="e#1038#1062#0" expanded="true" />
-            <element signature="e#1139#1163#0" expanded="true" />
+            <element signature="e#96#112#0" expanded="true" />
+            <element signature="e#2266#2290#0" expanded="true" />
+            <element signature="e#5918#5942#0" expanded="true" />
+            <element signature="e#6042#6066#0" expanded="true" />
+            <element signature="e#6463#6487#0" expanded="true" />
+            <element signature="e#6534#6558#0" expanded="true" />
           </folding>
         </state>
       </provider>

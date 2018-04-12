@@ -123,33 +123,6 @@ WordCount/fast:
 	$(MAKE) -f CMakeFiles/WordCount.dir/build.make CMakeFiles/WordCount.dir/build
 .PHONY : WordCount/fast
 
-BST.o: BST.cpp.o
-
-.PHONY : BST.o
-
-# target to build an object file
-BST.cpp.o:
-	$(MAKE) -f CMakeFiles/WordCount.dir/build.make CMakeFiles/WordCount.dir/BST.cpp.o
-.PHONY : BST.cpp.o
-
-BST.i: BST.cpp.i
-
-.PHONY : BST.i
-
-# target to preprocess a source file
-BST.cpp.i:
-	$(MAKE) -f CMakeFiles/WordCount.dir/build.make CMakeFiles/WordCount.dir/BST.cpp.i
-.PHONY : BST.cpp.i
-
-BST.s: BST.cpp.s
-
-.PHONY : BST.s
-
-# target to generate assembly for a file
-BST.cpp.s:
-	$(MAKE) -f CMakeFiles/WordCount.dir/build.make CMakeFiles/WordCount.dir/BST.cpp.s
-.PHONY : BST.cpp.s
-
 WordCount.o: WordCount.cpp.o
 
 .PHONY : WordCount.o
@@ -186,9 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... WordCount"
-	@echo "... BST.o"
-	@echo "... BST.i"
-	@echo "... BST.s"
 	@echo "... WordCount.o"
 	@echo "... WordCount.i"
 	@echo "... WordCount.s"

@@ -6,8 +6,6 @@
 #define WORDCOUNT_BST_H
 
 #include <stack>
-#include <string>
-#include <iostream>
 
 template <class Key, class Value>
 class BST
@@ -50,9 +48,7 @@ public:
     private:
         Node* current;
         std::stack<Node*> history;
-
         void leftMost(Node* node);
-
     };
 
     BST();
@@ -67,7 +63,7 @@ public:
 
 template<class Key, class Value>
 BST<Key, Value>::Node::Node(const Key& key): _key(key), _value(Value{}),
-                                 _left(nullptr), _right(nullptr) {}
+                                             _left(nullptr), _right(nullptr) {}
 
 template<class Key, class Value>
 BST<Key, Value>::Node::~Node() {}

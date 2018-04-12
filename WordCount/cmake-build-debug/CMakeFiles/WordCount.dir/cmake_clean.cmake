@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/WordCount.dir/WordCount.cpp.o"
-  "CMakeFiles/WordCount.dir/BST.cpp.o"
   "WordCount.pdb"
   "WordCount"
 )
