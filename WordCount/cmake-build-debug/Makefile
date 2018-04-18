@@ -123,33 +123,6 @@ WordCount/fast:
 	$(MAKE) -f CMakeFiles/WordCount.dir/build.make CMakeFiles/WordCount.dir/build
 .PHONY : WordCount/fast
 
-WordCount.o: WordCount.cpp.o
-
-.PHONY : WordCount.o
-
-# target to build an object file
-WordCount.cpp.o:
-	$(MAKE) -f CMakeFiles/WordCount.dir/build.make CMakeFiles/WordCount.dir/WordCount.cpp.o
-.PHONY : WordCount.cpp.o
-
-WordCount.i: WordCount.cpp.i
-
-.PHONY : WordCount.i
-
-# target to preprocess a source file
-WordCount.cpp.i:
-	$(MAKE) -f CMakeFiles/WordCount.dir/build.make CMakeFiles/WordCount.dir/WordCount.cpp.i
-.PHONY : WordCount.cpp.i
-
-WordCount.s: WordCount.cpp.s
-
-.PHONY : WordCount.s
-
-# target to generate assembly for a file
-WordCount.cpp.s:
-	$(MAKE) -f CMakeFiles/WordCount.dir/build.make CMakeFiles/WordCount.dir/WordCount.cpp.s
-.PHONY : WordCount.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +132,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... WordCount"
-	@echo "... WordCount.o"
-	@echo "... WordCount.i"
-	@echo "... WordCount.s"
 .PHONY : help
 
 

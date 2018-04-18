@@ -1,4 +1,15 @@
 /home/ccomai92/clion-2018.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ccomai92/WorkSpace/CSS343/WordCount
 -- Configuring done
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    WordCount1.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error: CMake can not determine linker language for target: WordCount
+CMake Error: Cannot determine link language for target "WordCount".
 -- Generating done
 -- Build files have been written to: /home/ccomai92/WorkSpace/CSS343/WordCount/cmake-build-debug

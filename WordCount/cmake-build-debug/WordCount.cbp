@@ -84,15 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/ccomai92/WorkSpace/CSS343/WordCount/BST.h">
-			<Option target="WordCount"/>
-		</Unit>
-		<Unit filename="/home/ccomai92/WorkSpace/CSS343/WordCount/Treap.h">
-			<Option target="WordCount"/>
-		</Unit>
-		<Unit filename="/home/ccomai92/WorkSpace/CSS343/WordCount/WordCount.cpp">
-			<Option target="WordCount"/>
-		</Unit>
 		<Unit filename="/home/ccomai92/WorkSpace/CSS343/WordCount/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
