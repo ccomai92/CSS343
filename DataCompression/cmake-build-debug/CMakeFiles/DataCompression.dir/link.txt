@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/DataCompression.dir/main.cpp.o CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o  -o DataCompression 

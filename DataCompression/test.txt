@@ -1,0 +1,6 @@
+Hello,
+This is Kris, 
+I am writing this to test the data compression program. 
+
+I hope this works. 
+Bye. 
