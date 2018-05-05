@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DataCompression.dir/main.cpp.o"
   "CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o"
+  "CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o"
+  "CMakeFiles/DataCompression.dir/BitInputStream.cpp.o"
   "DataCompression.pdb"
   "DataCompression"
 )

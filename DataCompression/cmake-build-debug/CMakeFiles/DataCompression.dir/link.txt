@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/DataCompression.dir/main.cpp.o CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o  -o DataCompression 
+/usr/bin/c++  -g   CMakeFiles/DataCompression.dir/main.cpp.o CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o CMakeFiles/DataCompression.dir/BitInputStream.cpp.o  -o DataCompression 

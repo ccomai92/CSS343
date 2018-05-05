@@ -9,10 +9,14 @@ HuffmanTree::HuffmanTree() {}
 
 
 HuffmanTree::HuffmanTree(unsigned int count[]) {
-    Heap<unsigned char, unsigned int> priority;
+    Heap<Node<unsigned char, unsigned int>*,
+            std::vector<Node<unsigned char, unsigned int>*>,
+            CompareNode<unsigned char, unsigned int>> priority;
     for (int i = 0; i < UCHAR_MAX + 1; i++) {
         if (count[i] > 0) {
-            priority.Push(i, count[i]);
+            Node<unsigned char, unsigned int>* temp =
+                    new Node<unsigned char, unsigned int>(i, count[i]);
+            priority.Push(temp);
         }
     }
     priority.verify();
@@ -22,7 +26,9 @@ HuffmanTree::HuffmanTree(unsigned int count[]) {
 HuffmanTree::~HuffmanTree() {}
 
 Node<unsigned char, unsigned int>* HuffmanTree::makeTree(
-                                Heap<unsigned char, unsigned int> priority) {
+                Heap<Node<unsigned char, unsigned int>*,
+                std::vector<Node<unsigned char, unsigned int>*>,
+                CompareNode<unsigned char, unsigned int>> priority) {
     while (priority.size() > 1) {
         Node<unsigned char, unsigned int>* first = priority.Pop();
         Node<unsigned char, unsigned int>* second = priority.Pop();

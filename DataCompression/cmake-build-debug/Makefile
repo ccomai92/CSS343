@@ -123,6 +123,60 @@ DataCompression/fast:
 	$(MAKE) -f CMakeFiles/DataCompression.dir/build.make CMakeFiles/DataCompression.dir/build
 .PHONY : DataCompression/fast
 
+BitInputStream.o: BitInputStream.cpp.o
+
+.PHONY : BitInputStream.o
+
+# target to build an object file
+BitInputStream.cpp.o:
+	$(MAKE) -f CMakeFiles/DataCompression.dir/build.make CMakeFiles/DataCompression.dir/BitInputStream.cpp.o
+.PHONY : BitInputStream.cpp.o
+
+BitInputStream.i: BitInputStream.cpp.i
+
+.PHONY : BitInputStream.i
+
+# target to preprocess a source file
+BitInputStream.cpp.i:
+	$(MAKE) -f CMakeFiles/DataCompression.dir/build.make CMakeFiles/DataCompression.dir/BitInputStream.cpp.i
+.PHONY : BitInputStream.cpp.i
+
+BitInputStream.s: BitInputStream.cpp.s
+
+.PHONY : BitInputStream.s
+
+# target to generate assembly for a file
+BitInputStream.cpp.s:
+	$(MAKE) -f CMakeFiles/DataCompression.dir/build.make CMakeFiles/DataCompression.dir/BitInputStream.cpp.s
+.PHONY : BitInputStream.cpp.s
+
+BitOutputStream.o: BitOutputStream.cpp.o
+
+.PHONY : BitOutputStream.o
+
+# target to build an object file
+BitOutputStream.cpp.o:
+	$(MAKE) -f CMakeFiles/DataCompression.dir/build.make CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o
+.PHONY : BitOutputStream.cpp.o
+
+BitOutputStream.i: BitOutputStream.cpp.i
+
+.PHONY : BitOutputStream.i
+
+# target to preprocess a source file
+BitOutputStream.cpp.i:
+	$(MAKE) -f CMakeFiles/DataCompression.dir/build.make CMakeFiles/DataCompression.dir/BitOutputStream.cpp.i
+.PHONY : BitOutputStream.cpp.i
+
+BitOutputStream.s: BitOutputStream.cpp.s
+
+.PHONY : BitOutputStream.s
+
+# target to generate assembly for a file
+BitOutputStream.cpp.s:
+	$(MAKE) -f CMakeFiles/DataCompression.dir/build.make CMakeFiles/DataCompression.dir/BitOutputStream.cpp.s
+.PHONY : BitOutputStream.cpp.s
+
 HuffmanTree.o: HuffmanTree.cpp.o
 
 .PHONY : HuffmanTree.o
@@ -186,6 +240,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataCompression"
+	@echo "... BitInputStream.o"
+	@echo "... BitInputStream.i"
+	@echo "... BitInputStream.s"
+	@echo "... BitOutputStream.o"
+	@echo "... BitOutputStream.i"
+	@echo "... BitOutputStream.s"
 	@echo "... HuffmanTree.o"
 	@echo "... HuffmanTree.i"
 	@echo "... HuffmanTree.s"

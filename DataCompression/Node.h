@@ -6,6 +6,11 @@
 #define DATACOMPRESSION_NODE_H
 
 #include <iostream>
+#include <functional>
+#include <algorithm>
+
+
+
 
 template<class Data, class Priority>
 class Node {
@@ -27,7 +32,7 @@ public:
 
 
     Data& data();
-    Priority& priority();
+    const Priority& priority()const;
     Node<Data, Priority>*& left();
     Node<Data, Priority>*& right();
 
@@ -43,6 +48,15 @@ private:
     Priority _priority;
     Node<Data, Priority>* _left;
     Node<Data, Priority>* _right;
+};
+
+template<class Data, class Priority>
+struct CompareNode: public std::binary_function<Node<Data, Priority>*,
+        Node<Data, Priority>*, bool> {
+    bool operator()(const Node<Data, Priority>* lhs,
+                    const Node<Data, Priority>* rhs) {
+        return lhs->priority() < rhs->priority();
+    }
 };
 
 template<class Data, class Priority>
@@ -99,7 +113,7 @@ Data& Node<Data, Priority>::data() {
 }
 
 template<class Data, class Priority>
-Priority& Node<Data, Priority>::priority() {
+const Priority & Node<Data, Priority>::priority() const{
     return this->_priority;
 }
 

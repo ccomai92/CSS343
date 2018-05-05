@@ -16,7 +16,7 @@ int main() {
     while (cin >> character) {
         frequency[character]++;
     }
-
+    cerr << "here" << endl;
     dump(frequency);
     HuffmanTree tree(frequency);
     tree.dump();

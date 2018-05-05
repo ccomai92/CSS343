@@ -8,6 +8,7 @@
 #include "Node.h"
 #include "Heap.h"
 #include <limits.h>
+#include <vector>
 #include <iostream>
 
 class HuffmanTree {
@@ -20,8 +21,10 @@ public:
 
 private:
     Node<unsigned char, unsigned int>* root;
-    Node<unsigned char, unsigned int>*
-            makeTree(Heap<unsigned char, unsigned int> priority);
+    Node<unsigned char, unsigned int>* makeTree(
+                    Heap<Node<unsigned char, unsigned int>*,
+                    std::vector<Node<unsigned char, unsigned int>*>,
+                    CompareNode<unsigned char, unsigned int>> priority);
     void dumpHelper(Node<unsigned char, unsigned int>* current, int level);
 
 };

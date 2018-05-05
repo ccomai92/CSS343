@@ -105,19 +105,71 @@ CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o.provides: CMakeFiles/DataCompre
 CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o.provides.build: CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o
 
 
+CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o: CMakeFiles/DataCompression.dir/flags.make
+CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o: ../BitOutputStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ccomai92/WorkSpace/CSS343/DataCompression/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o -c /home/ccomai92/WorkSpace/CSS343/DataCompression/BitOutputStream.cpp
+
+CMakeFiles/DataCompression.dir/BitOutputStream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataCompression.dir/BitOutputStream.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ccomai92/WorkSpace/CSS343/DataCompression/BitOutputStream.cpp > CMakeFiles/DataCompression.dir/BitOutputStream.cpp.i
+
+CMakeFiles/DataCompression.dir/BitOutputStream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataCompression.dir/BitOutputStream.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ccomai92/WorkSpace/CSS343/DataCompression/BitOutputStream.cpp -o CMakeFiles/DataCompression.dir/BitOutputStream.cpp.s
+
+CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o.requires:
+
+.PHONY : CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o.requires
+
+CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o.provides: CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o.requires
+	$(MAKE) -f CMakeFiles/DataCompression.dir/build.make CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o.provides.build
+.PHONY : CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o.provides
+
+CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o.provides.build: CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o
+
+
+CMakeFiles/DataCompression.dir/BitInputStream.cpp.o: CMakeFiles/DataCompression.dir/flags.make
+CMakeFiles/DataCompression.dir/BitInputStream.cpp.o: ../BitInputStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ccomai92/WorkSpace/CSS343/DataCompression/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DataCompression.dir/BitInputStream.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataCompression.dir/BitInputStream.cpp.o -c /home/ccomai92/WorkSpace/CSS343/DataCompression/BitInputStream.cpp
+
+CMakeFiles/DataCompression.dir/BitInputStream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataCompression.dir/BitInputStream.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ccomai92/WorkSpace/CSS343/DataCompression/BitInputStream.cpp > CMakeFiles/DataCompression.dir/BitInputStream.cpp.i
+
+CMakeFiles/DataCompression.dir/BitInputStream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataCompression.dir/BitInputStream.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ccomai92/WorkSpace/CSS343/DataCompression/BitInputStream.cpp -o CMakeFiles/DataCompression.dir/BitInputStream.cpp.s
+
+CMakeFiles/DataCompression.dir/BitInputStream.cpp.o.requires:
+
+.PHONY : CMakeFiles/DataCompression.dir/BitInputStream.cpp.o.requires
+
+CMakeFiles/DataCompression.dir/BitInputStream.cpp.o.provides: CMakeFiles/DataCompression.dir/BitInputStream.cpp.o.requires
+	$(MAKE) -f CMakeFiles/DataCompression.dir/build.make CMakeFiles/DataCompression.dir/BitInputStream.cpp.o.provides.build
+.PHONY : CMakeFiles/DataCompression.dir/BitInputStream.cpp.o.provides
+
+CMakeFiles/DataCompression.dir/BitInputStream.cpp.o.provides.build: CMakeFiles/DataCompression.dir/BitInputStream.cpp.o
+
+
 # Object files for target DataCompression
 DataCompression_OBJECTS = \
 "CMakeFiles/DataCompression.dir/main.cpp.o" \
-"CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o"
+"CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o" \
+"CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o" \
+"CMakeFiles/DataCompression.dir/BitInputStream.cpp.o"
 
 # External object files for target DataCompression
 DataCompression_EXTERNAL_OBJECTS =
 
 DataCompression: CMakeFiles/DataCompression.dir/main.cpp.o
 DataCompression: CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o
+DataCompression: CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o
+DataCompression: CMakeFiles/DataCompression.dir/BitInputStream.cpp.o
 DataCompression: CMakeFiles/DataCompression.dir/build.make
 DataCompression: CMakeFiles/DataCompression.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ccomai92/WorkSpace/CSS343/DataCompression/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DataCompression"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ccomai92/WorkSpace/CSS343/DataCompression/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable DataCompression"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DataCompression.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +179,8 @@ CMakeFiles/DataCompression.dir/build: DataCompression
 
 CMakeFiles/DataCompression.dir/requires: CMakeFiles/DataCompression.dir/main.cpp.o.requires
 CMakeFiles/DataCompression.dir/requires: CMakeFiles/DataCompression.dir/HuffmanTree.cpp.o.requires
+CMakeFiles/DataCompression.dir/requires: CMakeFiles/DataCompression.dir/BitOutputStream.cpp.o.requires
+CMakeFiles/DataCompression.dir/requires: CMakeFiles/DataCompression.dir/BitInputStream.cpp.o.requires
 
 .PHONY : CMakeFiles/DataCompression.dir/requires
 

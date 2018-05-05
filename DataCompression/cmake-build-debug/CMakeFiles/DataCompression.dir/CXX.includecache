@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/ccomai92/WorkSpace/CSS343/DataCompression/BitInputStream.cpp
+BitInputStream.h
+/home/ccomai92/WorkSpace/CSS343/DataCompression/BitInputStream.h
+
+/home/ccomai92/WorkSpace/CSS343/DataCompression/BitInputStream.h
+
+/home/ccomai92/WorkSpace/CSS343/DataCompression/BitOutputStream.cpp
+BitOutputStream.h
+/home/ccomai92/WorkSpace/CSS343/DataCompression/BitOutputStream.h
+
+/home/ccomai92/WorkSpace/CSS343/DataCompression/BitOutputStream.h
+iostream
+-
+fstream
+-
+bitset
+-
+
 /home/ccomai92/WorkSpace/CSS343/DataCompression/Heap.h
 vector
 -
@@ -27,11 +45,17 @@ Heap.h
 /home/ccomai92/WorkSpace/CSS343/DataCompression/Heap.h
 limits.h
 -
+vector
+-
 iostream
 -
 
 /home/ccomai92/WorkSpace/CSS343/DataCompression/Node.h
 iostream
+-
+functional
+-
+algorithm
 -
 
 /home/ccomai92/WorkSpace/CSS343/DataCompression/main.cpp
