@@ -11,9 +11,9 @@
 #include "Node.h"
 
 template<class T,
-         class Container=std::vector<T>,
-         typename Compare=std::less<T>
-        >
+        class Container = std::vector<T>,
+        typename Compare = std::less<T>
+>
 class Heap {
 public:
     Heap();
@@ -34,9 +34,9 @@ private:
 };
 
 template<class T,
-         class Container,
-         class Compare>
-Heap<T, Container, Compare>::Heap(): list(), compare() {
+        class Container,
+        class Compare>
+Heap<T, Container, Compare>::Heap() : list(), compare() {
     this->list.push_back(T{});
 }
 
@@ -60,7 +60,8 @@ void Heap<T, Container, Compare>::Push(T item) {
         T parent = this->list[parentIndex];
         if (this->compare(child, parent)) {
             this->swap(index, parentIndex);
-        } else {
+        }
+        else {
             done = true;
         }
         index = parentIndex;
@@ -80,7 +81,7 @@ template<class T, class Container, class Compare>
 T Heap<T, Container, Compare>::Pop() {
     T result = this->list[1];
     int size = this->list.size();
-    this->list[1] =  this->list[size - 1];
+    this->list[1] = this->list[size - 1];
     this->list.pop_back();
     size = this->list.size();
     int index = 1;
@@ -95,14 +96,17 @@ T Heap<T, Container, Compare>::Pop() {
             if (this->compare(left, parent)) {
                 this->swap(leftIndex, index);
                 index = leftIndex;
-            } else {
+            }
+            else {
                 done = true;
             }
-        } else  {
+        }
+        else {
             if (this->compare(right, parent)) {
                 this->swap(rightIndex, index);
                 index = rightIndex;
-            } else {
+            }
+            else {
                 done = true;
             }
         }
