@@ -38,13 +38,11 @@ int main(int argc, char* argv[]) {
 	input.open(inputFile);
 	unsigned int frequency[UCHAR_MAX + 1] = { 0 };
 	if (input.is_open()) {
-		char ch;
+		unsigned char ch = input.get();
 		while (!input.eof()) {
-			input.get(ch);
-			count++; 
-			unsigned char character =
-					static_cast<unsigned char>(ch);
-			frequency[character]++;
+			frequency[ch]++;
+			count++;
+			ch = input.get();
 		}
 	}
 	else {
@@ -104,11 +102,10 @@ void verify(string inputFile, unsigned int frequency[]) {
 	ifstream input;
 	input.open(inputFile);
 	if (input.is_open()) {
-		char ch;
+		unsigned char ch = input.get();
 		while (!input.eof()) {
-			input.get(ch);
-			unsigned char character = static_cast<unsigned char>(ch);
-			frequency[character]--;
+			frequency[ch]--;
+			ch = input.get();
 		}
 	}
 	input.close();
@@ -124,11 +121,10 @@ void verify(string inputFile, unsigned int frequency[]) {
 	}
 	input.open(inputFile);
 	if (input.is_open()) {
-		char ch;
+		unsigned char ch = input.get();
 		while (!input.eof()) {
-			input.get(ch);
-			unsigned char character = static_cast<unsigned char>(ch);
-			frequency[character]++;
+			frequency[ch]++;
+			ch = input.get();
 		}
 	}
 	input.close();
@@ -179,15 +175,12 @@ void write(BitOutputStream& output, unsigned long long codes[],
 	ifstream input;
 	input.open(inputFile);
 	if (input.is_open()) {
-		char ch;
+		unsigned char ch = input.get();
 		while (!input.eof()) {
-			input.get(ch);
-			unsigned char character =
-					static_cast<unsigned char>(ch);
-			unsigned long long code = codes[character];
-			int size = sizes[character];
+			unsigned long long code = codes[ch];
+			int size = sizes[ch];
 			bitset<64> dump(code);
-			cerr << character << " "
+			cerr << ch << " "
 				 << dump << " " << size << endl;
 			for (int i = 0; i < size; i++) {
 				int shifting = size - 1 - i;
@@ -195,6 +188,7 @@ void write(BitOutputStream& output, unsigned long long codes[],
 				unsigned int bit = (temp >> shifting) & 1;
 				output.putBit(bit);
 			}
+			ch = input.get(); 
 		}
 		output.flush();
 	}
