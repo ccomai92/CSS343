@@ -48,6 +48,10 @@ void HuffmanTree::dump() {
     this->dumpHelper(this->root, 0);
 }
 
+void HuffmanTree::verify(unsigned long long* codes, int* sizes) {
+    this->verifyHelper(this->root, codes, sizes, 0, 0); 
+}
+
 void HuffmanTree::dumpHelper(Node<unsigned char, unsigned int>* current, int level) {
     if (current != nullptr) {
         this->dumpHelper(current->right(), level + 1);
@@ -75,6 +79,38 @@ void HuffmanTree::recordCodesHelper(Node<unsigned char, unsigned int> *current,
             recordCodesHelper(current->right(),
                               codes, sizes, code, level + 1);
         }
+    }
+}
+
+void HuffmanTree::verifyHelper(Node<unsigned char, unsigned int>* current,
+	       			unsigned long long* codes, int* sizes,
+			       	int code, int level) {
+    if (current != nullptr) {
+        if (current->left() == nullptr && current->right() == nullptr) {
+	    unsigned char character = current->data(); 
+	    unsigned long long actualCode = codes[character]; 
+	    int actualSize = sizes[character]; 
+	    if (actualCode != code) {
+	    	std::cerr << "Malformed Tree: actualCode = " << actualCode 
+			<< "code = " << code << std::endl; 
+	    } else if (actualSize != level) {
+	    	std::cerr << "Malformed Tree: actualSize = " << actualSize
+		       << "size = " << level << std::endl; 	
+	    }
+	} else {
+	    unsigned int currentPriority = current->priority(); 
+	    unsigned int leftPriority = current->left()->priority(); 
+	    unsigned int rightPriority = current->right()->priority();
+	    if (currentPriority != leftPriority + rightPriority) {
+	    	std:: cerr << "Malformed Tree: priority not matching"
+			<< " parent = " << currentPriority 
+			<< " left = " << leftPriority
+			<< " right = " << rightPriority
+			<< " parent data = " << current->data() << std::endl; 
+	    } 
+	}
+	this->verifyHelper(current->left(), codes, sizes, code << 1, level + 1); 
+	this->verifyHelper(current->right(), codes, sizes, (code << 1) + 1, level + 1); 
     }
 }
 

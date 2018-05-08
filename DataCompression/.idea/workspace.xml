@@ -28,7 +28,7 @@
           <file leaf-file-name="Node.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Node.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
+                <state relative-caret-position="975">
                   <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
                   <folding>
                     <element signature="e#105#124#0" expanded="true" />
@@ -110,8 +110,8 @@
           <file leaf-file-name="HuffmanTree.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/HuffmanTree.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="775">
-                  <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+                <state relative-caret-position="558">
+                  <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
                   <folding>
                     <element signature="e#119#136#0" expanded="true" />
                   </folding>
@@ -126,8 +126,8 @@
           <file leaf-file-name="HuffmanTree.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/HuffmanTree.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="496">
-                  <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+                <state relative-caret-position="355">
+                  <caret line="88" column="58" selection-start-line="88" selection-start-column="58" selection-end-line="88" selection-end-column="58" />
                 </state>
               </provider>
             </entry>
@@ -159,9 +159,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="587" />
-    <option name="y" value="370" />
-    <option name="width" value="1738" />
+    <option name="x" value="2" />
+    <option name="y" value="52" />
+    <option name="width" value="2547" />
     <option name="height" value="1388" />
   </component>
   <component name="ProjectView">
@@ -169,6 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,7 +181,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,18 +226,20 @@
       <workItem from="1525467317073" duration="12763000" />
       <workItem from="1525641039905" duration="2178000" />
       <workItem from="1525644093240" duration="3949000" />
+      <workItem from="1525746983220" duration="164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58452000" />
+    <option name="totallyTimeSpent" value="58616000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="587" y="370" width="1738" height="1388" extended-state="0" />
+    <frame x="2" y="52" width="2547" height="1388" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11162256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07616804" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.1826923" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.2440678" />
       <window_info anchor="bottom" id="CMake" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
@@ -255,23 +257,23 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10039063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32932693" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32932693" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="CMake" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32932693" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -742,7 +744,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Node.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="975">
           <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
           <folding>
             <element signature="e#105#124#0" expanded="true" />
@@ -752,15 +754,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HuffmanTree.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+        <state relative-caret-position="355">
+          <caret line="88" column="58" selection-start-line="88" selection-start-column="58" selection-end-line="88" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HuffmanTree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+        <state relative-caret-position="558">
+          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
           <folding>
             <element signature="e#119#136#0" expanded="true" />
           </folding>
