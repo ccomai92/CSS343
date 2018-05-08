@@ -15,7 +15,7 @@ void verify(string inputFile, unsigned int frequency[]);
 void dump(unsigned long long codes[], int sizes[]);
 void writeHeader(BitOutputStream& output,
 				 unsigned long long codes[],
-				 int sizes[]);
+				 int sizes[], unsigned int count);
 void write(BitOutputStream& output, unsigned long long codes[],
 		   int sizes[], string inputFile);
 
@@ -33,6 +33,7 @@ int main(int argc, char* argv[]) {
 
 	// open input file and read characters
 	// make frequency table.
+	unsigned int count = 0; 
 	ifstream input;
 	input.open(inputFile);
 	unsigned int frequency[UCHAR_MAX + 1] = { 0 };
@@ -40,6 +41,7 @@ int main(int argc, char* argv[]) {
 		char ch;
 		while (!input.eof()) {
 			input.get(ch);
+			count++; 
 			unsigned char character =
 					static_cast<unsigned char>(ch);
 			frequency[character]++;
@@ -67,7 +69,7 @@ int main(int argc, char* argv[]) {
 	BitOutputStream output(outputFile);
 
 	// write header to the output file
-	writeHeader(output, codes, sizes);
+	writeHeader(output, codes, sizes, count);
 
 	// write text
 	write(output, codes, sizes, inputFile);
@@ -144,8 +146,8 @@ void dump(unsigned long long codes[], int sizes[]) {
 	}
 }
 
-void writeHeader(BitOutputStream& output, unsigned long long codes[], int sizes[]) {
-	unsigned int countSymbols = 0;
+void writeHeader(BitOutputStream& output, unsigned long long codes[], 
+		 int sizes[], unsigned int count) {
 	for (int i = 0; i < UCHAR_MAX + 1; i++) {
 		unsigned long long code = codes[i];
 		int size = sizes[i];
@@ -153,7 +155,6 @@ void writeHeader(BitOutputStream& output, unsigned long long codes[], int sizes[
 		cerr << (char)i << endl;
 		output.putByte(codeSize);
 		if (size > 0) {
-			countSymbols++;
 			for (int i = 0; i < size; i++) {
 				int shifting = size - 1 - i;
 				unsigned long long temp = code & (1 << shifting);
@@ -163,11 +164,12 @@ void writeHeader(BitOutputStream& output, unsigned long long codes[], int sizes[
 			output.flush();
 		}
 	}
-	cerr << "count symbols = " << countSymbols << endl;
+	cerr << "count symbols = " << count << endl;
 	for (int i = 0; i < 4; i++) {
-		unsigned char temp = static_cast<unsigned char>(countSymbols);
+		unsigned char temp = static_cast<unsigned char>(count);
 		output.putByte(temp);
-		countSymbols = countSymbols >> 8;
+		count = count >> 8;
+
 	}
 }
 

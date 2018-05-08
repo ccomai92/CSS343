@@ -18,7 +18,9 @@ class Node {
                                     const Node<Data, Priority>& rhs) {
         if (rhs._data != Data{}) {
             output << "(" << rhs._data << " , ";
-        }
+        } else {
+	    output << "("; 
+	}
         output << rhs._priority << ")";
         return output;
     }

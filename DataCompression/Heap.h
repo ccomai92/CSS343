@@ -156,9 +156,9 @@ bool Heap<T, Container, Compare>::verify() {
 template<class T, class Container, class Compare>
 void Heap<T, Container, Compare>::print() {
     int size = this->list.size();
-    std::cerr << "[" << std::endl;
+    std::cerr << "[";
     for (int i = 1; i < size; i++) {
-        std::cerr << this->list[i];
+        std::cerr << *this->list[i];
     }
     std::cerr << "]" << std::endl;
 
