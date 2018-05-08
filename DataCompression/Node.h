@@ -50,6 +50,9 @@ private:
     Node<Data, Priority>* _right;
 };
 
+
+// Reference:
+// www.technical-recipes.com/2011/priority-queues-and-min-priority-queues-in-c/
 template<class Data, class Priority>
 struct CompareNode: public std::binary_function<Node<Data, Priority>*,
         Node<Data, Priority>*, bool> {

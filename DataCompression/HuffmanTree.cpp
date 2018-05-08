@@ -5,8 +5,7 @@
 #include "HuffmanTree.h"
 
 
-HuffmanTree::HuffmanTree() {}
-
+HuffmanTree::HuffmanTree(): root() {}
 
 HuffmanTree::HuffmanTree(unsigned int count[]) {
     Heap<Node<unsigned char, unsigned int>*,
@@ -24,6 +23,10 @@ HuffmanTree::HuffmanTree(unsigned int count[]) {
 }
 
 HuffmanTree::~HuffmanTree() {}
+
+void HuffmanTree::recordCodes(unsigned long long* codes, int* sizes) {
+    this->recordCodesHelper(this->root, codes, sizes, 0, 0);
+}
 
 Node<unsigned char, unsigned int>* HuffmanTree::makeTree(
                 Heap<Node<unsigned char, unsigned int>*,
@@ -56,4 +59,22 @@ void HuffmanTree::dumpHelper(Node<unsigned char, unsigned int>* current, int lev
     }
 }
 
+void HuffmanTree::recordCodesHelper(Node<unsigned char, unsigned int> *current,
+                                    unsigned long long (*codes), int (*sizes),
+                                    int (code), int level) {
+    if (current != nullptr) {
+        if (current->left() == nullptr && current->right() == nullptr) {
+            unsigned char data = current->data();
+            codes[data] = code;
+            sizes[data] = level;
+        } else {
+            code = code << 1;
+            recordCodesHelper(current->left(),
+                              codes, sizes, code, level + 1);
+            code = code + 1;
+            recordCodesHelper(current->right(),
+                              codes, sizes, code, level + 1);
+        }
+    }
+}
 

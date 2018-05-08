@@ -16,7 +16,7 @@ public:
     HuffmanTree();
     HuffmanTree(unsigned int count[]);
     ~HuffmanTree();
-
+    void recordCodes(unsigned long long* codes, int* sizes);
     void dump();
 
 private:
@@ -25,8 +25,10 @@ private:
                     Heap<Node<unsigned char, unsigned int>*,
                     std::vector<Node<unsigned char, unsigned int>*>,
                     CompareNode<unsigned char, unsigned int>> priority);
+    void recordCodesHelper(Node<unsigned char, unsigned int>* current,
+            			unsigned long long (*codes), int (*sizes),
+		    		    unsigned long long (code), int level);
     void dumpHelper(Node<unsigned char, unsigned int>* current, int level);
-
 };
 
 

@@ -7,22 +7,22 @@
 #include <iostream>
 #include <fstream>
 #include <bitset>
+#include <string>
 
 class BitOutputStream {
 public:
     BitOutputStream();
-    BitOutputStream(std::ostream& output);
+    BitOutputStream(std::string outputFile);
     ~BitOutputStream();
 
     int putBit(unsigned int bit);
     int putByte(unsigned char byte);
     void flush();
-    void close();
 
 private:
-    std::ostream& output;
-    unsigned int buffer; // the buffer of bits
-    int bufferIndex;       // the bit buffer index
+    std::ofstream output;
+    unsigned char buffer; // the buffer of bits
+    int bufferSize;       // the bit buffer index
 
 };
 
