@@ -35,17 +35,17 @@ int main(int argc, char* argv[]) {
 	// make frequency table.
 	unsigned int count = 0; 
 	ifstream input;
-	input.open(inputFile);
+	input.open(inputFile.c_str());
 	unsigned int frequency[UCHAR_MAX + 1] = { 0 };
 	if (input.is_open()) {
-		unsigned char ch = input.get();
+		unsigned char ch = input.get(); 
 		while (!input.eof()) {
-			frequency[ch]++;
 			count++;
+			frequency[ch]++;
 			ch = input.get();
+			
 		}
-	}
-	else {
+	} else {
 		return EXIT_FAILURE;
 	}
 	input.close();
@@ -58,11 +58,13 @@ int main(int argc, char* argv[]) {
 	// build huffman tree to make codes for compression
 	HuffmanTree tree(frequency);
 	tree.dump();
+
 	unsigned long long codes[UCHAR_MAX + 1] = { 0 };
 	int sizes[UCHAR_MAX + 1] = { 0 };
 	tree.recordCodes(codes, sizes); // should print out bits to cerr
 	dump(codes, sizes);
 	tree.verify(codes, sizes);
+	
 	// open output file
 	BitOutputStream output(outputFile);
 
@@ -149,15 +151,16 @@ void writeHeader(BitOutputStream& output, unsigned long long codes[],
 		int size = sizes[i];
 		unsigned char codeSize = static_cast<unsigned char>(size);
 		cerr << (char)i << endl;
+		cerr << size << endl; 
 		output.putByte(codeSize);
 		if (size > 0) {
-			for (int i = 0; i < size; i++) {
-				int shifting = size - 1 - i;
+			for (int i = 1; i <= size; i++) {
+				int shifting = size - i;
 				unsigned long long temp = code & (1 << shifting);
 				unsigned int bit = (temp >> shifting) & 1;
 				output.putBit(bit);
 			}
-			output.flush();
+			output.flush(); 
 		}
 	}
 	cerr << "count symbols = " << count << endl;
@@ -182,8 +185,8 @@ void write(BitOutputStream& output, unsigned long long codes[],
 			bitset<64> dump(code);
 			cerr << ch << " "
 				 << dump << " " << size << endl;
-			for (int i = 0; i < size; i++) {
-				int shifting = size - 1 - i;
+			for (int i = 1; i <= size; i++) {
+				int shifting = size - i;
 				unsigned long long temp = code & (1 << shifting);
 				unsigned int bit = (temp >> shifting) & 1;
 				output.putBit(bit);

@@ -52,8 +52,7 @@ void HuffmanTree::recordCodesHelper(Node<unsigned char, unsigned int>* current,
             unsigned char data = current->data();
             codes[data] = code;
             sizes[data] = level;
-        }
-        else {
+        } else {
             code = code << 1;
             recordCodesHelper(current->left(),
                               codes, sizes, code, level + 1);
