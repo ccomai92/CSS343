@@ -15,7 +15,7 @@ BitOutputStream::BitOutputStream(std::string outputFile) :
 }
 
 BitOutputStream::~BitOutputStream() {
-    flush();
+    this->flush();
     this->output.close();
 }
 

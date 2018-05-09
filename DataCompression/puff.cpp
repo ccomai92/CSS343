@@ -28,7 +28,14 @@ int main(int arc, char* argv[]) {
 
 	// read Coded Symbols in the header of inputFile 
 	for (int i = 0; i < UCHAR_MAX + 1; i++) {
-		
+		unsigned char size = input.getByte();
+		unsigned long long code = 0; 
+		for (int i = 0; i < size; i++) {
+			code = code + input.getBit();
+			code << 1;
+		}	
+		codes[i] = code;
+		sizes[i] = size;
 	}
 
 	HuffmanTree tree(codes, sizes); 
