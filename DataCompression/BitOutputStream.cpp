@@ -8,7 +8,7 @@ BitOutputStream::BitOutputStream() : output(), buffer(0), bufferSize(0) {}
 
 BitOutputStream::BitOutputStream(std::string outputFile) :
         output(), buffer(0), bufferSize(0) {
-    this->output.open(outputFile.c_str());
+    this->output.open(outputFile);
     if (!this->output.is_open()) {
         std::cerr << "output file not open" << std::endl;
     }

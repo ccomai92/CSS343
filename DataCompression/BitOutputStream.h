@@ -21,8 +21,8 @@ public:
 
 private:
     std::ofstream output;
-    unsigned char buffer; // the buffer of bits
-    int bufferSize;       // the bit buffer index
+    unsigned char buffer; 
+    int bufferSize;       
 
 };
 

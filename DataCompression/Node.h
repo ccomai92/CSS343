@@ -16,7 +16,7 @@ template<class Data, class Priority>
 class Node {
     friend std::ostream& operator<<(std::ostream& output,
                                     const Node<Data, Priority>& rhs) {
-        if (rhs._data != Data{}) {
+	if (rhs._data != Data{}) {
             output << "(" << rhs._data << " , ";
         } else {
 	    output << "("; 
@@ -27,6 +27,7 @@ class Node {
 
 public:
     Node();
+    Node(Data data); 
     Node(Priority priority, Node<Data, Priority>* left,
          Node<Data, Priority>* right);
     Node(Data data, Priority priority);
@@ -67,6 +68,10 @@ struct CompareNode : public std::binary_function<Node<Data, Priority>*,
 template<class Data, class Priority>
 Node<Data, Priority>::Node() : _data(Data{}), _priority(Priority{}),
                                _left(nullptr), _right(nullptr) {}
+
+template<class Data, class Priority>
+Node<Data, Priority>::Node(Data data): _data(data), _priority(Priority{}),
+				       _left(nullptr), _right(nullptr) {}
 
 template<class Data, class Priority>
 Node<Data, Priority>::Node(Priority priority, Node<Data, Priority>* left,
