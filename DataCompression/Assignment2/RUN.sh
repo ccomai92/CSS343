@@ -12,6 +12,6 @@
 # huff takes CommonSense1.txt and make CommonSense1.huff
 ./huff CommonSense1.txt 2> cs1Huff.txt
 # puff-baseline takes CommonSense1.huff and make CommonSense1.puff 
-./puff CommonSense1.huff 2> cs1Puff.txt
+./puff-baseline CommonSense1.huff 2> cs1Puff.txt
 
 
