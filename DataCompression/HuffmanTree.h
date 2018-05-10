@@ -24,9 +24,6 @@ public:
     void recordCodes(unsigned long long codes[], int sizes[]);
     void decode(BitInputStream& input, std::string outputFile, unsigned int numOfCharacters);
 
-    void dump();
-    void verify(unsigned long long codes[], int sizes[]);
-
 private:
     Node<unsigned char, unsigned int>* root;
     Node<unsigned char, unsigned int>* makeTree(
@@ -42,12 +39,15 @@ private:
                            unsigned long long code, int level);
     void decodeHelper(Node<unsigned char, unsigned int>* current,
 		      BitInputStream& input, std::ofstream& output);
+	void dump();
+	void verify(unsigned long long codes[], int sizes[]);
     void dumpHelper(Node<unsigned char, unsigned int>* current, int level);
     void verifyHelper(Node<unsigned char, unsigned int>* current,
                       unsigned long long codes[], int sizes[],
                       unsigned long long code, int level);
     void clear();
     Node<unsigned char, unsigned int>* clearHelper(Node<unsigned char, unsigned int>* current);
+
 };
 
 #endif //DATACOMPRESSION_HUFFMANTREE_H

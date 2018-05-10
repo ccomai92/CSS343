@@ -22,14 +22,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41969568">
+    <splitter split-orientation="horizontal" split-proportion="0.38334742">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
           <file leaf-file-name="HuffmanTree.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/HuffmanTree.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1189">
-                  <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+                <state relative-caret-position="4200">
+                  <caret line="173" column="1" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -37,7 +37,7 @@
           <file leaf-file-name="Heap.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Heap.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="789">
+                <state relative-caret-position="4075">
                   <caret line="163" selection-start-line="163" selection-end-line="163" />
                   <folding>
                     <element signature="e#105#122#0" expanded="true" />
@@ -59,8 +59,8 @@
           <file leaf-file-name="BitOutputStream.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BitOutputStream.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="564">
-                  <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+                <state relative-caret-position="864">
+                  <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -68,8 +68,8 @@
           <file leaf-file-name="BitOutputStream.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BitOutputStream.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+                <state>
+                  <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
                   <folding>
                     <element signature="e#154#173#0" expanded="true" />
                   </folding>
@@ -77,14 +77,29 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HuffmanTree.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HuffmanTree.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/HuffmanTree.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="650">
-                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-                  <folding>
-                    <element signature="e#119#136#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="225">
+                  <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BitInputStream.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/BitInputStream.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="117">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="encode.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/encode.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3325">
+                  <caret line="171" column="32" lean-forward="true" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -92,12 +107,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
           <file leaf-file-name="HuffmanTree.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/HuffmanTree.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="475">
-                  <caret line="70" column="64" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
+                <state relative-caret-position="625">
+                  <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -113,12 +128,12 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/BitInputStream.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/encode.cpp" />
         <option value="$PROJECT_DIR$/Node.h" />
         <option value="$PROJECT_DIR$/Heap.h" />
         <option value="$PROJECT_DIR$/BitOutputStream.cpp" />
         <option value="$PROJECT_DIR$/BitOutputStream.h" />
         <option value="$PROJECT_DIR$/HuffmanTree.h" />
+        <option value="$PROJECT_DIR$/encode.cpp" />
         <option value="$PROJECT_DIR$/HuffmanTree.cpp" />
       </list>
     </option>
@@ -140,6 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,7 +167,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,11 +214,12 @@
       <workItem from="1525644093240" duration="3949000" />
       <workItem from="1525746983220" duration="513000" />
       <workItem from="1525752552735" duration="1230000" />
+      <workItem from="1525909607348" duration="1167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60195000" />
+    <option name="totallyTimeSpent" value="61362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-16" width="2560" height="1456" extended-state="6" />
@@ -211,11 +227,10 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07578125" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.24358974" />
       <window_info anchor="bottom" id="CMake" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29727563" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29727563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -227,25 +242,26 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.24358974" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10039063" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32932693" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32932693" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="CMake" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32932693" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -279,9 +295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <element signature="e#119#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -361,9 +374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="925">
           <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#119#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -373,6 +383,21 @@
           <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
           <folding>
             <element signature="e#105#124#0" expanded="true" />
+            <element signature="e#1226#1254#0" expanded="true" />
+            <element signature="e#1542#1570#0" expanded="true" />
+            <element signature="e#1715#1743#0" expanded="true" />
+            <element signature="e#1959#1987#0" expanded="true" />
+            <element signature="e#2184#2212#0" expanded="true" />
+            <element signature="e#2255#2283#0" expanded="true" />
+            <element signature="e#2407#2435#0" expanded="true" />
+            <element signature="e#2559#2587#0" expanded="true" />
+            <element signature="e#2709#2737#0" expanded="true" />
+            <element signature="e#2907#2935#0" expanded="true" />
+            <element signature="e#3057#3085#0" expanded="true" />
+            <element signature="e#3255#3283#0" expanded="true" />
+            <element signature="e#3356#3384#0" expanded="true" />
+            <element signature="e#3482#3510#0" expanded="true" />
+            <element signature="e#3600#3628#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -432,9 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="e#119#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -480,9 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="e#119#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -541,9 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="e#119#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,9 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="e#119#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,29 +669,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BitInputStream.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1375">
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/encode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="196" column="23" lean-forward="true" selection-start-line="196" selection-start-column="23" selection-end-line="196" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -710,7 +706,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Heap.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
+        <state relative-caret-position="4075">
           <caret line="163" selection-start-line="163" selection-end-line="163" />
           <folding>
             <element signature="e#105#122#0" expanded="true" />
@@ -728,37 +724,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BitOutputStream.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BitOutputStream.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
           <folding>
             <element signature="e#154#173#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HuffmanTree.cpp">
+    <entry file="file://$PROJECT_DIR$/BitOutputStream.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1189">
-          <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        <state relative-caret-position="864">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encode.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3325">
+          <caret line="171" column="32" lean-forward="true" selection-start-line="171" selection-start-column="32" selection-end-line="171" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HuffmanTree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#119#136#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitInputStream.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HuffmanTree.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
         </state>
       </provider>
     </entry>

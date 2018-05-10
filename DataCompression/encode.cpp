@@ -13,6 +13,7 @@ using namespace std;
 void dump(unsigned int frequency[]);
 void verify(string inputFile, unsigned int frequency[]);
 void dump(unsigned long long codes[], int sizes[]);
+unsigned int readFile(ifstream& input, unsigned int frequency[]);
 void writeHeader(BitOutputStream& output,
 				 unsigned long long codes[],
 				 int sizes[], unsigned int count);
@@ -33,43 +34,35 @@ int main(int argc, char* argv[]) {
 
 	// open input file and read characters
 	// make frequency table.
-	unsigned int count = 0; 
+	unsigned int numOfCharacters = 0;
 	ifstream input;
-	input.open(inputFile.c_str());
+	input.open(inputFile);
 	unsigned int frequency[UCHAR_MAX + 1] = { 0 };
 	if (input.is_open()) {
-		unsigned char ch = input.get(); 
-		while (!input.eof()) {
-			count++;
-			frequency[ch]++;
-			ch = input.get();
-			
-		}
+		numOfCharacters = readFile(input, frequency);
 	} else {
 		return EXIT_FAILURE;
 	}
 	input.close();
 
-	// Testing inputs are proper
+	// Testing if inputs are proper
 	dump(frequency);
 	verify(inputFile, frequency);
 
 
 	// build huffman tree to make codes for compression
 	HuffmanTree tree(frequency);
-	tree.dump();
 
 	unsigned long long codes[UCHAR_MAX + 1] = { 0 };
 	int sizes[UCHAR_MAX + 1] = { 0 };
-	tree.recordCodes(codes, sizes); // should print out bits to cerr
+	tree.recordCodes(codes, sizes);
 	dump(codes, sizes);
-	tree.verify(codes, sizes);
 	
 	// open output file
 	BitOutputStream output(outputFile);
 
 	// write header to the output file
-	writeHeader(output, codes, sizes, count);
+	writeHeader(output, codes, sizes, numOfCharacters);
 
 	// write text
 	write(output, codes, sizes, inputFile);
@@ -142,6 +135,18 @@ void dump(unsigned long long codes[], int sizes[]) {
 				 << size << " " << bitCode << endl;
 		}
 	}
+}
+
+unsigned int readFile(ifstream& input, unsigned int frequency[]) {
+	unsigned int count = 0;
+    unsigned char ch = input.get();
+	while (!input.eof()) {
+		count++;
+		frequency[ch]++;
+		ch = input.get();
+
+	}
+	return count;
 }
 
 void writeHeader(BitOutputStream& output, unsigned long long codes[], 

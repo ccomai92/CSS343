@@ -20,13 +20,17 @@ HuffmanTree::HuffmanTree(unsigned int count[]) {
     }
     priority.verify();
     this->root = makeTree(priority);
+    this->dump();
 }
 
 HuffmanTree::HuffmanTree(BitInputStream& input) {
     // for verification 
     unsigned long long codes[UCHAR_MAX + 1] ={0};
     int sizes[UCHAR_MAX + 1] = {0};
+
+    // initializing root
     this->root = new Node<unsigned char, unsigned int>();
+
     for (int i = 0; i < UCHAR_MAX + 1; i++) {
 	unsigned char character = i;
 	int size = input.getByte();
@@ -56,6 +60,7 @@ HuffmanTree::~HuffmanTree() {
 
 void HuffmanTree::recordCodes(unsigned long long codes[], int sizes[]) {
     this->recordCodesHelper(this->root, codes, sizes, 0, 0);
+    this->verify(codes, sizes);
 }
 
 void HuffmanTree::decode(BitInputStream& input, std::string outputFile, unsigned int numOfCharacters) {
@@ -93,7 +98,7 @@ Node<unsigned char, unsigned int>* HuffmanTree::makeTree(
 	  	unsigned char character) {
     if (size == 0) {
         std::cerr << character << std::endl;
-	current = new Node<unsigned char, unsigned int>(character);
+	    current = new Node<unsigned char, unsigned int>(character);
         return current;	
     }
 
@@ -106,9 +111,9 @@ Node<unsigned char, unsigned int>* HuffmanTree::makeTree(
     std::cerr << bit  << std::endl; 
     
     if (bit == 0) {
-	current->left() = makeTree(current->left(), code, size - 1, character);
+	    current->left() = makeTree(current->left(), code, size - 1, character);
     } else { // bit == 1
-   	current->right() = makeTree(current->right(), code, size - 1, character); 
+   	    current->right() = makeTree(current->right(), code, size - 1, character);
     }	
     return current;
 }
@@ -136,16 +141,16 @@ void HuffmanTree::decodeHelper(Node<unsigned char, unsigned int>* current,
 	       		       BitInputStream& input, std::ofstream& output) {
     if (current != nullptr) {
     	if (current->left() == nullptr && current->right() == nullptr) {
-	    unsigned char character = current->data(); 
-	    output.put(character);
-	} else {
-	    unsigned int bit = input.getBit();
-	    if (bit == 0) {
-	    	decodeHelper(current->left(), input, output);
-	    } else { // bit == 1
-	    	decodeHelper(current->right(), input, output);
+	        unsigned char character = current->data();
+	        output.put(character);
+	    } else {
+    	    unsigned int bit = input.getBit();
+	        if (bit == 0) {
+	    	    decodeHelper(current->left(), input, output);
+	        } else { // bit == 1
+	    	    decodeHelper(current->right(), input, output);
+	        }
 	    }
-	}
     }
 }
 
