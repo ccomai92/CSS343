@@ -8,12 +8,10 @@
 #include <vector>
 #include <iostream>
 #include <algorithm> // reference: cplusplus.com
-#include "Node.h"
 
 template<class T,
         class Container = std::vector<T>,
-        typename Compare = std::less<T>
->
+        typename Compare = std::less<T>>
 class Heap {
 public:
     Heap();

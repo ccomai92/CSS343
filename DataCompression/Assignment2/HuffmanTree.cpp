@@ -4,17 +4,14 @@
 
 #include "HuffmanTree.h"
 
-
 HuffmanTree::HuffmanTree() : root() {}
 
 HuffmanTree::HuffmanTree(unsigned int count[]) {
-    Heap<Node<unsigned char, unsigned int>*,
-            std::vector<Node<unsigned char, unsigned int>*>,
-            CompareNode<unsigned char, unsigned int>> priority;
+    Heap<HuffmanNode*, std::vector<HuffmanNode*>, CompareNode> priority;
     for (int i = 0; i < UCHAR_MAX + 1; i++) {
         if (count[i] > 0) {
-            Node<unsigned char, unsigned int>* temp =
-                    new Node<unsigned char, unsigned int>(i, count[i]);
+            HuffmanNode* temp =
+                    new HuffmanNode(i, count[i]);
             priority.Push(temp);
         }
     }
@@ -29,26 +26,21 @@ HuffmanTree::HuffmanTree(BitInputStream& input) {
     int sizes[UCHAR_MAX + 1] = {0};
 
     // initializing root
-    this->root = new Node<unsigned char, unsigned int>();
+    this->root = new HuffmanNode();
 
     for (int i = 0; i < UCHAR_MAX + 1; i++) {
 	unsigned char character = i;
 	int size = input.getByte();
 	unsigned long long code = 0; 
         if (size > 0) {	
-	    for (int i = 0; i < size; i++) {
-	        code = code << 1;
-            code += input.getBit();
-        }
-
-	    std::bitset<64> testing(code);
-	    std::cerr << "character = " << (char) i << std::endl;
-	    std::cerr << "size: " <<  size << std::endl; 
-	    std::cerr << "code: " << testing << std::endl;
+            for (int i = 0; i < size; i++) {
+                code = code << 1;
+                code += input.getBit();
+            }
 	    this->root = this->makeTree(this->root, code, size, character);
-	}
-	codes[i] = code;
-	sizes[i] = size;
+        }
+        codes[i] = code;
+        sizes[i] = size;
     }
     this->dump(); 
     this->verify(codes, sizes);
@@ -76,34 +68,28 @@ void HuffmanTree::decode(BitInputStream& input, std::string outputFile, unsigned
     output.close(); 
 }
 
-Node<unsigned char, unsigned int>* HuffmanTree::makeTree(
-        Heap<Node<unsigned char, unsigned int>*,
-                std::vector<Node<unsigned char, unsigned int>*>,
-                CompareNode<unsigned char, unsigned int>> priority) {
+HuffmanNode* HuffmanTree::makeTree(Heap<HuffmanNode*, std::vector<HuffmanNode*>, CompareNode> priority) {
     while (priority.size() > 1) {
-        Node<unsigned char, unsigned int>* first = priority.Pop();
-        Node<unsigned char, unsigned int>* second = priority.Pop();
-        unsigned int frequencySum = first->priority() + second->priority();
-        Node<unsigned char, unsigned int>* branch =
-                new Node<unsigned char, unsigned int>(frequencySum, first, second);
+        HuffmanNode* first = priority.Pop();
+        HuffmanNode* second = priority.Pop();
+        unsigned int frequencySum = first->frequency() + second->frequency();
+        HuffmanNode* branch =
+                new HuffmanNode(frequencySum, first, second);
         priority.Push(branch);
         priority.verify();
     }
     return priority.Pop();
 }
 
-Node<unsigned char, unsigned int>* HuffmanTree::makeTree(
-		Node<unsigned char, unsigned int>* current,
-		unsigned long long code, int size,
-	  	unsigned char character) {
+HuffmanNode* HuffmanTree::makeTree (HuffmanNode* current, unsigned long long code, int size, unsigned char character) {
     if (size == 0) {
         std::cerr << character << std::endl;
-	    current = new Node<unsigned char, unsigned int>(character);
+	    current = new HuffmanNode(character);
         return current;	
     }
 
     if (current == nullptr) {
-    	current = new Node<unsigned char, unsigned int>(); 
+    	current = new HuffmanNode();
     }
 
     unsigned long long bit = code & (1 << size - 1);
@@ -118,7 +104,7 @@ Node<unsigned char, unsigned int>* HuffmanTree::makeTree(
     return current;
 }
 
-void HuffmanTree::recordCodesHelper(Node<unsigned char, unsigned int>* current,
+void HuffmanTree::recordCodesHelper(HuffmanNode* current,
                                     unsigned long long codes[], int sizes[],
                                     unsigned long long code, int level) {
     if (current != nullptr) {
@@ -137,7 +123,7 @@ void HuffmanTree::recordCodesHelper(Node<unsigned char, unsigned int>* current,
     }
 } 
 
-void HuffmanTree::decodeHelper(Node<unsigned char, unsigned int>* current,
+void HuffmanTree::decodeHelper(HuffmanNode* current,
 	       		       BitInputStream& input, std::ofstream& output) {
     if (current != nullptr) {
     	if (current->left() == nullptr && current->right() == nullptr) {
@@ -162,7 +148,7 @@ void HuffmanTree::verify(unsigned long long codes[], int sizes[]) {
     this->verifyHelper(this->root, codes, sizes, 0, 0);
 }
 
-void HuffmanTree::dumpHelper(Node<unsigned char, unsigned int>* current, int level) {
+void HuffmanTree::dumpHelper(HuffmanNode* current, int level) {
     if (current != nullptr) {
         this->dumpHelper(current->right(), level + 1);
         for (int i = 0; i < level; i++) {
@@ -173,7 +159,7 @@ void HuffmanTree::dumpHelper(Node<unsigned char, unsigned int>* current, int lev
     }
 }
 
-void HuffmanTree::verifyHelper(Node<unsigned char, unsigned int>* current,
+void HuffmanTree::verifyHelper(HuffmanNode* current,
                                unsigned long long codes[], int sizes[],
                                unsigned long long code, int level) {
     if (current != nullptr) {
@@ -193,14 +179,14 @@ void HuffmanTree::verifyHelper(Node<unsigned char, unsigned int>* current,
             }
         }
         else {
-            unsigned int currentPriority = current->priority();
-            unsigned int leftPriority = current->left()->priority();
-            unsigned int rightPriority = current->right()->priority();
-            if (currentPriority != leftPriority + rightPriority) {
+            unsigned int currentFrequency = current->frequency();
+            unsigned int leftFrequency = current->left()->frequency();
+            unsigned int rightFrequency = current->right()->frequency();
+            if (currentFrequency != leftFrequency + rightFrequency) {
                 std::cerr << "Malformed Tree: priority not matching"
-                          << " parent = " << currentPriority
-                          << " left = " << leftPriority
-                          << " right = " << rightPriority
+                          << " parent = " << currentFrequency
+                          << " left = " << leftFrequency
+                          << " right = " << rightFrequency
                           << " parent data = " << current->data() << std::endl;
             }
         }
@@ -215,7 +201,7 @@ void HuffmanTree::clear() {
     this->root = clearHelper(this->root); 	
 }
 
-Node<unsigned char, unsigned int>* HuffmanTree::clearHelper(Node<unsigned char, unsigned int>* current) {
+HuffmanNode* HuffmanTree::clearHelper(HuffmanNode* current) {
     if (current == nullptr) {
         return nullptr;
     } else {
