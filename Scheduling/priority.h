@@ -1,141 +1,132 @@
-/* Reference:  
- *  https://courses.washington.edu/css343/bernstein/2018-q2/assignment-03/priority.h 
- *  "priority.h" is modified by Kris Kwon.  
- */ 
+#pragma once
 
-#ifndef SCHEDULING_PRIORITY_H
-#define SCHEDULING_PRIORITY_H
+// priority.h
+//
+// PriorityQueue: binary heap priority queue
+//
+// Copyright 2013 Systems Deployment, LLC
+// Author: Morris Bernstein (morris@systems-deployment.com)
 
-#include <vector> 
+// #ifndef PRIORITY_H
+// #define PRIORITY_H
 
-template<class T, class Compare> 
+#include <cassert>
+#include <cstdlib>
+#include <vector>
+
+
+// This priority queue implementation stores pointers to Things, using
+// a Compare function object that returns a numeric value <0, =0, or
+// >0 for <, ==, and >.  It is assumed that the Thing class has
+// methods int get_priority() and void set_priority(int).  These hold
+// indices into the priority queue to simplify implementation of the
+// reduce (decrease_key) method.
+template<typename Thing, typename Compare>
 class PriorityQueue {
-public: 
-    PriorityQueue(Compare compare);
-    ~PriorityQueue(); 
+public:
+	PriorityQueue(Compare compare) : compare_(compare) {
+	}
 
-    void push(T* input); 
-    void reduce(T* target); 
-    T* pop(); 
-    bool isEmpty() {}
+	// Add a new thing to the priority queue.
+	void push_back(Thing* thing);
+
+	// Decrease (raise?) the priority of a given Thing.
+	void reduce(Thing* thing);
+
+	// Remove and return the lowest (highest?) priority Thing.  This
+	// differs from std::priority_queue which has separate functions.
+	// Returns NULL if the queue is empty.
+	Thing* pop();
+
+	bool empty() { return data_.empty(); }
+
 private:
-    PriorityQueue(): {}
+	void swap(int n1, int n2);
 
-    Compare _compare;
-    std::vector<T*> _list;
+	void sift_up(int n);
+	void sift_down(int n);
 
-    void swap(int index1, int index2); 
-    void shift_up(int n); 
-    void shift_down(int n);  
-}; 
+	Compare compare_;
+	std::vector<Thing*> data_;
+};
 
-template<class T, class Compare> 
-PriorityQueue<T, Compare>::PriorityQueue(Compare compare):
- _compare(compare), _list() {
-    this->_list[0] = T*{}; 
+
+template<typename Thing, typename Compare>
+void PriorityQueue<Thing, Compare>::swap(int n1, int n2) {
+	Thing* tmp = data_[n1];
+	data_[n1] = data_[n2];
+	data_[n2] = tmp;
+	data_[n1]->set_priority(n1);
+	data_[n2]->set_priority(n2);
 }
 
-template<class T, class Compare> 
-PriorityQueue<T, Compare>::~PriorityQueue() {}
 
-template<class T, class Compare> 
-void PriorityQueue<T, Compare>::swap(int index1, int index2) {
-    T* temp = this->_list[index1]; 
-    this->_list[index1] = this->_list[index2]; 
-    this->_list[index2] = temp;  
-    this->_list[index1]->setIndex(index1); 
-    this->_list[index2]->setIndex(index2); 
-} 
+template<typename Thing, typename Compare>
+void PriorityQueue<Thing, Compare>::sift_up(int n) {
+	if (n == 0) {
+		return;
+	}
 
-template<class T, class Compare>
-void PriorityQueue<T, Compare>::shift_up(int index) {
-    bool done = false; 
-    while (index > 1 && !done) {
-        int parentIndex = index / 2; 
-        T* child = this->_list[index]; 
-        T* parent = this->_list[parentIndex]; 
-        if (this->_compare(child, parent)) {
-            this->swap(index, parentIndex);
-            index = parentIndex; 
-        } else {
-            done = true; 
-        }
-    }
+	int parent = (n + 1) / 2 - 1;
+	if (compare_(data_[parent], data_[n]) > 0) {
+		swap(parent, n);
+		sift_up(parent);
+	}
 }
 
-template<class T, class Compare> 
-void PriorityQueue<T, Compare>::shift_down(int index) {
-    int size = this->_list.size(); 
-    bool done = false; 
-    while (index < (size / 2) && !done) {
-        int leftIndex = index * 2; 
-        int rightIndex = (index * 2) + 1; 
-        T* parent = this->_list[index]; 
-        T* left = this->_list[leftIndex]; 
-        T* right = this->_list[rightIndex]; 
-        if (this->_compare(left, right)) {
-            if (this->_compare(left, parent)) {
-                this->swap(leftIndex, index); 
-                index = leftIndex; 
-            } else {
-                done = true; 
-            }
-        } else {
-            if (this->_compare(right, parent)) {
-                this->swap(rightIndex index); 
-                index = rightIndex; 
-            } else {
-                done = true; 
-            }
-        }
-    }
-    
-    if (size % 2 == 1) {
-        int parentIndex = size / 2; 
-        int leftIndex = size - 1; 
-        T* parent = this->_list[parentIndex]; 
-        T* left = this->_list[leftIndex]; 
-        if (this->_compare(left, parent)) {
-            this->swap(parentIndex, leftIndex); 
-        }
-    }
+
+template<typename Thing, typename Compare>
+void PriorityQueue<Thing, Compare>::sift_down(int n) {
+	unsigned left = (n + 1) * 2 - 1;
+	if (left >= data_.size()) {
+		return;
+	}
+	unsigned right = left + 1;
+
+	if (compare_(data_[n], data_[left]) >= 0) {
+		if (right >= data_.size() || compare_(data_[left], data_[right]) <= 0) {
+			swap(n, left);
+			sift_down(left);
+		} else {
+			swap(n, right);
+			sift_down(right);
+		}
+	} else if (right < data_.size() && compare_(data_[n], data_[right]) > 0) {
+		swap(n, right);
+		sift_down(right);
+	}
 }
 
-template<class T, class Compare> 
-void PriorityQueue<T, Compare>::push(T* input) {
-    this->_list.push_back(input); 
-    int index = this->_list.size() - 1;
-    this->_list[index]->setIndex(index); 
-    this->shift_up(index);  
+
+template<typename Thing, typename Compare>
+void PriorityQueue<Thing, Compare>::push_back(Thing* thing) {
+	int n = data_.size();
+	thing->set_priority(n);
+	data_.push_back(thing);
+	sift_up(n);
 }
 
-template<class T, class Compare> 
-void PriorityQueue<T, Compare>::reduce(T* input) {
-    int index = input.getIndex(); 
-    if (this->_list[index] != input) {
-        std::cerr << "Wrong index for reducing" << std::endl;
-    }
-    shift_up(index); 
+
+template<typename Thing, typename Compare>
+void PriorityQueue<Thing, Compare>::reduce(Thing* thing) {
+	int current_priority = thing->get_priority();
+	assert(data_[current_priority] == thing);
+	sift_up(current_priority);
 }
 
-template<class T, class Compare> 
-Thing* PriorityQueue<T, Compare>::pop() {
-    if (this->_list.size() <= 1) {
-        return nullptr; 
-    }
-    Thing* result = this->_list[1];
-    int size = this->_list.size(); 
-    this->_list[1] = this->list[size - 1];
-    this->_list[1]->setIndex(1); 
-    this->_list.pop_back();  
-    this->shift_down(1);     
 
-    return result;  
+template<typename Thing, typename Compare>
+Thing* PriorityQueue<Thing, Compare>::pop() {
+	if (data_.size() == 0) {
+		return NULL;
+	}
+	Thing* min = data_[0];
+	data_[0] = *data_.rbegin();
+	data_[0]->set_priority(0);
+	data_.pop_back();
+	sift_down(0);
+	return min;
 }
 
-template<class T, class Compare>
-bool PriorityQueue<T, compare>::isEmpty() {
-    int size = this->_list.size(); 
-    return size <= 1
-} 
-#endif //SCHEDULING_PRIORITY_H
+
+// #endif
