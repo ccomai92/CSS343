@@ -3,7 +3,7 @@
 #include <string>
 #include <map>
 #include <fstream>
-#include "Galaxy.h"
+#include "galaxy.h"
 
 typedef std::map<std::string, std::map<std::string, int>> Travel_Times;
 
