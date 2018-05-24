@@ -2,58 +2,82 @@
 //
 
 #include <iostream>
-#include <fstream> 
 #include <vector>
+#include <fstream> 
 #include <cstdlib>
 #include <string>
-//#include "Reader.h"
+#include "Reader.h"
 //#include "galaxy.h"
 
 using namespace std; 
 
-// http://forums.devshed.com/programming-42/split-lines-584595.html
-typedef vector<vector<string>> Travel_Times; 
+
+void readConduits(ifstream& input, Travel_Times* constraints); 
+void dump(Travel_Times* constraints); 
 
 int main(int argc, char* argv[]) {
-	if (argc < 2) {
+	if (argc < 3) {
 		return EXIT_FAILURE; 
 	}
 
 	string conduits = argv[1]; 
-	//string routes = argv[2]; 
+	string routes = argv[2]; 
 
 	ifstream input; 
+
+	// open conduits.txt 
 	input.open(conduits);  
+	Travel_Times* constraints = new Travel_Times(); 
 	if (input.is_open()) {
-		string start;
-		while (input >> start) {
-			if (input.get() == ' ') {
-				string temp; 
-				input >> temp; 
-				start += " " + temp; 
-			}
-			string destination; 
-			int time;  
-			input >> destination;
-			if (input.get() == ' ') {
-				string temp; 
-				input >> temp; 
-				destination += " " + temp; 
-			} 
-			input >> time;
-
-			// put input into Travel_Times data structure 
-
-			// dump input
-			cerr << start << " " << destination << " " << time << endl; 
- 
-		}
+		readConduits(input, constraints);
 	} else {
 		return EXIT_FAILURE; 
 	}
+	input.close(); 
+	dump(constraints);
 
-	// Reader reader(cin, constraints); 
+	// open routes.txt
+	input.open(routes); 
+	if (!input.is_open()) {
+		return EXIT_FAILURE; 
+	}
+
+	Reader reader(input, constraints); 
+	input.close(); 
 
 	return EXIT_SUCCESS;
 }
 
+void readConduits(ifstream& input, Travel_Times* constraints) {
+	string start;
+	while (input >> start) {
+		if (input.get() == ' ') {
+			string temp; 
+			input >> temp; 
+			start += " " + temp; 
+		}
+		string destination; 
+		int time;  
+		input >> destination;
+		if (input.get() == ' ') {
+			string temp; 
+			input >> temp; 
+			destination += " " + temp; 
+		} 
+		input >> time;
+
+		// put input into Travel_Times data structure
+		constraints->starts.push_back(start); 
+		constraints->destinations.push_back(destination); 
+		constraints->times.push_back(time);  
+		constraints->size++;
+	}
+} 
+
+void dump(Travel_Times* constraints) { 
+	for (int i = 0; i < constraints->size; i++) {
+		cerr << constraints->starts[i] 
+			<< "\t" << constraints->destinations[i]
+			<< "\t" << constraints->times[i] << endl; 
+	}
+}

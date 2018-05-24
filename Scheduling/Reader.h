@@ -3,20 +3,30 @@
 #include <string>
 #include <map>
 #include <fstream>
-#include "galaxy.h"
+#include <iostream> 
+#include <vector>
+#include "Galaxy.h"
 
-typedef std::map<std::string, std::map<std::string, int>> Travel_Times;
+struct Travel_Times {
+	std::vector<std::string> starts; 
+	std::vector<std::string> destinations; 
+	std::vector<int> times; 
+	int size = 0; 
+};
+
+// typedef std::map<std::string, std::map<std::string, int>> Travel_Times;   
 
 class Reader {
 public:
 	Reader();
-	Reader(std::ifstream& input, Travel_Times* constraints);
+	Reader(std::istream& input, Travel_Times* constraints);
 	~Reader(); 
 
 	Galaxy* load();
 
 private:
 	static const int MIN_LAYOVER_TIME;
+	void createGalaxy(); 
 
 	// Read next leg of ship's route
 	bool get_record();

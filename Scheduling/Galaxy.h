@@ -222,7 +222,10 @@ public:
 	}
 
 	void dump() {
-	
+		int size = this->planets.size(); 
+		for (int i = 0; i < size; i++) {
+			std::cerr << this->planets[i]->name << std::endl; 
+		}
 	}
 
 	void dump_routes(Planet* origin, std::ostream& out = std::cerr) {
