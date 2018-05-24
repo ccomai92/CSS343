@@ -1,4 +1,5 @@
-#pragma once
+#ifndef READER_H
+#define READER_H
 
 #include <string>
 #include <map>
@@ -26,7 +27,6 @@ public:
 
 private:
 	static const int MIN_LAYOVER_TIME;
-	void createGalaxy(); 
 
 	// Read next leg of ship's route
 	bool get_record();
@@ -65,4 +65,6 @@ private:
 	// Route structure under construction.
 	Galaxy* galaxy;
 };
+
+#endif
 

@@ -1,4 +1,3 @@
-#pragma once 
 // galaxy.h
 //
 // Declarations for a graph representing Old Republic Spaceways' route
@@ -12,8 +11,8 @@
 // Copyright 2013, 2018 Systems Deployment, LLC
 // Author: Morris Bernstein (morris@systems-deployment.com)
 
-// #ifndef GALAXY_H
-// #define GALAXY_H
+#ifndef GALAXY_H
+#define GALAXY_H
 
 #include <climits>
 #include <iostream>
@@ -125,7 +124,7 @@ public:
 //  Dijkstra's shortest-path algorithm.
 class Planet {
 public:
-	Planet(const std::string& name) : name(name) {}
+	Planet(const std::string& name): name(name) {}
 	void add(Edge* e) {
 		edges.push_back(e);
 	}
@@ -155,8 +154,13 @@ public:
 	}
 
 	// Debug-friendly output.
-	void dump(Galaxy* galaxy) {
-	
+	void dump() { //Galaxy* galaxy
+		std::cerr << this->name <<  ": " << std::endl; 
+		int size = this->edges.size(); 
+		std::cerr << size << std::endl; 
+		for (int i = 0; i < size; i++) {
+			std::cerr << this->edges[i]->destination->name << std::endl; 
+		}
 	}
 
 	// Functions for priority queue:
@@ -199,8 +203,8 @@ private:
 // adding edges to the planet objects.
 class Galaxy {
 public:
-	Galaxy();
-	~Galaxy(); 
+	Galaxy(): planets(), fleet() {}
+	~Galaxy() {}
 
 	void add(Planet* planet) {
 		this->planets.push_back(planet);
@@ -223,8 +227,11 @@ public:
 
 	void dump() {
 		int size = this->planets.size(); 
+		std::cerr << "size " << size << std::endl; 
 		for (int i = 0; i < size; i++) {
-			std::cerr << this->planets[i]->name << std::endl; 
+			Planet* temp = this->planets[i]; 
+			temp->dump(); 
+			std::cerr << std::endl; 
 		}
 	}
 
@@ -236,4 +243,4 @@ public:
 	std::vector<Planet*> planets;
 };
 
-// #endif
+#endif

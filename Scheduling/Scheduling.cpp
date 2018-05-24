@@ -7,7 +7,7 @@
 #include <cstdlib>
 #include <string>
 #include "Reader.h"
-//#include "galaxy.h"
+#include "Galaxy.h"
 
 using namespace std; 
 
@@ -43,8 +43,10 @@ int main(int argc, char* argv[]) {
 	}
 
 	Reader reader(input, constraints); 
-	input.close(); 
+	Galaxy* galaxy = reader.load(); 
+	galaxy->dump(); 
 
+	input.close(); 
 	return EXIT_SUCCESS;
 }
 
