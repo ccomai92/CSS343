@@ -1,3 +1,7 @@
+// Author: Morris Bernstein (morris@systems-deployment.com)
+// Modified by Kris Kwon for CSS 343 Assignment3 
+
+
 #ifndef READER_H
 #define READER_H
 

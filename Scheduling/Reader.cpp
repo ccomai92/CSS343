@@ -27,6 +27,8 @@ Galaxy* Reader::load() {
 		Planet* startP;
 		Planet* destP; 
 		
+		// reference: stack overflow 
+		// https://stackoverflow.com/questions/3136520/determine-if-map-contains-a-value-for-a-key
 		if (this->planets.count(start) == 0) {
 			count++; 
 			startP = new Planet(start); 
@@ -36,6 +38,8 @@ Galaxy* Reader::load() {
 			startP = this->planets[start]; 
 		}
 
+		// reference: stack overflow 
+		// https://stackoverflow.com/questions/3136520/determine-if-map-contains-a-value-for-a-key
 		if (this->planets.count(destination) == 0) {
 			count++; 
 			destP = new Planet(destination);
@@ -46,6 +50,8 @@ Galaxy* Reader::load() {
 		}
 
 		Edge* edge = new Edge(destP); 
+		Leg leg; 
+		edge->add(leg);
 		startP->add(edge); 
 		this->edges[startP][destP] = edge; 		
 	}

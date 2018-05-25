@@ -24,8 +24,7 @@
 template<typename Thing, typename Compare>
 class PriorityQueue {
 public:
-	PriorityQueue(Compare compare) : compare_(compare) {
-	}
+	PriorityQueue(Compare compare) : compare_(compare) {}
 
 	// Add a new thing to the priority queue.
 	void push_back(Thing* thing);

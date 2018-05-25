@@ -10,6 +10,7 @@
 //
 // Copyright 2013, 2018 Systems Deployment, LLC
 // Author: Morris Bernstein (morris@systems-deployment.com)
+// Modified by Kris Kwon for CSS 343 assignment 3 
 
 #ifndef GALAXY_H
 #define GALAXY_H
@@ -101,7 +102,11 @@ public:
 // planet (vertex) to the destination planet.
 class Edge {
 public:
-	Edge(Planet* destination) : destination(destination) {}
+	Edge(Planet* destination, Time& time) : destination(destination), time(time) {
+		Leg leg;
+		this->add(leg);  
+	}
+
 	void add(Leg& leg) { 
 		departures.push_back(leg);
 	}
@@ -114,6 +119,7 @@ public:
 
 	void dump(Galaxy* galaxy);
 
+	Time time; 
 	Planet* destination;
 	std::vector<Leg> departures;
 };
@@ -124,7 +130,8 @@ public:
 //  Dijkstra's shortest-path algorithm.
 class Planet {
 public:
-	Planet(const std::string& name): name(name) {}
+	Planet(const std::string& name): name(name), best_leg(Leg{}),
+									 predecessor(nullptr), priority(0) {}
 	void add(Edge* e) {
 		edges.push_back(e);
 	}
@@ -132,7 +139,8 @@ public:
 	// reset() clears the fields set by Dijkstra's algorithm so the
 	// algorithm may be re-run with a different origin planet.
 	void reset() {
-		predecessor = nullptr; best_leg = Leg();
+		predecessor = nullptr; 
+		best_leg = Leg{};
 	}
 
 	// search() computes the shortest path from the Planet to each of the
@@ -222,7 +230,16 @@ public:
 	// strongly connnected (you can't get there from here).  Finally,
 	// print the diameter of the galaxy and its itinerary.
 	void search() {
-		
+		int size = this->planets.size(); 
+
+		for (int i = 0; i < size; i++) {
+			PriorityQueue<Planet, int(*)(Planet*, Planet*)> priorityQ(Planet::compare); 
+			for (int i = 0; i < size; i++) {
+				priorityQ.push_back(this->planets[i]); 
+				this->planets[i]->reset(); 
+			}
+			this->planets[i]->search(priorityQ); // passing priority queue 
+		}
 	}
 
 	void dump() {
