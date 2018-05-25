@@ -49,9 +49,7 @@ Galaxy* Reader::load() {
 			destP = this->planets[destination]; 
 		}
 
-		Edge* edge = new Edge(destP); 
-		Leg leg; 
-		edge->add(leg);
+		Edge* edge = new Edge(destP, time); 
 		startP->add(edge); 
 		this->edges[startP][destP] = edge; 		
 	}

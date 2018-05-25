@@ -120,6 +120,7 @@ Thing* PriorityQueue<Thing, Compare>::pop() {
 		return NULL;
 	}
 	Thing* min = data_[0];
+	min->set_priority(-1); // modified by Kris Kwon 
 	data_[0] = *data_.rbegin();
 	data_[0]->set_priority(0);
 	data_.pop_back();

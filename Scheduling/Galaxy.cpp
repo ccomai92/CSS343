@@ -1,28 +1,14 @@
-#include "stdafx.h"
+
 #include "Galaxy.h"
 
 
-Galaxy::Galaxy() {
-}
-
-
-Galaxy::~Galaxy() {
-}
-
-void Itinerary::print(Fleet& fleet, std::ostream& out) {
-	
-}
-
-Planet * Planet::search(PriorityQueue<Planet, int(*)(Planet*, Planet*)>& queue) {
-	return nullptr;
-}
-
-Itinerary * Planet::make_itinerary(Planet * destination) {
-	return nullptr;
-}
-
-void Planet::relax_neighbors(PriorityQueue<Planet, int(*)(Planet*, Planet*)>& queue) {
-}
-
-void Galaxy::search() {
+void Itinerary::dump() {
+	std::cout << this->origin->name << " "; 
+	int size = this->destinations.size();  
+	for (int i = size - 1; i >= 0; i--) {
+		std::cout << this->legs[i].departure_time << " " 
+				<< this->legs[i].arrival_time << " ";
+		std::cout << this->destinations[i]->name << " ";
+	}
+	std::cout << std::endl; 
 }

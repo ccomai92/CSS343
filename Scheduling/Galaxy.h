@@ -21,13 +21,14 @@
 #include <algorithm>
 #include <string>
 #include <vector>
+#include <cassert>
 
 #include "priority.h"
 
 typedef int Time;
 const Time MAX_TIME = INT_MAX;
 const Time TURNAROUND_TIME = 4;
-const Time TRANSFER_TIME = 6;
+const Time TRANSFER_TIME = 4;
 
 typedef int Ship_ID;
 
@@ -87,9 +88,8 @@ public:
 class Itinerary {
 public:
 	Itinerary(Planet* origin) : origin(origin) {}
-	void print(Fleet& fleet, std::ostream& out = std::cout) {
-		
-	}
+	void print(Fleet& fleet, std::ostream& out = std::cout); 
+	void dump(); 
 
 	Planet* origin;
 	std::vector<Planet*> destinations;
@@ -102,10 +102,7 @@ public:
 // planet (vertex) to the destination planet.
 class Edge {
 public:
-	Edge(Planet* destination, Time& time) : destination(destination), time(time) {
-		Leg leg;
-		this->add(leg);  
-	}
+	Edge(Planet* destination, Time& time) : destination(destination), time(time) {}
 
 	void add(Leg& leg) { 
 		departures.push_back(leg);
@@ -141,18 +138,41 @@ public:
 	void reset() {
 		predecessor = nullptr; 
 		best_leg = Leg{};
+		this->priority = 0; 
 	}
 
 	// search() computes the shortest path from the Planet to each of the
 	// other planets and returns the furthest planet by travel time.
 	Planet* search(PriorityQueue<Planet, int(*)(Planet*, Planet*)>& queue) {
-		
+		this->best_leg = Leg(-1, 0, 0);
+		Planet* furthest = this; 
+		queue.reduce(this); 
+		while(!queue.empty()) {
+			Planet* current = queue.pop(); 
+			//assert(current->arrival_time() != MAX_TIME); 
+			if (current->arrival_time() != MAX_TIME && 
+					current->arrival_time() > furthest->arrival_time()) {
+				furthest = current; 
+			} 
+			current->relax_neighbors(queue);
+		}
+		return furthest; 
 	}
 
 	// make_itinerary() builds the itinerary with the earliest arrival
 	// time from this planet to the given destination planet.
 	Itinerary* make_itinerary(Planet* destination) {
-	
+		Itinerary* result = new Itinerary(this); 
+		Planet* current = destination; 
+		Planet* predecessor = destination->predecessor; 
+		//std::cerr << predecessor->name << std::endl; 
+		while (predecessor != nullptr) {
+			result->destinations.push_back(current);
+			result->legs.push_back(current->best_leg);
+			current = predecessor; 
+			predecessor = current->predecessor; 
+		}
+		return result; 
 	}
 
 	// arrival_time() is the time to arrive at this planet from the
@@ -173,11 +193,11 @@ public:
 
 	// Functions for priority queue:
 	int get_priority() {
-		return priority; 
+		return this->priority; 
 	}
 
 	void set_priority(int new_priority) {
-		priority = new_priority; 
+		this->priority = new_priority; 
 	}
 
 	static int compare(Planet* left, Planet* right) {
@@ -191,7 +211,19 @@ private:
 	// determine if the route to the neighbor via this planet is faster
 	// than the previously-recorded travel time to the neighbor.
 	void relax_neighbors(PriorityQueue<Planet, int(*)(Planet*, Planet*)>& queue) {
-		
+		for (auto& edge: this->edges) {
+			Planet* destination = edge->destination; 
+			if (destination->priority > -1) { // means already visited 
+				Leg newLeg = Leg(-1, this->best_leg.arrival_time, 
+								this->best_leg.arrival_time + edge->time); 
+				Leg existingLeg = destination->best_leg; 
+				if (Leg::less_than(newLeg, existingLeg)) {
+					destination->predecessor = this; 
+					destination->best_leg = newLeg;
+					queue.reduce(destination); 
+				}  
+			}
+		}
 	}
 
 	// edges shows the connections between this planet and it's
@@ -235,10 +267,12 @@ public:
 		for (int i = 0; i < size; i++) {
 			PriorityQueue<Planet, int(*)(Planet*, Planet*)> priorityQ(Planet::compare); 
 			for (int i = 0; i < size; i++) {
-				priorityQ.push_back(this->planets[i]); 
-				this->planets[i]->reset(); 
+				priorityQ.push_back(this->planets[i]);  
 			}
-			this->planets[i]->search(priorityQ); // passing priority queue 
+			Planet* furthest = this->planets[i]->search(priorityQ); // passing priority queue 
+			Itinerary* result = this->planets[i]->make_itinerary(furthest); 
+			result->dump(); 
+			this->reset(); 
 		}
 	}
 

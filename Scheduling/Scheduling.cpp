@@ -45,6 +45,7 @@ int main(int argc, char* argv[]) {
 	Reader reader(input, constraints); 
 	Galaxy* galaxy = reader.load(); 
 	galaxy->dump(); 
+	galaxy->search(); 
 
 	input.close(); 
 	return EXIT_SUCCESS;
