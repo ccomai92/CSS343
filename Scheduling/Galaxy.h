@@ -104,7 +104,7 @@ class Edge {
 public:
 	Edge(Planet* destination, Time& time) : destination(destination), time(time) {}
 
-	void add(Leg& leg) { 
+	void add(Leg leg) { 
 		departures.push_back(leg);
 	}
 
@@ -150,9 +150,11 @@ public:
 		while(!queue.empty()) {
 			Planet* current = queue.pop(); 
 			//assert(current->arrival_time() != MAX_TIME); 
-			if (current->arrival_time() != MAX_TIME && 
-					current->arrival_time() > furthest->arrival_time()) {
+			if (current->arrival_time() != MAX_TIME 
+				&& current->arrival_time() > furthest->arrival_time()) {
 				furthest = current; 
+				std::cerr << current->name << std::endl; 
+				std::cerr << current->arrival_time() << std::endl; 
 			} 
 			current->relax_neighbors(queue);
 		}
@@ -162,17 +164,16 @@ public:
 	// make_itinerary() builds the itinerary with the earliest arrival
 	// time from this planet to the given destination planet.
 	Itinerary* make_itinerary(Planet* destination) {
-		Itinerary* result = new Itinerary(this); 
+		/*Itinerary* result = new Itinerary(this); 
 		Planet* current = destination; 
 		Planet* predecessor = destination->predecessor; 
-		//std::cerr << predecessor->name << std::endl; 
 		while (predecessor != nullptr) {
 			result->destinations.push_back(current);
 			result->legs.push_back(current->best_leg);
 			current = predecessor; 
 			predecessor = current->predecessor; 
 		}
-		return result; 
+		return result; */
 	}
 
 	// arrival_time() is the time to arrive at this planet from the
@@ -198,6 +199,14 @@ public:
 
 	void set_priority(int new_priority) {
 		this->priority = new_priority; 
+	}
+
+	Planet* getPredecessor() {
+		return this->predecessor;
+	}
+
+	const Leg& getLeg() {
+		return this->best_leg; 
 	}
 
 	static int compare(Planet* left, Planet* right) {
@@ -270,8 +279,9 @@ public:
 				priorityQ.push_back(this->planets[i]);  
 			}
 			Planet* furthest = this->planets[i]->search(priorityQ); // passing priority queue 
-			Itinerary* result = this->planets[i]->make_itinerary(furthest); 
-			result->dump(); 
+			this->dump_routes(this->planets[i], furthest, std::cerr); 
+			//Itinerary* result = this->planets[i]->make_itinerary(furthest); 
+			//result->dump(); 
 			this->reset(); 
 		}
 	}
@@ -286,8 +296,26 @@ public:
 		}
 	}
 
-	void dump_routes(Planet* origin, std::ostream& out = std::cerr) {
-	
+	void dump_routes(Planet* origin, Planet* destination, std::ostream& out = std::cerr) {
+		std::vector<Leg> legs; 
+		std::vector<Planet*> planets; 
+		Planet* current = destination; 
+		Planet* predecessor = current->getPredecessor(); 
+		while (predecessor != nullptr) {
+			legs.push_back(current->getLeg());
+			planets.push_back(current);  
+			current = predecessor; 
+			predecessor = current->getPredecessor(); 
+		}
+		
+		out << origin->name << " "; 
+		int size = planets.size();  
+		for (int i = size - 1; i >= 0; i--) {
+			out << legs[i].departure_time << " " 
+					<< legs[i].arrival_time << " ";
+			out << planets[i]->name << " ";
+		}
+		out << std::endl; 
 	}
 
 	Fleet fleet;

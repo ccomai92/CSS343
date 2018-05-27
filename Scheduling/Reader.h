@@ -1,5 +1,5 @@
 // Author: Morris Bernstein (morris@systems-deployment.com)
-// Modified by Kris Kwon for CSS 343 Assignment3 
+// Modified by Kris Kwon
 
 
 #ifndef READER_H
@@ -30,7 +30,9 @@ public:
 	Galaxy* load();
 
 private:
-	static const int MIN_LAYOVER_TIME;
+	static const int MIN_LAYOVER_TIME = 4;
+
+	void createGalaxy(); 
 
 	// Read next leg of ship's route
 	bool get_record();
@@ -43,7 +45,7 @@ private:
 	// Data structure holding the travel times between planets.
 	Travel_Times* constraints;
 	// Input string representing a single leg.
-	std::string current_input_line;
+	// std::string current_input_line;
 
 	// Previous leg information for validation.
 	Ship_ID previous_ship_id;

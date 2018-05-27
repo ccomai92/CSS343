@@ -1,1 +1,660 @@
-inRoutes.txt
+Andromeda Ascendant	Dagobah	0	Dantooine	32
+Andromeda Ascendant	Dantooine	36	Alderaan	49
+Andromeda Ascendant	Alderaan	53	Yavin	58
+Andromeda Ascendant	Yavin	62	Alderaan	67
+Andromeda Ascendant	Alderaan	71	Dantooine	84
+Andromeda Ascendant	Dantooine	88	Dagobah	120
+Andromeda Ascendant	Dagobah	124	Dantooine	156
+Andromeda Ascendant	Dantooine	160	Alderaan	173
+Andromeda Ascendant	Alderaan	177	Yavin	182
+Andromeda Ascendant	Yavin	186	Alderaan	191
+Andromeda Ascendant	Alderaan	195	Dantooine	208
+Andromeda Ascendant	Dantooine	212	Dagobah	244
+Andromeda Ascendant	Dagobah	248	Dantooine	280
+Andromeda Ascendant	Dantooine	284	Alderaan	297
+Andromeda Ascendant	Alderaan	301	Yavin	306
+Andromeda Ascendant	Yavin	310	Alderaan	315
+Andromeda Ascendant	Alderaan	319	Dantooine	332
+Andromeda Ascendant	Dantooine	336	Dagobah	368
+Andromeda Ascendant	Dagobah	372	Dantooine	404
+Andromeda Ascendant	Dantooine	408	Alderaan	421
+Andromeda Ascendant	Alderaan	425	Yavin	430
+Andromeda Ascendant	Yavin	434	Alderaan	439
+Andromeda Ascendant	Alderaan	443	Dantooine	456
+Andromeda Ascendant	Dantooine	460	Dagobah	492
+Andromeda Ascendant	Dagobah	496	Dantooine	528
+Andromeda Ascendant	Dantooine	532	Alderaan	545
+Andromeda Ascendant	Alderaan	549	Yavin	554
+Andromeda Ascendant	Yavin	558	Alderaan	563
+Andromeda Ascendant	Alderaan	567	Dantooine	580
+Andromeda Ascendant	Dantooine	584	Dagobah	616
+Andromeda Ascendant	Dagobah	620	Dantooine	652
+Andromeda Ascendant	Dantooine	656	Alderaan	669
+Andromeda Ascendant	Alderaan	673	Yavin	678
+Andromeda Ascendant	Yavin	682	Alderaan	687
+Andromeda Ascendant	Alderaan	691	Dantooine	704
+Andromeda Ascendant	Dantooine	708	Dagobah	740
+Andromeda Ascendant	Dagobah	744	Dantooine	776
+Andromeda Ascendant	Dantooine	780	Alderaan	793
+Andromeda Ascendant	Alderaan	797	Yavin	802
+Andromeda Ascendant	Yavin	806	Alderaan	811
+Andromeda Ascendant	Alderaan	815	Dantooine	828
+Andromeda Ascendant	Dantooine	832	Dagobah	864
+Andromeda Ascendant	Dagobah	868	Dantooine	900
+Andromeda Ascendant	Dantooine	904	Alderaan	917
+Andromeda Ascendant	Alderaan	921	Yavin	926
+Andromeda Ascendant	Yavin	930	Alderaan	935
+Andromeda Ascendant	Alderaan	939	Dantooine	952
+Andromeda Ascendant	Dantooine	956	Dagobah	988
+Andromeda Ascendant	Dagobah	992	Dantooine	1024
+Andromeda Ascendant	Dantooine	1028	Alderaan	1041
+Andromeda Ascendant	Alderaan	1045	Yavin	1050
+Andromeda Ascendant	Yavin	1054	Alderaan	1059
+Andromeda Ascendant	Alderaan	1063	Dantooine	1076
+Andromeda Ascendant	Dantooine	1080	Dagobah	1112
+Andromeda Ascendant	Dagobah	1116	Dantooine	1148
+Andromeda Ascendant	Dantooine	1152	Alderaan	1165
+Andromeda Ascendant	Alderaan	1169	Yavin	1174
+Andromeda Ascendant	Yavin	1178	Alderaan	1183
+Andromeda Ascendant	Alderaan	1187	Dantooine	1200
+Andromeda Ascendant	Dantooine	1204	Dagobah	1236
+USSC Discovery One	Gamor	0	Tatooine	40
+USSC Discovery One	Tatooine	44	Gamor	84
+USSC Discovery One	Gamor	88	Tatooine	128
+USSC Discovery One	Tatooine	132	Gamor	172
+USSC Discovery One	Gamor	176	Tatooine	216
+USSC Discovery One	Tatooine	220	Gamor	260
+USSC Discovery One	Gamor	264	Tatooine	304
+USSC Discovery One	Tatooine	308	Gamor	348
+USSC Discovery One	Gamor	352	Tatooine	392
+USSC Discovery One	Tatooine	396	Gamor	436
+USSC Discovery One	Gamor	440	Tatooine	480
+USSC Discovery One	Tatooine	484	Gamor	524
+USSC Discovery One	Gamor	528	Tatooine	568
+USSC Discovery One	Tatooine	572	Gamor	612
+USSC Discovery One	Gamor	616	Tatooine	656
+USSC Discovery One	Tatooine	660	Gamor	700
+USSC Discovery One	Gamor	704	Tatooine	744
+USSC Discovery One	Tatooine	748	Gamor	788
+USSC Discovery One	Gamor	792	Tatooine	832
+USSC Discovery One	Tatooine	836	Gamor	876
+Galactica	Endor	0	Sullust	19
+Galactica	Sullust	23	Hoth	45
+Galactica	Hoth	49	Bespin	53
+Galactica	Bespin	57	Hoth	61
+Galactica	Hoth	65	Sullust	87
+Galactica	Sullust	91	Endor	110
+Galactica	Endor	114	Sullust	133
+Galactica	Sullust	137	Hoth	159
+Galactica	Hoth	163	Bespin	167
+Galactica	Bespin	171	Hoth	175
+Galactica	Hoth	179	Sullust	201
+Galactica	Sullust	205	Endor	224
+Galactica	Endor	228	Sullust	247
+Galactica	Sullust	251	Hoth	273
+Galactica	Hoth	277	Bespin	281
+Galactica	Bespin	285	Hoth	289
+Galactica	Hoth	293	Sullust	315
+Galactica	Sullust	319	Endor	338
+Galactica	Endor	342	Sullust	361
+Galactica	Sullust	365	Hoth	387
+Galactica	Hoth	391	Bespin	395
+Galactica	Bespin	399	Hoth	403
+Galactica	Hoth	407	Sullust	429
+Galactica	Sullust	433	Endor	452
+Galactica	Endor	456	Sullust	475
+Galactica	Sullust	479	Hoth	501
+Galactica	Hoth	505	Bespin	509
+Galactica	Bespin	513	Hoth	517
+Galactica	Hoth	521	Sullust	543
+Galactica	Sullust	547	Endor	566
+Galactica	Endor	570	Sullust	589
+Galactica	Sullust	593	Hoth	615
+Galactica	Hoth	619	Bespin	623
+Galactica	Bespin	627	Hoth	631
+Galactica	Hoth	635	Sullust	657
+Galactica	Sullust	661	Endor	680
+Galactica	Endor	684	Sullust	703
+Galactica	Sullust	707	Hoth	729
+Galactica	Hoth	733	Bespin	737
+Galactica	Bespin	741	Hoth	745
+Galactica	Hoth	749	Sullust	771
+Galactica	Sullust	775	Endor	794
+Galactica	Endor	798	Sullust	817
+Galactica	Sullust	821	Hoth	843
+Galactica	Hoth	847	Bespin	851
+Galactica	Bespin	855	Hoth	859
+Galactica	Hoth	863	Sullust	885
+Galactica	Sullust	889	Endor	908
+Galactica	Endor	912	Sullust	931
+Galactica	Sullust	935	Hoth	957
+Galactica	Hoth	961	Bespin	965
+Galactica	Bespin	969	Hoth	973
+Galactica	Hoth	977	Sullust	999
+Galactica	Sullust	1003	Endor	1022
+Galactica	Endor	1026	Sullust	1045
+Galactica	Sullust	1049	Hoth	1071
+Galactica	Hoth	1075	Bespin	1079
+Galactica	Bespin	1083	Hoth	1087
+Galactica	Hoth	1091	Sullust	1113
+Galactica	Sullust	1117	Endor	1136
+Heart of Gold	Corulag	0	Brentaal	2
+Heart of Gold	Brentaal	6	Rinnal	11
+Heart of Gold	Rinnal	15	Ralltiir	16
+Heart of Gold	Ralltiir	20	Chandrila	24
+Heart of Gold	Chandrila	28	Esseles	31
+Heart of Gold	Esseles	35	Corulag	39
+Heart of Gold	Corulag	43	Brentaal	45
+Heart of Gold	Brentaal	49	Rinnal	54
+Heart of Gold	Rinnal	58	Ralltiir	59
+Heart of Gold	Ralltiir	63	Chandrila	67
+Heart of Gold	Chandrila	71	Esseles	74
+Heart of Gold	Esseles	78	Corulag	82
+Heart of Gold	Corulag	86	Brentaal	88
+Heart of Gold	Brentaal	92	Rinnal	97
+Heart of Gold	Rinnal	101	Ralltiir	102
+Heart of Gold	Ralltiir	106	Chandrila	110
+Heart of Gold	Chandrila	114	Esseles	117
+Heart of Gold	Esseles	121	Corulag	125
+Heart of Gold	Corulag	129	Brentaal	131
+Heart of Gold	Brentaal	135	Rinnal	140
+Heart of Gold	Rinnal	144	Ralltiir	145
+Heart of Gold	Ralltiir	149	Chandrila	153
+Heart of Gold	Chandrila	157	Esseles	160
+Heart of Gold	Esseles	164	Corulag	168
+Heart of Gold	Corulag	172	Brentaal	174
+Heart of Gold	Brentaal	178	Rinnal	183
+Heart of Gold	Rinnal	187	Ralltiir	188
+Heart of Gold	Ralltiir	192	Chandrila	196
+Heart of Gold	Chandrila	200	Esseles	203
+Heart of Gold	Esseles	207	Corulag	211
+Heart of Gold	Corulag	215	Brentaal	217
+Heart of Gold	Brentaal	221	Rinnal	226
+Heart of Gold	Rinnal	230	Ralltiir	231
+Heart of Gold	Ralltiir	235	Chandrila	239
+Heart of Gold	Chandrila	243	Esseles	246
+Heart of Gold	Esseles	250	Corulag	254
+Heart of Gold	Corulag	258	Brentaal	260
+Heart of Gold	Brentaal	264	Rinnal	269
+Heart of Gold	Rinnal	273	Ralltiir	274
+Heart of Gold	Ralltiir	278	Chandrila	282
+Heart of Gold	Chandrila	286	Esseles	289
+Heart of Gold	Esseles	293	Corulag	297
+Heart of Gold	Corulag	301	Brentaal	303
+Heart of Gold	Brentaal	307	Rinnal	312
+Heart of Gold	Rinnal	316	Ralltiir	317
+Heart of Gold	Ralltiir	321	Chandrila	325
+Heart of Gold	Chandrila	329	Esseles	332
+Heart of Gold	Esseles	336	Corulag	340
+Heart of Gold	Corulag	344	Brentaal	346
+Heart of Gold	Brentaal	350	Rinnal	355
+Heart of Gold	Rinnal	359	Ralltiir	360
+Heart of Gold	Ralltiir	364	Chandrila	368
+Heart of Gold	Chandrila	372	Esseles	375
+Heart of Gold	Esseles	379	Corulag	383
+Heart of Gold	Corulag	387	Brentaal	389
+Heart of Gold	Brentaal	393	Rinnal	398
+Heart of Gold	Rinnal	402	Ralltiir	403
+Heart of Gold	Ralltiir	407	Chandrila	411
+Heart of Gold	Chandrila	415	Esseles	418
+Heart of Gold	Esseles	422	Corulag	426
+Heart of Gold	Corulag	430	Brentaal	432
+Heart of Gold	Brentaal	436	Rinnal	441
+Heart of Gold	Rinnal	445	Ralltiir	446
+Heart of Gold	Ralltiir	450	Chandrila	454
+Heart of Gold	Chandrila	458	Esseles	461
+Heart of Gold	Esseles	465	Corulag	469
+Heart of Gold	Corulag	473	Brentaal	475
+Heart of Gold	Brentaal	479	Rinnal	484
+Heart of Gold	Rinnal	488	Ralltiir	489
+Heart of Gold	Ralltiir	493	Chandrila	497
+Heart of Gold	Chandrila	501	Esseles	504
+Heart of Gold	Esseles	508	Corulag	512
+Heart of Gold	Corulag	516	Brentaal	518
+Heart of Gold	Brentaal	522	Rinnal	527
+Heart of Gold	Rinnal	531	Ralltiir	532
+Heart of Gold	Ralltiir	536	Chandrila	540
+Heart of Gold	Chandrila	544	Esseles	547
+Heart of Gold	Esseles	551	Corulag	555
+Heart of Gold	Corulag	559	Brentaal	561
+Heart of Gold	Brentaal	565	Rinnal	570
+Heart of Gold	Rinnal	574	Ralltiir	575
+Heart of Gold	Ralltiir	579	Chandrila	583
+Heart of Gold	Chandrila	587	Esseles	590
+Heart of Gold	Esseles	594	Corulag	598
+Heart of Gold	Corulag	602	Brentaal	604
+Heart of Gold	Brentaal	608	Rinnal	613
+Heart of Gold	Rinnal	617	Ralltiir	618
+Heart of Gold	Ralltiir	622	Chandrila	626
+Heart of Gold	Chandrila	630	Esseles	633
+Heart of Gold	Esseles	637	Corulag	641
+Heart of Gold	Corulag	645	Brentaal	647
+Heart of Gold	Brentaal	651	Rinnal	656
+Heart of Gold	Rinnal	660	Ralltiir	661
+Heart of Gold	Ralltiir	665	Chandrila	669
+Heart of Gold	Chandrila	673	Esseles	676
+Heart of Gold	Esseles	680	Corulag	684
+Heart of Gold	Corulag	688	Brentaal	690
+Heart of Gold	Brentaal	694	Rinnal	699
+Heart of Gold	Rinnal	703	Ralltiir	704
+Heart of Gold	Ralltiir	708	Chandrila	712
+Heart of Gold	Chandrila	716	Esseles	719
+Heart of Gold	Esseles	723	Corulag	727
+Heart of Gold	Corulag	731	Brentaal	733
+Heart of Gold	Brentaal	737	Rinnal	742
+Heart of Gold	Rinnal	746	Ralltiir	747
+Heart of Gold	Ralltiir	751	Chandrila	755
+Heart of Gold	Chandrila	759	Esseles	762
+Heart of Gold	Esseles	766	Corulag	770
+Heart of Gold	Corulag	774	Brentaal	776
+Heart of Gold	Brentaal	780	Rinnal	785
+Heart of Gold	Rinnal	789	Ralltiir	790
+Heart of Gold	Ralltiir	794	Chandrila	798
+Heart of Gold	Chandrila	802	Esseles	805
+Heart of Gold	Esseles	809	Corulag	813
+Heart of Gold	Corulag	817	Brentaal	819
+Heart of Gold	Brentaal	823	Rinnal	828
+Heart of Gold	Rinnal	832	Ralltiir	833
+Heart of Gold	Ralltiir	837	Chandrila	841
+Heart of Gold	Chandrila	845	Esseles	848
+Heart of Gold	Esseles	852	Corulag	856
+Millenium Falcon	Kessel	0	Bakura	27
+Millenium Falcon	Bakura	31	Kessel	58
+Millenium Falcon	Kessel	62	Bakura	89
+Millenium Falcon	Bakura	93	Kessel	120
+Millenium Falcon	Kessel	124	Bakura	151
+Millenium Falcon	Bakura	155	Kessel	182
+Millenium Falcon	Kessel	186	Bakura	213
+Millenium Falcon	Bakura	217	Kessel	244
+Millenium Falcon	Kessel	248	Bakura	275
+Millenium Falcon	Bakura	279	Kessel	306
+Millenium Falcon	Kessel	310	Bakura	337
+Millenium Falcon	Bakura	341	Kessel	368
+Millenium Falcon	Kessel	372	Bakura	399
+Millenium Falcon	Bakura	403	Kessel	430
+Millenium Falcon	Kessel	434	Bakura	461
+Millenium Falcon	Bakura	465	Kessel	492
+Millenium Falcon	Kessel	496	Bakura	523
+Millenium Falcon	Bakura	527	Kessel	554
+Millenium Falcon	Kessel	558	Bakura	585
+Millenium Falcon	Bakura	589	Kessel	616
+Millenium Falcon	Kessel	620	Bakura	647
+Millenium Falcon	Bakura	651	Kessel	678
+Millenium Falcon	Kessel	682	Bakura	709
+Millenium Falcon	Bakura	713	Kessel	740
+Millenium Falcon	Kessel	744	Bakura	771
+Millenium Falcon	Bakura	775	Kessel	802
+Millenium Falcon	Kessel	806	Bakura	833
+Millenium Falcon	Bakura	837	Kessel	864
+Millenium Falcon	Kessel	868	Bakura	895
+Millenium Falcon	Bakura	899	Kessel	926
+Millenium Falcon	Kessel	930	Bakura	957
+Millenium Falcon	Bakura	961	Kessel	988
+Millenium Falcon	Kessel	992	Bakura	1019
+Millenium Falcon	Bakura	1023	Kessel	1050
+Millenium Falcon	Kessel	1054	Bakura	1081
+Millenium Falcon	Bakura	1085	Kessel	1112
+Millenium Falcon	Kessel	1116	Bakura	1143
+Millenium Falcon	Bakura	1147	Kessel	1174
+Millenium Falcon	Kessel	1178	Bakura	1205
+Millenium Falcon	Bakura	1209	Kessel	1236
+Moya	Mon Calamari	0	Corporate Sector	1
+Moya	Corporate Sector	5	Hapes Cluster	12
+Moya	Hapes Cluster	16	Kessel	28
+Moya	Kessel	32	Hapes Cluster	44
+Moya	Hapes Cluster	48	Corporate Sector	55
+Moya	Corporate Sector	59	Mon Calamari	60
+Moya	Mon Calamari	64	Corporate Sector	65
+Moya	Corporate Sector	69	Hapes Cluster	76
+Moya	Hapes Cluster	80	Kessel	92
+Moya	Kessel	96	Hapes Cluster	108
+Moya	Hapes Cluster	112	Corporate Sector	119
+Moya	Corporate Sector	123	Mon Calamari	124
+Moya	Mon Calamari	128	Corporate Sector	129
+Moya	Corporate Sector	133	Hapes Cluster	140
+Moya	Hapes Cluster	144	Kessel	156
+Moya	Kessel	160	Hapes Cluster	172
+Moya	Hapes Cluster	176	Corporate Sector	183
+Moya	Corporate Sector	187	Mon Calamari	188
+Moya	Mon Calamari	192	Corporate Sector	193
+Moya	Corporate Sector	197	Hapes Cluster	204
+Moya	Hapes Cluster	208	Kessel	220
+Moya	Kessel	224	Hapes Cluster	236
+Moya	Hapes Cluster	240	Corporate Sector	247
+Moya	Corporate Sector	251	Mon Calamari	252
+Moya	Mon Calamari	256	Corporate Sector	257
+Moya	Corporate Sector	261	Hapes Cluster	268
+Moya	Hapes Cluster	272	Kessel	284
+Moya	Kessel	288	Hapes Cluster	300
+Moya	Hapes Cluster	304	Corporate Sector	311
+Moya	Corporate Sector	315	Mon Calamari	316
+Moya	Mon Calamari	320	Corporate Sector	321
+Moya	Corporate Sector	325	Hapes Cluster	332
+Moya	Hapes Cluster	336	Kessel	348
+Moya	Kessel	352	Hapes Cluster	364
+Moya	Hapes Cluster	368	Corporate Sector	375
+Moya	Corporate Sector	379	Mon Calamari	380
+Moya	Mon Calamari	384	Corporate Sector	385
+Moya	Corporate Sector	389	Hapes Cluster	396
+Moya	Hapes Cluster	400	Kessel	412
+Moya	Kessel	416	Hapes Cluster	428
+Moya	Hapes Cluster	432	Corporate Sector	439
+Moya	Corporate Sector	443	Mon Calamari	444
+Moya	Mon Calamari	448	Corporate Sector	449
+Moya	Corporate Sector	453	Hapes Cluster	460
+Moya	Hapes Cluster	464	Kessel	476
+Moya	Kessel	480	Hapes Cluster	492
+Moya	Hapes Cluster	496	Corporate Sector	503
+Moya	Corporate Sector	507	Mon Calamari	508
+Moya	Mon Calamari	512	Corporate Sector	513
+Moya	Corporate Sector	517	Hapes Cluster	524
+Moya	Hapes Cluster	528	Kessel	540
+Moya	Kessel	544	Hapes Cluster	556
+Moya	Hapes Cluster	560	Corporate Sector	567
+Moya	Corporate Sector	571	Mon Calamari	572
+Moya	Mon Calamari	576	Corporate Sector	577
+Moya	Corporate Sector	581	Hapes Cluster	588
+Moya	Hapes Cluster	592	Kessel	604
+Moya	Kessel	608	Hapes Cluster	620
+Moya	Hapes Cluster	624	Corporate Sector	631
+Moya	Corporate Sector	635	Mon Calamari	636
+Moya	Mon Calamari	640	Corporate Sector	641
+Moya	Corporate Sector	645	Hapes Cluster	652
+Moya	Hapes Cluster	656	Kessel	668
+Moya	Kessel	672	Hapes Cluster	684
+Moya	Hapes Cluster	688	Corporate Sector	695
+Moya	Corporate Sector	699	Mon Calamari	700
+Moya	Mon Calamari	704	Corporate Sector	705
+Moya	Corporate Sector	709	Hapes Cluster	716
+Moya	Hapes Cluster	720	Kessel	732
+Moya	Kessel	736	Hapes Cluster	748
+Moya	Hapes Cluster	752	Corporate Sector	759
+Moya	Corporate Sector	763	Mon Calamari	764
+Moya	Mon Calamari	768	Corporate Sector	769
+Moya	Corporate Sector	773	Hapes Cluster	780
+Moya	Hapes Cluster	784	Kessel	796
+Moya	Kessel	800	Hapes Cluster	812
+Moya	Hapes Cluster	816	Corporate Sector	823
+Moya	Corporate Sector	827	Mon Calamari	828
+Moya	Mon Calamari	832	Corporate Sector	833
+Moya	Corporate Sector	837	Hapes Cluster	844
+Moya	Hapes Cluster	848	Kessel	860
+Moya	Kessel	864	Hapes Cluster	876
+Moya	Hapes Cluster	880	Corporate Sector	887
+Moya	Corporate Sector	891	Mon Calamari	892
+Moya	Mon Calamari	896	Corporate Sector	897
+Moya	Corporate Sector	901	Hapes Cluster	908
+Moya	Hapes Cluster	912	Kessel	924
+Moya	Kessel	928	Hapes Cluster	940
+Moya	Hapes Cluster	944	Corporate Sector	951
+Moya	Corporate Sector	955	Mon Calamari	956
+Moya	Mon Calamari	960	Corporate Sector	961
+Moya	Corporate Sector	965	Hapes Cluster	972
+Moya	Hapes Cluster	976	Kessel	988
+Moya	Kessel	992	Hapes Cluster	1004
+Moya	Hapes Cluster	1008	Corporate Sector	1015
+Moya	Corporate Sector	1019	Mon Calamari	1020
+Moya	Mon Calamari	1024	Corporate Sector	1025
+Moya	Corporate Sector	1029	Hapes Cluster	1036
+Moya	Hapes Cluster	1040	Kessel	1052
+Moya	Kessel	1056	Hapes Cluster	1068
+Moya	Hapes Cluster	1072	Corporate Sector	1079
+Moya	Corporate Sector	1083	Mon Calamari	1084
+Moya	Mon Calamari	1088	Corporate Sector	1089
+Moya	Corporate Sector	1093	Hapes Cluster	1100
+Moya	Hapes Cluster	1104	Kessel	1116
+Moya	Kessel	1120	Hapes Cluster	1132
+Moya	Hapes Cluster	1136	Corporate Sector	1143
+Moya	Corporate Sector	1147	Mon Calamari	1148
+Moya	Mon Calamari	1152	Corporate Sector	1153
+Moya	Corporate Sector	1157	Hapes Cluster	1164
+Moya	Hapes Cluster	1168	Kessel	1180
+Moya	Kessel	1184	Hapes Cluster	1196
+Moya	Hapes Cluster	1200	Corporate Sector	1207
+Moya	Corporate Sector	1211	Mon Calamari	1212
+Moya	Mon Calamari	1216	Corporate Sector	1217
+Moya	Corporate Sector	1221	Hapes Cluster	1228
+Moya	Hapes Cluster	1232	Kessel	1244
+Moya	Kessel	1248	Hapes Cluster	1260
+Moya	Hapes Cluster	1264	Corporate Sector	1271
+Moya	Corporate Sector	1275	Mon Calamari	1276
+NSEA Protector	Corellia	0	Bespin	6
+NSEA Protector	Bespin	10	Alderaan	18
+NSEA Protector	Alderaan	22	Tatooine	29
+NSEA Protector	Tatooine	33	Corellia	37
+NSEA Protector	Corellia	41	Yaga Minor	53
+NSEA Protector	Yaga Minor	57	Corellia	69
+NSEA Protector	Corellia	73	Tatooine	77
+NSEA Protector	Tatooine	81	Alderaan	88
+NSEA Protector	Alderaan	92	Bespin	100
+NSEA Protector	Bespin	104	Corellia	110
+NSEA Protector	Corellia	114	Bespin	120
+NSEA Protector	Bespin	124	Alderaan	132
+NSEA Protector	Alderaan	136	Tatooine	143
+NSEA Protector	Tatooine	147	Corellia	151
+NSEA Protector	Corellia	155	Yaga Minor	167
+NSEA Protector	Yaga Minor	171	Corellia	183
+NSEA Protector	Corellia	187	Tatooine	191
+NSEA Protector	Tatooine	195	Alderaan	202
+NSEA Protector	Alderaan	206	Bespin	214
+NSEA Protector	Bespin	218	Corellia	224
+NSEA Protector	Corellia	228	Bespin	234
+NSEA Protector	Bespin	238	Alderaan	246
+NSEA Protector	Alderaan	250	Tatooine	257
+NSEA Protector	Tatooine	261	Corellia	265
+NSEA Protector	Corellia	269	Yaga Minor	281
+NSEA Protector	Yaga Minor	285	Corellia	297
+NSEA Protector	Corellia	301	Tatooine	305
+NSEA Protector	Tatooine	309	Alderaan	316
+NSEA Protector	Alderaan	320	Bespin	328
+NSEA Protector	Bespin	332	Corellia	338
+NSEA Protector	Corellia	342	Bespin	348
+NSEA Protector	Bespin	352	Alderaan	360
+NSEA Protector	Alderaan	364	Tatooine	371
+NSEA Protector	Tatooine	375	Corellia	379
+NSEA Protector	Corellia	383	Yaga Minor	395
+NSEA Protector	Yaga Minor	399	Corellia	411
+NSEA Protector	Corellia	415	Tatooine	419
+NSEA Protector	Tatooine	423	Alderaan	430
+NSEA Protector	Alderaan	434	Bespin	442
+NSEA Protector	Bespin	446	Corellia	452
+NSEA Protector	Corellia	456	Bespin	462
+NSEA Protector	Bespin	466	Alderaan	474
+NSEA Protector	Alderaan	478	Tatooine	485
+NSEA Protector	Tatooine	489	Corellia	493
+NSEA Protector	Corellia	497	Yaga Minor	509
+NSEA Protector	Yaga Minor	513	Corellia	525
+NSEA Protector	Corellia	529	Tatooine	533
+NSEA Protector	Tatooine	537	Alderaan	544
+NSEA Protector	Alderaan	548	Bespin	556
+NSEA Protector	Bespin	560	Corellia	566
+NSEA Protector	Corellia	570	Bespin	576
+NSEA Protector	Bespin	580	Alderaan	588
+NSEA Protector	Alderaan	592	Tatooine	599
+NSEA Protector	Tatooine	603	Corellia	607
+NSEA Protector	Corellia	611	Yaga Minor	623
+NSEA Protector	Yaga Minor	627	Corellia	639
+NSEA Protector	Corellia	643	Tatooine	647
+NSEA Protector	Tatooine	651	Alderaan	658
+NSEA Protector	Alderaan	662	Bespin	670
+NSEA Protector	Bespin	674	Corellia	680
+NSEA Protector	Corellia	684	Bespin	690
+NSEA Protector	Bespin	694	Alderaan	702
+NSEA Protector	Alderaan	706	Tatooine	713
+NSEA Protector	Tatooine	717	Corellia	721
+NSEA Protector	Corellia	725	Yaga Minor	737
+NSEA Protector	Yaga Minor	741	Corellia	753
+NSEA Protector	Corellia	757	Tatooine	761
+NSEA Protector	Tatooine	765	Alderaan	772
+NSEA Protector	Alderaan	776	Bespin	784
+NSEA Protector	Bespin	788	Corellia	794
+NSEA Protector	Corellia	798	Bespin	804
+NSEA Protector	Bespin	808	Alderaan	816
+NSEA Protector	Alderaan	820	Tatooine	827
+NSEA Protector	Tatooine	831	Corellia	835
+NSEA Protector	Corellia	839	Yaga Minor	851
+NSEA Protector	Yaga Minor	855	Corellia	867
+NSEA Protector	Corellia	871	Tatooine	875
+NSEA Protector	Tatooine	879	Alderaan	886
+NSEA Protector	Alderaan	890	Bespin	898
+NSEA Protector	Bespin	902	Corellia	908
+NSEA Protector	Corellia	912	Bespin	918
+NSEA Protector	Bespin	922	Alderaan	930
+NSEA Protector	Alderaan	934	Tatooine	941
+NSEA Protector	Tatooine	945	Corellia	949
+NSEA Protector	Corellia	953	Yaga Minor	965
+NSEA Protector	Yaga Minor	969	Corellia	981
+NSEA Protector	Corellia	985	Tatooine	989
+NSEA Protector	Tatooine	993	Alderaan	1000
+NSEA Protector	Alderaan	1004	Bespin	1012
+NSEA Protector	Bespin	1016	Corellia	1022
+NSEA Protector	Corellia	1026	Bespin	1032
+NSEA Protector	Bespin	1036	Alderaan	1044
+NSEA Protector	Alderaan	1048	Tatooine	1055
+NSEA Protector	Tatooine	1059	Corellia	1063
+NSEA Protector	Corellia	1067	Yaga Minor	1079
+NSEA Protector	Yaga Minor	1083	Corellia	1095
+NSEA Protector	Corellia	1099	Tatooine	1103
+NSEA Protector	Tatooine	1107	Alderaan	1114
+NSEA Protector	Alderaan	1118	Bespin	1126
+NSEA Protector	Bespin	1130	Corellia	1136
+Red Dwarf	Corellia	0	Coruscant	4
+Red Dwarf	Coruscant	8	Mon Calamari	21
+Red Dwarf	Mon Calamari	25	Coruscant	38
+Red Dwarf	Coruscant	42	Corulag	48
+Red Dwarf	Corulag	52	Coruscant	58
+Red Dwarf	Coruscant	62	Mon Calamari	75
+Red Dwarf	Mon Calamari	79	Coruscant	92
+Red Dwarf	Coruscant	96	Corellia	100
+Red Dwarf	Corellia	104	Coruscant	108
+Red Dwarf	Coruscant	112	Mon Calamari	125
+Red Dwarf	Mon Calamari	129	Coruscant	142
+Red Dwarf	Coruscant	146	Corulag	152
+Red Dwarf	Corulag	156	Coruscant	162
+Red Dwarf	Coruscant	166	Mon Calamari	179
+Red Dwarf	Mon Calamari	183	Coruscant	196
+Red Dwarf	Coruscant	200	Corellia	204
+Red Dwarf	Corellia	208	Coruscant	212
+Red Dwarf	Coruscant	216	Mon Calamari	229
+Red Dwarf	Mon Calamari	233	Coruscant	246
+Red Dwarf	Coruscant	250	Corulag	256
+Red Dwarf	Corulag	260	Coruscant	266
+Red Dwarf	Coruscant	270	Mon Calamari	283
+Red Dwarf	Mon Calamari	287	Coruscant	300
+Red Dwarf	Coruscant	304	Corellia	308
+Red Dwarf	Corellia	312	Coruscant	316
+Red Dwarf	Coruscant	320	Mon Calamari	333
+Red Dwarf	Mon Calamari	337	Coruscant	350
+Red Dwarf	Coruscant	354	Corulag	360
+Red Dwarf	Corulag	364	Coruscant	370
+Red Dwarf	Coruscant	374	Mon Calamari	387
+Red Dwarf	Mon Calamari	391	Coruscant	404
+Red Dwarf	Coruscant	408	Corellia	412
+Red Dwarf	Corellia	416	Coruscant	420
+Red Dwarf	Coruscant	424	Mon Calamari	437
+Red Dwarf	Mon Calamari	441	Coruscant	454
+Red Dwarf	Coruscant	458	Corulag	464
+Red Dwarf	Corulag	468	Coruscant	474
+Red Dwarf	Coruscant	478	Mon Calamari	491
+Red Dwarf	Mon Calamari	495	Coruscant	508
+Red Dwarf	Coruscant	512	Corellia	516
+Red Dwarf	Corellia	520	Coruscant	524
+Red Dwarf	Coruscant	528	Mon Calamari	541
+Red Dwarf	Mon Calamari	545	Coruscant	558
+Red Dwarf	Coruscant	562	Corulag	568
+Red Dwarf	Corulag	572	Coruscant	578
+Red Dwarf	Coruscant	582	Mon Calamari	595
+Red Dwarf	Mon Calamari	599	Coruscant	612
+Red Dwarf	Coruscant	616	Corellia	620
+Red Dwarf	Corellia	624	Coruscant	628
+Red Dwarf	Coruscant	632	Mon Calamari	645
+Red Dwarf	Mon Calamari	649	Coruscant	662
+Red Dwarf	Coruscant	666	Corulag	672
+Red Dwarf	Corulag	676	Coruscant	682
+Red Dwarf	Coruscant	686	Mon Calamari	699
+Red Dwarf	Mon Calamari	703	Coruscant	716
+Red Dwarf	Coruscant	720	Corellia	724
+Red Dwarf	Corellia	728	Coruscant	732
+Red Dwarf	Coruscant	736	Mon Calamari	749
+Red Dwarf	Mon Calamari	753	Coruscant	766
+Red Dwarf	Coruscant	770	Corulag	776
+Red Dwarf	Corulag	780	Coruscant	786
+Red Dwarf	Coruscant	790	Mon Calamari	803
+Red Dwarf	Mon Calamari	807	Coruscant	820
+Red Dwarf	Coruscant	824	Corellia	828
+Red Dwarf	Corellia	832	Coruscant	836
+Red Dwarf	Coruscant	840	Mon Calamari	853
+Red Dwarf	Mon Calamari	857	Coruscant	870
+Red Dwarf	Coruscant	874	Corulag	880
+Red Dwarf	Corulag	884	Coruscant	890
+Red Dwarf	Coruscant	894	Mon Calamari	907
+Red Dwarf	Mon Calamari	911	Coruscant	924
+Red Dwarf	Coruscant	928	Corellia	932
+Red Dwarf	Corellia	936	Coruscant	940
+Red Dwarf	Coruscant	944	Mon Calamari	957
+Red Dwarf	Mon Calamari	961	Coruscant	974
+Red Dwarf	Coruscant	978	Corulag	984
+Red Dwarf	Corulag	988	Coruscant	994
+Red Dwarf	Coruscant	998	Mon Calamari	1011
+Red Dwarf	Mon Calamari	1015	Coruscant	1028
+Red Dwarf	Coruscant	1032	Corellia	1036
+Serenity	Yaga Minor	0	Kashyyyk	53
+Serenity	Kashyyyk	57	Yaga Minor	110
+Serenity	Yaga Minor	114	Kashyyyk	167
+Serenity	Kashyyyk	171	Yaga Minor	224
+Serenity	Yaga Minor	228	Kashyyyk	281
+Serenity	Kashyyyk	285	Yaga Minor	338
+Serenity	Yaga Minor	342	Kashyyyk	395
+Serenity	Kashyyyk	399	Yaga Minor	452
+Serenity	Yaga Minor	456	Kashyyyk	509
+Serenity	Kashyyyk	513	Yaga Minor	566
+Serenity	Yaga Minor	570	Kashyyyk	623
+Serenity	Kashyyyk	627	Yaga Minor	680
+Serenity	Yaga Minor	684	Kashyyyk	737
+Serenity	Kashyyyk	741	Yaga Minor	794
+Serenity	Yaga Minor	798	Kashyyyk	851
+Serenity	Kashyyyk	855	Yaga Minor	908
+Serenity	Yaga Minor	912	Kashyyyk	965
+Serenity	Kashyyyk	969	Yaga Minor	1022
+Serenity	Yaga Minor	1026	Kashyyyk	1079
+Serenity	Kashyyyk	1083	Yaga Minor	1136
+USS Enterprise	Yaga Minor	0	Wayland	30
+USS Enterprise	Wayland	34	Myrkr	55
+USS Enterprise	Myrkr	59	Wayland	80
+USS Enterprise	Wayland	84	Yaga Minor	114
+USS Enterprise	Yaga Minor	118	Wayland	148
+USS Enterprise	Wayland	152	Myrkr	173
+USS Enterprise	Myrkr	177	Wayland	198
+USS Enterprise	Wayland	202	Yaga Minor	232
+USS Enterprise	Yaga Minor	236	Wayland	266
+USS Enterprise	Wayland	270	Myrkr	291
+USS Enterprise	Myrkr	295	Wayland	316
+USS Enterprise	Wayland	320	Yaga Minor	350
+USS Enterprise	Yaga Minor	354	Wayland	384
+USS Enterprise	Wayland	388	Myrkr	409
+USS Enterprise	Myrkr	413	Wayland	434
+USS Enterprise	Wayland	438	Yaga Minor	468
+USS Enterprise	Yaga Minor	472	Wayland	502
+USS Enterprise	Wayland	506	Myrkr	527
+USS Enterprise	Myrkr	531	Wayland	552
+USS Enterprise	Wayland	556	Yaga Minor	586
+USS Enterprise	Yaga Minor	590	Wayland	620
+USS Enterprise	Wayland	624	Myrkr	645
+USS Enterprise	Myrkr	649	Wayland	670
+USS Enterprise	Wayland	674	Yaga Minor	704
+USS Enterprise	Yaga Minor	708	Wayland	738
+USS Enterprise	Wayland	742	Myrkr	763
+USS Enterprise	Myrkr	767	Wayland	788
+USS Enterprise	Wayland	792	Yaga Minor	822
+USS Enterprise	Yaga Minor	826	Wayland	856
+USS Enterprise	Wayland	860	Myrkr	881
+USS Enterprise	Myrkr	885	Wayland	906
+USS Enterprise	Wayland	910	Yaga Minor	940
+USS Enterprise	Yaga Minor	944	Wayland	974
+USS Enterprise	Wayland	978	Myrkr	999
+USS Enterprise	Myrkr	1003	Wayland	1024
+USS Enterprise	Wayland	1028	Yaga Minor	1058
+USS Enterprise	Yaga Minor	1062	Wayland	1092
+USS Enterprise	Wayland	1096	Myrkr	1117
+USS Enterprise	Myrkr	1121	Wayland	1142
+USS Enterprise	Wayland	1146	Yaga Minor	1176

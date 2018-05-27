@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
 void readConduits(ifstream& input, Travel_Times* constraints) {
 	string start;
 	while (input >> start) {
-		if (input.get() == ' ') {
+		while (input.get() == ' ') {
 			string temp; 
 			input >> temp; 
 			start += " " + temp; 
