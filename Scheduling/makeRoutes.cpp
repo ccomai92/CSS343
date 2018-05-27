@@ -61,7 +61,7 @@ int main() {
     time = 0; 
     for (int i = 0; i < 10; i++) {
         cout << "USSC Discovery One" << "\t"; 
-        cout << "Gamor" << "\t"; 
+        cout << "Gamorr" << "\t"; 
         cout << time << "\t"; 
         cout << "Tatooine" << "\t"; 
         time += 40; 
@@ -71,7 +71,7 @@ int main() {
         cout << "USSC Discovery One" << "\t"; 
         cout << "Tatooine" << "\t"; 
         cout << time << "\t"; 
-        cout << "Gamor" << "\t"; 
+        cout << "Gamorr" << "\t"; 
         time += 40; 
         cout << time << endl; 
         time += 4; // layover 
@@ -143,13 +143,13 @@ int main() {
         cout << "Heart of Gold" << "\t"; 
         cout << "Brentaal" << "\t"; 
         cout << time << "\t"; 
-        cout << "Rinnal" << "\t"; 
+        cout << "Rhinnal" << "\t"; 
         time += 5; 
         cout << time << endl; 
         time += 4; // layover 
 
         cout << "Heart of Gold" << "\t"; 
-        cout << "Rinnal" << "\t"; 
+        cout << "Rhinnal" << "\t"; 
         cout << time << "\t"; 
         cout << "Ralltiir" << "\t"; 
         time += 1; 

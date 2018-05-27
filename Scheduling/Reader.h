@@ -31,11 +31,12 @@ public:
 
 private:
 	static const int MIN_LAYOVER_TIME = 4;
-
 	void createGalaxy(); 
+	void dumpGalaxy(int count); 
 
 	// Read next leg of ship's route
 	bool get_record();
+	void dumpRoutes(); 
 
 	// Verify that that current leg is a valid continuation of the
 	// previous leg or the beginning of the route for another ship.

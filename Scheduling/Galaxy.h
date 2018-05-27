@@ -150,11 +150,10 @@ public:
 		while(!queue.empty()) {
 			Planet* current = queue.pop(); 
 			//assert(current->arrival_time() != MAX_TIME); 
-			if (current->arrival_time() != MAX_TIME 
-				&& current->arrival_time() > furthest->arrival_time()) {
+			if (current->arrival_time() > furthest->arrival_time()) {
 				furthest = current; 
-				std::cerr << current->name << std::endl; 
-				std::cerr << current->arrival_time() << std::endl; 
+				//std::cerr << current->name << std::endl; 
+				//std::cerr << current->arrival_time() << std::endl; 
 			} 
 			current->relax_neighbors(queue);
 		}
@@ -164,7 +163,7 @@ public:
 	// make_itinerary() builds the itinerary with the earliest arrival
 	// time from this planet to the given destination planet.
 	Itinerary* make_itinerary(Planet* destination) {
-		/*Itinerary* result = new Itinerary(this); 
+		Itinerary* result = new Itinerary(this); 
 		Planet* current = destination; 
 		Planet* predecessor = destination->predecessor; 
 		while (predecessor != nullptr) {
@@ -173,7 +172,7 @@ public:
 			current = predecessor; 
 			predecessor = current->predecessor; 
 		}
-		return result; */
+		return result; 
 	}
 
 	// arrival_time() is the time to arrive at this planet from the
@@ -220,18 +219,24 @@ private:
 	// determine if the route to the neighbor via this planet is faster
 	// than the previously-recorded travel time to the neighbor.
 	void relax_neighbors(PriorityQueue<Planet, int(*)(Planet*, Planet*)>& queue) {
+		Time min_next_departure = this->best_leg.arrival_time + TRANSFER_TIME; 
 		for (auto& edge: this->edges) {
 			Planet* destination = edge->destination; 
-			if (destination->priority > -1) { // means already visited 
-				Leg newLeg = Leg(-1, this->best_leg.arrival_time, 
-								this->best_leg.arrival_time + edge->time); 
-				Leg existingLeg = destination->best_leg; 
-				if (Leg::less_than(newLeg, existingLeg)) {
-					destination->predecessor = this; 
-					destination->best_leg = newLeg;
-					queue.reduce(destination); 
-				}  
-			}
+			edge->sort(); 
+			int size = edge->departures.size();
+			Leg bestLeg; 
+			for (int i = 0; i < size; i++) {
+				Leg current = edge->departures[i];
+				if (current.departure_time >= min_next_departure
+					&& Leg::less_than(current, bestLeg)) {
+					bestLeg = current; 
+				}
+			} 
+			if (Leg::less_than(bestLeg, destination->best_leg)) {
+				destination->predecessor = this; 
+				destination->best_leg = bestLeg;
+				queue.reduce(destination); 
+			}  
 		}
 	}
 
@@ -279,9 +284,9 @@ public:
 				priorityQ.push_back(this->planets[i]);  
 			}
 			Planet* furthest = this->planets[i]->search(priorityQ); // passing priority queue 
-			this->dump_routes(this->planets[i], furthest, std::cerr); 
-			//Itinerary* result = this->planets[i]->make_itinerary(furthest); 
-			//result->dump(); 
+			//this->dump_routes(this->planets[i], furthest, std::cerr); 
+			Itinerary* result = this->planets[i]->make_itinerary(furthest); 
+			result->dump(); 
 			this->reset(); 
 		}
 	}

@@ -22,6 +22,28 @@ Galaxy* Reader::load() {
 	return this->galaxy;
 }
 
+void Reader::dumpGalaxy(int count) {
+	std::cerr << "Number of Planets " << count << std::endl;  
+	// check if stored data are valid. 
+	count = 0; 
+	for (auto& it: this->planets) {
+		std::cerr << it.first << std::endl; 
+		
+		count ++;
+	}
+	
+
+	for (auto& it: this->edges) {
+		std::cerr << "Start: " << it.first->name << std::endl;
+		for (auto& it2: it.second) {
+			std::cerr << "Destination: " << it2.first->name << std::endl; 
+			std::cerr << "EdgeDestination: " 
+				<< it2.second->destination->name << std::endl; 
+		}		
+		std::cerr << std::endl;
+	}
+}
+
 void Reader::createGalaxy() {
 	this->galaxy = new Galaxy(); 
 	int count = 0; 
@@ -57,28 +79,12 @@ void Reader::createGalaxy() {
 
 		Edge* edge = new Edge(destP, time); 
 		startP->add(edge); 
-		this->edges[startP][destP] = edge; 		
+		this->edges[startP][destP] = edge; 
+		edge = new Edge(startP, time); 
+		destP->add(edge);		
+		this->edges[destP][startP] = edge; 
 	}
-
-	std::cerr << "Number of Planets " << count << std::endl;  
-	// check if stored data are valid. 
-	count = 0; 
-	for (auto& it: this->planets) {
-		std::cerr << it.first << std::endl; 
-		
-		count ++;
-	}
-	std::cerr << "Number of planets: " << count << std::endl; 
-
-	for (auto& it: this->edges) {
-		std::cerr << "Start: " << it.first->name << std::endl;
-		for (auto& it2: it.second) {
-			std::cerr << "Destination: " << it2.first->name << std::endl; 
-			std::cerr << "EdgeDestination: " 
-				<< it2.second->destination->name << std::endl; 
-		}		
-		std::cerr << std::endl;
-	}
+	this->dumpGalaxy(count); 
 }
 
 bool Reader::get_record() {
@@ -112,19 +118,32 @@ bool Reader::get_record() {
 			this->ships[ship] = this->ship_id;
 		} 
  
-		assert(this->planets[departure] != nullptr); 
 		this->departure_planet =  this->planets[departure]; 
-		assert(this->planets[destination] != nullptr); 
 		this->destination_planet = this->planets[destination]; 
 
+
 		Leg leg(this->ship_id, this->departure_time, this->arrival_time);
+		//std::cerr << this->departure_planet->name << " " << this->destination_planet->name << std::endl; 
+		//std::cerr << this->edges[this->departure_planet][this->destination_planet]->destination->name << std::endl;
 		this->edges[this->departure_planet][this->destination_planet]->add(leg);  
+		this->dumpRoutes(); 
 		this->validate(); 
+		
+		this->previous_ship_id = this->ship_id; 
+		this->previous_destination_planet = this->destination_planet; 
+		this->previous_arrival_time = this->arrival_time; 
 	} 
 	return true;
 }
 
+void Reader::dumpRoutes() {
+	std::cerr << this->ship_id << " " << this->galaxy->fleet.name(this->ship_id) << "\t"; 
+	std::cerr << this->departure_planet->name << "\t" << this->departure_time 
+				<< "\t" << this->destination_planet->name << "\t" << this->arrival_time << std::endl;   
+}
+
 bool Reader::validate() {
+
 	if (this->previous_ship_id == this->ship_id) {
 		if (this->previous_destination_planet != this->departure_planet) {
 			exit(EXIT_FAILURE); 
