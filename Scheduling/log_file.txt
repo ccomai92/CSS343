@@ -1,0 +1,2121 @@
+Alderaan	Bespin	8
+Alderaan	Corellia	6
+Alderaan	Coruscant	16
+Alderaan	Dagobah	30
+Alderaan	Dantooine	13
+Alderaan	Endor	18
+Alderaan	Gamorr	180
+Alderaan	Hoth	27
+Alderaan	Sullust	213
+Alderaan	Tatooine	7
+Alderaan	Yavin	5
+Bespin	Corellia	6
+Bespin	Coruscant	158
+Bespin	Dagobah	27
+Bespin	Dantooine	22
+Bespin	Endor	32
+Bespin	Gamorr	75
+Bespin	Hoth	4
+Bespin	Sullust	268
+Bespin	Tatooine	16
+Bespin	Yavin	11
+Corellia	Coruscant	4
+Corellia	Dagobah	31
+Corellia	Dantooine	12
+Corellia	Endor	17
+Corellia	Gamorr	254
+Corellia	Hoth	21
+Corellia	Sullust	19
+Corellia	Tatooine	4
+Corellia	Yavin	15
+Coruscant	Dagobah	302
+Coruscant	Dantooine	19
+Coruscant	Endor	156
+Coruscant	Gamorr	387
+Coruscant	Hoth	81
+Coruscant	Sullust	194
+Coruscant	Tatooine	542
+Coruscant	Yavin	128
+Dagobah	Dantooine	32
+Dagobah	Endor	97
+Dagobah	Gamorr	656
+Dagobah	Hoth	89
+Dagobah	Sullust	78
+Dagobah	Tatooine	28
+Dagobah	Yavin	314
+Dantooine	Endor	21
+Dantooine	Gamorr	86
+Dantooine	Hoth	28
+Dantooine	Sullust	126
+Dantooine	Tatooine	20
+Dantooine	Yavin	12
+Endor	Gamorr	341
+Endor	Hoth	60
+Endor	Sullust	19
+Endor	Tatooine	24
+Endor	Yavin	10
+Gamorr	Hoth	346
+Gamorr	Sullust	74
+Gamorr	Tatooine	40
+Gamorr	Yavin	55
+Hoth	Sullust	22
+Hoth	Tatooine	56
+Hoth	Yavin	39
+Sullust	Tatooine	38
+Sullust	Yavin	17
+Tatooine	Yavin	15
+Brentaal	Chandrila	1
+Brentaal	Corellia	3
+Brentaal	Corulag	2
+Brentaal	Coruscant	7
+Brentaal	Esseles	2
+Brentaal	Rhinnal	5
+Brentaal	Ralltiir	7
+Chandrila	Corellia	2
+Chandrila	Corulag	1
+Chandrila	Coruscant	5
+Chandrila	Esseles	3
+Chandrila	Rhinnal	2
+Chandrila	Ralltiir	4
+Corellia	Corulag	1
+Corellia	Coruscant	4
+Corellia	Esseles	4
+Corellia	Rhinnal	7
+Corellia	Ralltiir	9
+Corulag	Coruscant	6
+Corulag	Esseles	4
+Corulag	Rhinnal	8
+Corulag	Ralltiir	11
+Coruscant	Esseles	8
+Coruscant	Rhinnal	10
+Coruscant	Ralltiir	12
+Esseles	Rhinnal	2
+Esseles	Ralltiir	4
+Rhinnal	Ralltiir	1
+Corellia	Coruscant	4
+Corellia	Kashyyyk	36
+Corellia	Myrkr	81
+Corellia	Wayland	99
+Corellia	Yaga Minor	12
+Coruscant	Kashyyyk	43
+Coruscant	Myrkr	108
+Coruscant	Wayland	58
+Coruscant	Yaga Minor	15
+Kashyyyk	Myrkr	55
+Kashyyyk	Wayland	54
+Kashyyyk	Yaga Minor	53
+Myrkr	Wayland	21
+Myrkr	Yaga Minor	55
+Wayland	Yaga Minor	30
+Bakura	Corellia	52
+Bakura	Corporate Sector	60
+Bakura	Coruscant	77
+Bakura	Hapes Cluster	11
+Bakura	Kessel	27
+Bakura	Mon Calamari	22
+Corellia	Corporate Sector	9
+Corellia	Coruscant	4
+Corellia	Hapes Cluster	21
+Corellia	Kessel	10
+Corellia	Mon Calamari	6
+Corporate Sector	Coruscant	15
+Corporate Sector	Hapes Cluster	7
+Corporate Sector	Kessel	9
+Corporate Sector	Mon Calamari	24
+Coruscant	Hapes Cluster	39
+Coruscant	Kessel	27
+Coruscant	Mon Calamari	13
+Hapes Cluster	Kessel	12
+Hapes Cluster	Mon Calamari	18
+Kessel	Mon Calamari	9
+Number of Planets 27
+Alderaan
+Bakura
+Bespin
+Brentaal
+Chandrila
+Corellia
+Corporate Sector
+Corulag
+Coruscant
+Dagobah
+Dantooine
+Endor
+Esseles
+Gamorr
+Hapes Cluster
+Hoth
+Kashyyyk
+Kessel
+Mon Calamari
+Myrkr
+Ralltiir
+Rhinnal
+Sullust
+Tatooine
+Wayland
+Yaga Minor
+Yavin
+Start: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+
+Start: Bespin
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+
+Start: Corellia
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+Destination: Brentaal
+EdgeDestination: Brentaal
+Destination: Chandrila
+EdgeDestination: Chandrila
+Destination: Corulag
+EdgeDestination: Corulag
+Destination: Esseles
+EdgeDestination: Esseles
+Destination: Rhinnal
+EdgeDestination: Rhinnal
+Destination: Ralltiir
+EdgeDestination: Ralltiir
+Destination: Kashyyyk
+EdgeDestination: Kashyyyk
+Destination: Myrkr
+EdgeDestination: Myrkr
+Destination: Wayland
+EdgeDestination: Wayland
+Destination: Yaga Minor
+EdgeDestination: Yaga Minor
+Destination: Bakura
+EdgeDestination: Bakura
+Destination: Corporate Sector
+EdgeDestination: Corporate Sector
+Destination: Hapes Cluster
+EdgeDestination: Hapes Cluster
+Destination: Kessel
+EdgeDestination: Kessel
+Destination: Mon Calamari
+EdgeDestination: Mon Calamari
+
+Start: Coruscant
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+Destination: Brentaal
+EdgeDestination: Brentaal
+Destination: Chandrila
+EdgeDestination: Chandrila
+Destination: Corulag
+EdgeDestination: Corulag
+Destination: Esseles
+EdgeDestination: Esseles
+Destination: Rhinnal
+EdgeDestination: Rhinnal
+Destination: Ralltiir
+EdgeDestination: Ralltiir
+Destination: Kashyyyk
+EdgeDestination: Kashyyyk
+Destination: Myrkr
+EdgeDestination: Myrkr
+Destination: Wayland
+EdgeDestination: Wayland
+Destination: Yaga Minor
+EdgeDestination: Yaga Minor
+Destination: Bakura
+EdgeDestination: Bakura
+Destination: Corporate Sector
+EdgeDestination: Corporate Sector
+Destination: Hapes Cluster
+EdgeDestination: Hapes Cluster
+Destination: Kessel
+EdgeDestination: Kessel
+Destination: Mon Calamari
+EdgeDestination: Mon Calamari
+
+Start: Dagobah
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+
+Start: Dantooine
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+
+Start: Endor
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+
+Start: Gamorr
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+
+Start: Hoth
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+
+Start: Sullust
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Tatooine
+EdgeDestination: Tatooine
+Destination: Yavin
+EdgeDestination: Yavin
+
+Start: Tatooine
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Yavin
+EdgeDestination: Yavin
+
+Start: Yavin
+Destination: Alderaan
+EdgeDestination: Alderaan
+Destination: Bespin
+EdgeDestination: Bespin
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Dagobah
+EdgeDestination: Dagobah
+Destination: Dantooine
+EdgeDestination: Dantooine
+Destination: Endor
+EdgeDestination: Endor
+Destination: Gamorr
+EdgeDestination: Gamorr
+Destination: Hoth
+EdgeDestination: Hoth
+Destination: Sullust
+EdgeDestination: Sullust
+Destination: Tatooine
+EdgeDestination: Tatooine
+
+Start: Brentaal
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Chandrila
+EdgeDestination: Chandrila
+Destination: Corulag
+EdgeDestination: Corulag
+Destination: Esseles
+EdgeDestination: Esseles
+Destination: Rhinnal
+EdgeDestination: Rhinnal
+Destination: Ralltiir
+EdgeDestination: Ralltiir
+
+Start: Chandrila
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Brentaal
+EdgeDestination: Brentaal
+Destination: Corulag
+EdgeDestination: Corulag
+Destination: Esseles
+EdgeDestination: Esseles
+Destination: Rhinnal
+EdgeDestination: Rhinnal
+Destination: Ralltiir
+EdgeDestination: Ralltiir
+
+Start: Corulag
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Brentaal
+EdgeDestination: Brentaal
+Destination: Chandrila
+EdgeDestination: Chandrila
+Destination: Esseles
+EdgeDestination: Esseles
+Destination: Rhinnal
+EdgeDestination: Rhinnal
+Destination: Ralltiir
+EdgeDestination: Ralltiir
+
+Start: Esseles
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Brentaal
+EdgeDestination: Brentaal
+Destination: Chandrila
+EdgeDestination: Chandrila
+Destination: Corulag
+EdgeDestination: Corulag
+Destination: Rhinnal
+EdgeDestination: Rhinnal
+Destination: Ralltiir
+EdgeDestination: Ralltiir
+
+Start: Rhinnal
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Brentaal
+EdgeDestination: Brentaal
+Destination: Chandrila
+EdgeDestination: Chandrila
+Destination: Corulag
+EdgeDestination: Corulag
+Destination: Esseles
+EdgeDestination: Esseles
+Destination: Ralltiir
+EdgeDestination: Ralltiir
+
+Start: Ralltiir
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Brentaal
+EdgeDestination: Brentaal
+Destination: Chandrila
+EdgeDestination: Chandrila
+Destination: Corulag
+EdgeDestination: Corulag
+Destination: Esseles
+EdgeDestination: Esseles
+Destination: Rhinnal
+EdgeDestination: Rhinnal
+
+Start: Kashyyyk
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Myrkr
+EdgeDestination: Myrkr
+Destination: Wayland
+EdgeDestination: Wayland
+Destination: Yaga Minor
+EdgeDestination: Yaga Minor
+
+Start: Myrkr
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Kashyyyk
+EdgeDestination: Kashyyyk
+Destination: Wayland
+EdgeDestination: Wayland
+Destination: Yaga Minor
+EdgeDestination: Yaga Minor
+
+Start: Wayland
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Kashyyyk
+EdgeDestination: Kashyyyk
+Destination: Myrkr
+EdgeDestination: Myrkr
+Destination: Yaga Minor
+EdgeDestination: Yaga Minor
+
+Start: Yaga Minor
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Kashyyyk
+EdgeDestination: Kashyyyk
+Destination: Myrkr
+EdgeDestination: Myrkr
+Destination: Wayland
+EdgeDestination: Wayland
+
+Start: Bakura
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Corporate Sector
+EdgeDestination: Corporate Sector
+Destination: Hapes Cluster
+EdgeDestination: Hapes Cluster
+Destination: Kessel
+EdgeDestination: Kessel
+Destination: Mon Calamari
+EdgeDestination: Mon Calamari
+
+Start: Corporate Sector
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Bakura
+EdgeDestination: Bakura
+Destination: Hapes Cluster
+EdgeDestination: Hapes Cluster
+Destination: Kessel
+EdgeDestination: Kessel
+Destination: Mon Calamari
+EdgeDestination: Mon Calamari
+
+Start: Hapes Cluster
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Bakura
+EdgeDestination: Bakura
+Destination: Corporate Sector
+EdgeDestination: Corporate Sector
+Destination: Kessel
+EdgeDestination: Kessel
+Destination: Mon Calamari
+EdgeDestination: Mon Calamari
+
+Start: Kessel
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Bakura
+EdgeDestination: Bakura
+Destination: Corporate Sector
+EdgeDestination: Corporate Sector
+Destination: Hapes Cluster
+EdgeDestination: Hapes Cluster
+Destination: Mon Calamari
+EdgeDestination: Mon Calamari
+
+Start: Mon Calamari
+Destination: Corellia
+EdgeDestination: Corellia
+Destination: Coruscant
+EdgeDestination: Coruscant
+Destination: Bakura
+EdgeDestination: Bakura
+Destination: Corporate Sector
+EdgeDestination: Corporate Sector
+Destination: Hapes Cluster
+EdgeDestination: Hapes Cluster
+Destination: Kessel
+EdgeDestination: Kessel
+
+0 Andromeda Ascendant	Dagobah	0	Dantooine	32
+0 Andromeda Ascendant	Dantooine	36	Alderaan	49
+0 Andromeda Ascendant	Alderaan	53	Yavin	58
+0 Andromeda Ascendant	Yavin	62	Alderaan	67
+0 Andromeda Ascendant	Alderaan	71	Dantooine	84
+0 Andromeda Ascendant	Dantooine	88	Dagobah	120
+0 Andromeda Ascendant	Dagobah	124	Dantooine	156
+0 Andromeda Ascendant	Dantooine	160	Alderaan	173
+0 Andromeda Ascendant	Alderaan	177	Yavin	182
+0 Andromeda Ascendant	Yavin	186	Alderaan	191
+0 Andromeda Ascendant	Alderaan	195	Dantooine	208
+0 Andromeda Ascendant	Dantooine	212	Dagobah	244
+0 Andromeda Ascendant	Dagobah	248	Dantooine	280
+0 Andromeda Ascendant	Dantooine	284	Alderaan	297
+0 Andromeda Ascendant	Alderaan	301	Yavin	306
+0 Andromeda Ascendant	Yavin	310	Alderaan	315
+0 Andromeda Ascendant	Alderaan	319	Dantooine	332
+0 Andromeda Ascendant	Dantooine	336	Dagobah	368
+0 Andromeda Ascendant	Dagobah	372	Dantooine	404
+0 Andromeda Ascendant	Dantooine	408	Alderaan	421
+0 Andromeda Ascendant	Alderaan	425	Yavin	430
+0 Andromeda Ascendant	Yavin	434	Alderaan	439
+0 Andromeda Ascendant	Alderaan	443	Dantooine	456
+0 Andromeda Ascendant	Dantooine	460	Dagobah	492
+0 Andromeda Ascendant	Dagobah	496	Dantooine	528
+0 Andromeda Ascendant	Dantooine	532	Alderaan	545
+0 Andromeda Ascendant	Alderaan	549	Yavin	554
+0 Andromeda Ascendant	Yavin	558	Alderaan	563
+0 Andromeda Ascendant	Alderaan	567	Dantooine	580
+0 Andromeda Ascendant	Dantooine	584	Dagobah	616
+1 USSC Discovery One	Gamorr	0	Tatooine	40
+1 USSC Discovery One	Tatooine	44	Gamorr	84
+1 USSC Discovery One	Gamorr	88	Tatooine	128
+1 USSC Discovery One	Tatooine	132	Gamorr	172
+1 USSC Discovery One	Gamorr	176	Tatooine	216
+1 USSC Discovery One	Tatooine	220	Gamorr	260
+1 USSC Discovery One	Gamorr	264	Tatooine	304
+1 USSC Discovery One	Tatooine	308	Gamorr	348
+1 USSC Discovery One	Gamorr	352	Tatooine	392
+1 USSC Discovery One	Tatooine	396	Gamorr	436
+1 USSC Discovery One	Gamorr	440	Tatooine	480
+1 USSC Discovery One	Tatooine	484	Gamorr	524
+2 Galactica	Endor	0	Sullust	19
+2 Galactica	Sullust	23	Hoth	45
+2 Galactica	Hoth	49	Bespin	53
+2 Galactica	Bespin	57	Hoth	61
+2 Galactica	Hoth	65	Sullust	87
+2 Galactica	Sullust	91	Endor	110
+2 Galactica	Endor	114	Sullust	133
+2 Galactica	Sullust	137	Hoth	159
+2 Galactica	Hoth	163	Bespin	167
+2 Galactica	Bespin	171	Hoth	175
+2 Galactica	Hoth	179	Sullust	201
+2 Galactica	Sullust	205	Endor	224
+2 Galactica	Endor	228	Sullust	247
+2 Galactica	Sullust	251	Hoth	273
+2 Galactica	Hoth	277	Bespin	281
+2 Galactica	Bespin	285	Hoth	289
+2 Galactica	Hoth	293	Sullust	315
+2 Galactica	Sullust	319	Endor	338
+2 Galactica	Endor	342	Sullust	361
+2 Galactica	Sullust	365	Hoth	387
+2 Galactica	Hoth	391	Bespin	395
+2 Galactica	Bespin	399	Hoth	403
+2 Galactica	Hoth	407	Sullust	429
+2 Galactica	Sullust	433	Endor	452
+2 Galactica	Endor	456	Sullust	475
+2 Galactica	Sullust	479	Hoth	501
+2 Galactica	Hoth	505	Bespin	509
+2 Galactica	Bespin	513	Hoth	517
+2 Galactica	Hoth	521	Sullust	543
+2 Galactica	Sullust	547	Endor	566
+3 Heart of Gold	Corulag	0	Brentaal	2
+3 Heart of Gold	Brentaal	6	Rhinnal	11
+3 Heart of Gold	Rhinnal	15	Ralltiir	16
+3 Heart of Gold	Ralltiir	20	Chandrila	24
+3 Heart of Gold	Chandrila	28	Esseles	31
+3 Heart of Gold	Esseles	35	Corulag	39
+3 Heart of Gold	Corulag	43	Brentaal	45
+3 Heart of Gold	Brentaal	49	Rhinnal	54
+3 Heart of Gold	Rhinnal	58	Ralltiir	59
+3 Heart of Gold	Ralltiir	63	Chandrila	67
+3 Heart of Gold	Chandrila	71	Esseles	74
+3 Heart of Gold	Esseles	78	Corulag	82
+3 Heart of Gold	Corulag	86	Brentaal	88
+3 Heart of Gold	Brentaal	92	Rhinnal	97
+3 Heart of Gold	Rhinnal	101	Ralltiir	102
+3 Heart of Gold	Ralltiir	106	Chandrila	110
+3 Heart of Gold	Chandrila	114	Esseles	117
+3 Heart of Gold	Esseles	121	Corulag	125
+3 Heart of Gold	Corulag	129	Brentaal	131
+3 Heart of Gold	Brentaal	135	Rhinnal	140
+3 Heart of Gold	Rhinnal	144	Ralltiir	145
+3 Heart of Gold	Ralltiir	149	Chandrila	153
+3 Heart of Gold	Chandrila	157	Esseles	160
+3 Heart of Gold	Esseles	164	Corulag	168
+3 Heart of Gold	Corulag	172	Brentaal	174
+3 Heart of Gold	Brentaal	178	Rhinnal	183
+3 Heart of Gold	Rhinnal	187	Ralltiir	188
+3 Heart of Gold	Ralltiir	192	Chandrila	196
+3 Heart of Gold	Chandrila	200	Esseles	203
+3 Heart of Gold	Esseles	207	Corulag	211
+3 Heart of Gold	Corulag	215	Brentaal	217
+3 Heart of Gold	Brentaal	221	Rhinnal	226
+3 Heart of Gold	Rhinnal	230	Ralltiir	231
+3 Heart of Gold	Ralltiir	235	Chandrila	239
+3 Heart of Gold	Chandrila	243	Esseles	246
+3 Heart of Gold	Esseles	250	Corulag	254
+3 Heart of Gold	Corulag	258	Brentaal	260
+3 Heart of Gold	Brentaal	264	Rhinnal	269
+3 Heart of Gold	Rhinnal	273	Ralltiir	274
+3 Heart of Gold	Ralltiir	278	Chandrila	282
+3 Heart of Gold	Chandrila	286	Esseles	289
+3 Heart of Gold	Esseles	293	Corulag	297
+3 Heart of Gold	Corulag	301	Brentaal	303
+3 Heart of Gold	Brentaal	307	Rhinnal	312
+3 Heart of Gold	Rhinnal	316	Ralltiir	317
+3 Heart of Gold	Ralltiir	321	Chandrila	325
+3 Heart of Gold	Chandrila	329	Esseles	332
+3 Heart of Gold	Esseles	336	Corulag	340
+3 Heart of Gold	Corulag	344	Brentaal	346
+3 Heart of Gold	Brentaal	350	Rhinnal	355
+3 Heart of Gold	Rhinnal	359	Ralltiir	360
+3 Heart of Gold	Ralltiir	364	Chandrila	368
+3 Heart of Gold	Chandrila	372	Esseles	375
+3 Heart of Gold	Esseles	379	Corulag	383
+3 Heart of Gold	Corulag	387	Brentaal	389
+3 Heart of Gold	Brentaal	393	Rhinnal	398
+3 Heart of Gold	Rhinnal	402	Ralltiir	403
+3 Heart of Gold	Ralltiir	407	Chandrila	411
+3 Heart of Gold	Chandrila	415	Esseles	418
+3 Heart of Gold	Esseles	422	Corulag	426
+4 Millenium Falcon	Kessel	0	Bakura	27
+4 Millenium Falcon	Bakura	31	Kessel	58
+4 Millenium Falcon	Kessel	62	Bakura	89
+4 Millenium Falcon	Bakura	93	Kessel	120
+4 Millenium Falcon	Kessel	124	Bakura	151
+4 Millenium Falcon	Bakura	155	Kessel	182
+4 Millenium Falcon	Kessel	186	Bakura	213
+4 Millenium Falcon	Bakura	217	Kessel	244
+4 Millenium Falcon	Kessel	248	Bakura	275
+4 Millenium Falcon	Bakura	279	Kessel	306
+4 Millenium Falcon	Kessel	310	Bakura	337
+4 Millenium Falcon	Bakura	341	Kessel	368
+4 Millenium Falcon	Kessel	372	Bakura	399
+4 Millenium Falcon	Bakura	403	Kessel	430
+4 Millenium Falcon	Kessel	434	Bakura	461
+4 Millenium Falcon	Bakura	465	Kessel	492
+4 Millenium Falcon	Kessel	496	Bakura	523
+4 Millenium Falcon	Bakura	527	Kessel	554
+4 Millenium Falcon	Kessel	558	Bakura	585
+4 Millenium Falcon	Bakura	589	Kessel	616
+5 Moya	Mon Calamari	0	Corporate Sector	24
+5 Moya	Corporate Sector	28	Hapes Cluster	35
+5 Moya	Hapes Cluster	39	Kessel	51
+5 Moya	Kessel	55	Hapes Cluster	67
+5 Moya	Hapes Cluster	71	Corporate Sector	78
+5 Moya	Corporate Sector	82	Mon Calamari	106
+5 Moya	Mon Calamari	110	Corporate Sector	134
+5 Moya	Corporate Sector	138	Hapes Cluster	145
+5 Moya	Hapes Cluster	149	Kessel	161
+5 Moya	Kessel	165	Hapes Cluster	177
+5 Moya	Hapes Cluster	181	Corporate Sector	188
+5 Moya	Corporate Sector	192	Mon Calamari	216
+5 Moya	Mon Calamari	220	Corporate Sector	244
+5 Moya	Corporate Sector	248	Hapes Cluster	255
+5 Moya	Hapes Cluster	259	Kessel	271
+5 Moya	Kessel	275	Hapes Cluster	287
+5 Moya	Hapes Cluster	291	Corporate Sector	298
+5 Moya	Corporate Sector	302	Mon Calamari	326
+5 Moya	Mon Calamari	330	Corporate Sector	354
+5 Moya	Corporate Sector	358	Hapes Cluster	365
+5 Moya	Hapes Cluster	369	Kessel	381
+5 Moya	Kessel	385	Hapes Cluster	397
+5 Moya	Hapes Cluster	401	Corporate Sector	408
+5 Moya	Corporate Sector	412	Mon Calamari	436
+5 Moya	Mon Calamari	440	Corporate Sector	464
+5 Moya	Corporate Sector	468	Hapes Cluster	475
+5 Moya	Hapes Cluster	479	Kessel	491
+5 Moya	Kessel	495	Hapes Cluster	507
+5 Moya	Hapes Cluster	511	Corporate Sector	518
+5 Moya	Corporate Sector	522	Mon Calamari	546
+5 Moya	Mon Calamari	550	Corporate Sector	574
+5 Moya	Corporate Sector	578	Hapes Cluster	585
+5 Moya	Hapes Cluster	589	Kessel	601
+5 Moya	Kessel	605	Hapes Cluster	617
+5 Moya	Hapes Cluster	621	Corporate Sector	628
+5 Moya	Corporate Sector	632	Mon Calamari	656
+5 Moya	Mon Calamari	660	Corporate Sector	684
+5 Moya	Corporate Sector	688	Hapes Cluster	695
+5 Moya	Hapes Cluster	699	Kessel	711
+5 Moya	Kessel	715	Hapes Cluster	727
+5 Moya	Hapes Cluster	731	Corporate Sector	738
+5 Moya	Corporate Sector	742	Mon Calamari	766
+5 Moya	Mon Calamari	770	Corporate Sector	794
+5 Moya	Corporate Sector	798	Hapes Cluster	805
+5 Moya	Hapes Cluster	809	Kessel	821
+5 Moya	Kessel	825	Hapes Cluster	837
+5 Moya	Hapes Cluster	841	Corporate Sector	848
+5 Moya	Corporate Sector	852	Mon Calamari	876
+5 Moya	Mon Calamari	880	Corporate Sector	904
+5 Moya	Corporate Sector	908	Hapes Cluster	915
+5 Moya	Hapes Cluster	919	Kessel	931
+5 Moya	Kessel	935	Hapes Cluster	947
+5 Moya	Hapes Cluster	951	Corporate Sector	958
+5 Moya	Corporate Sector	962	Mon Calamari	986
+5 Moya	Mon Calamari	990	Corporate Sector	1014
+5 Moya	Corporate Sector	1018	Hapes Cluster	1025
+5 Moya	Hapes Cluster	1029	Kessel	1041
+5 Moya	Kessel	1045	Hapes Cluster	1057
+5 Moya	Hapes Cluster	1061	Corporate Sector	1068
+5 Moya	Corporate Sector	1072	Mon Calamari	1096
+6 NSEA Protector	Corellia	0	Bespin	6
+6 NSEA Protector	Bespin	10	Alderaan	18
+6 NSEA Protector	Alderaan	22	Tatooine	29
+6 NSEA Protector	Tatooine	33	Corellia	37
+6 NSEA Protector	Corellia	41	Yaga Minor	53
+6 NSEA Protector	Yaga Minor	57	Corellia	69
+6 NSEA Protector	Corellia	73	Tatooine	77
+6 NSEA Protector	Tatooine	81	Alderaan	88
+6 NSEA Protector	Alderaan	92	Bespin	100
+6 NSEA Protector	Bespin	104	Corellia	110
+6 NSEA Protector	Corellia	114	Bespin	120
+6 NSEA Protector	Bespin	124	Alderaan	132
+6 NSEA Protector	Alderaan	136	Tatooine	143
+6 NSEA Protector	Tatooine	147	Corellia	151
+6 NSEA Protector	Corellia	155	Yaga Minor	167
+6 NSEA Protector	Yaga Minor	171	Corellia	183
+6 NSEA Protector	Corellia	187	Tatooine	191
+6 NSEA Protector	Tatooine	195	Alderaan	202
+6 NSEA Protector	Alderaan	206	Bespin	214
+6 NSEA Protector	Bespin	218	Corellia	224
+6 NSEA Protector	Corellia	228	Bespin	234
+6 NSEA Protector	Bespin	238	Alderaan	246
+6 NSEA Protector	Alderaan	250	Tatooine	257
+6 NSEA Protector	Tatooine	261	Corellia	265
+6 NSEA Protector	Corellia	269	Yaga Minor	281
+6 NSEA Protector	Yaga Minor	285	Corellia	297
+6 NSEA Protector	Corellia	301	Tatooine	305
+6 NSEA Protector	Tatooine	309	Alderaan	316
+6 NSEA Protector	Alderaan	320	Bespin	328
+6 NSEA Protector	Bespin	332	Corellia	338
+6 NSEA Protector	Corellia	342	Bespin	348
+6 NSEA Protector	Bespin	352	Alderaan	360
+6 NSEA Protector	Alderaan	364	Tatooine	371
+6 NSEA Protector	Tatooine	375	Corellia	379
+6 NSEA Protector	Corellia	383	Yaga Minor	395
+6 NSEA Protector	Yaga Minor	399	Corellia	411
+6 NSEA Protector	Corellia	415	Tatooine	419
+6 NSEA Protector	Tatooine	423	Alderaan	430
+6 NSEA Protector	Alderaan	434	Bespin	442
+6 NSEA Protector	Bespin	446	Corellia	452
+6 NSEA Protector	Corellia	456	Bespin	462
+6 NSEA Protector	Bespin	466	Alderaan	474
+6 NSEA Protector	Alderaan	478	Tatooine	485
+6 NSEA Protector	Tatooine	489	Corellia	493
+6 NSEA Protector	Corellia	497	Yaga Minor	509
+6 NSEA Protector	Yaga Minor	513	Corellia	525
+6 NSEA Protector	Corellia	529	Tatooine	533
+6 NSEA Protector	Tatooine	537	Alderaan	544
+6 NSEA Protector	Alderaan	548	Bespin	556
+6 NSEA Protector	Bespin	560	Corellia	566
+7 Red Dwarf	Corellia	0	Coruscant	4
+7 Red Dwarf	Coruscant	8	Mon Calamari	21
+7 Red Dwarf	Mon Calamari	25	Coruscant	38
+7 Red Dwarf	Coruscant	42	Corulag	48
+7 Red Dwarf	Corulag	52	Coruscant	58
+7 Red Dwarf	Coruscant	62	Mon Calamari	75
+7 Red Dwarf	Mon Calamari	79	Coruscant	92
+7 Red Dwarf	Coruscant	96	Corellia	100
+7 Red Dwarf	Corellia	104	Coruscant	108
+7 Red Dwarf	Coruscant	112	Mon Calamari	125
+7 Red Dwarf	Mon Calamari	129	Coruscant	142
+7 Red Dwarf	Coruscant	146	Corulag	152
+7 Red Dwarf	Corulag	156	Coruscant	162
+7 Red Dwarf	Coruscant	166	Mon Calamari	179
+7 Red Dwarf	Mon Calamari	183	Coruscant	196
+7 Red Dwarf	Coruscant	200	Corellia	204
+7 Red Dwarf	Corellia	208	Coruscant	212
+7 Red Dwarf	Coruscant	216	Mon Calamari	229
+7 Red Dwarf	Mon Calamari	233	Coruscant	246
+7 Red Dwarf	Coruscant	250	Corulag	256
+7 Red Dwarf	Corulag	260	Coruscant	266
+7 Red Dwarf	Coruscant	270	Mon Calamari	283
+7 Red Dwarf	Mon Calamari	287	Coruscant	300
+7 Red Dwarf	Coruscant	304	Corellia	308
+7 Red Dwarf	Corellia	312	Coruscant	316
+7 Red Dwarf	Coruscant	320	Mon Calamari	333
+7 Red Dwarf	Mon Calamari	337	Coruscant	350
+7 Red Dwarf	Coruscant	354	Corulag	360
+7 Red Dwarf	Corulag	364	Coruscant	370
+7 Red Dwarf	Coruscant	374	Mon Calamari	387
+7 Red Dwarf	Mon Calamari	391	Coruscant	404
+7 Red Dwarf	Coruscant	408	Corellia	412
+7 Red Dwarf	Corellia	416	Coruscant	420
+7 Red Dwarf	Coruscant	424	Mon Calamari	437
+7 Red Dwarf	Mon Calamari	441	Coruscant	454
+7 Red Dwarf	Coruscant	458	Corulag	464
+7 Red Dwarf	Corulag	468	Coruscant	474
+7 Red Dwarf	Coruscant	478	Mon Calamari	491
+7 Red Dwarf	Mon Calamari	495	Coruscant	508
+7 Red Dwarf	Coruscant	512	Corellia	516
+8 Serenity	Yaga Minor	0	Kashyyyk	53
+8 Serenity	Kashyyyk	57	Yaga Minor	110
+8 Serenity	Yaga Minor	114	Kashyyyk	167
+8 Serenity	Kashyyyk	171	Yaga Minor	224
+8 Serenity	Yaga Minor	228	Kashyyyk	281
+8 Serenity	Kashyyyk	285	Yaga Minor	338
+8 Serenity	Yaga Minor	342	Kashyyyk	395
+8 Serenity	Kashyyyk	399	Yaga Minor	452
+8 Serenity	Yaga Minor	456	Kashyyyk	509
+8 Serenity	Kashyyyk	513	Yaga Minor	566
+9 USS Enterprise	Yaga Minor	0	Wayland	30
+9 USS Enterprise	Wayland	34	Myrkr	55
+9 USS Enterprise	Myrkr	59	Wayland	80
+9 USS Enterprise	Wayland	84	Yaga Minor	114
+9 USS Enterprise	Yaga Minor	118	Wayland	148
+9 USS Enterprise	Wayland	152	Myrkr	173
+9 USS Enterprise	Myrkr	177	Wayland	198
+9 USS Enterprise	Wayland	202	Yaga Minor	232
+9 USS Enterprise	Yaga Minor	236	Wayland	266
+9 USS Enterprise	Wayland	270	Myrkr	291
+9 USS Enterprise	Myrkr	295	Wayland	316
+9 USS Enterprise	Wayland	320	Yaga Minor	350
+9 USS Enterprise	Yaga Minor	354	Wayland	384
+9 USS Enterprise	Wayland	388	Myrkr	409
+9 USS Enterprise	Myrkr	413	Wayland	434
+9 USS Enterprise	Wayland	438	Yaga Minor	468
+9 USS Enterprise	Yaga Minor	472	Wayland	502
+9 USS Enterprise	Wayland	506	Myrkr	527
+9 USS Enterprise	Myrkr	531	Wayland	552
+9 USS Enterprise	Wayland	556	Yaga Minor	586
+size 27
+Alderaan: 
+11
+Destination: Bespin
+Enroute Time: 8
+	NSEA Protector	92	100
+	NSEA Protector	206	214
+	NSEA Protector	320	328
+	NSEA Protector	434	442
+	NSEA Protector	548	556
+Destination: Corellia
+Enroute Time: 6
+Destination: Coruscant
+Enroute Time: 16
+Destination: Dagobah
+Enroute Time: 30
+Destination: Dantooine
+Enroute Time: 13
+	Andromeda Ascendant	71	84
+	Andromeda Ascendant	195	208
+	Andromeda Ascendant	319	332
+	Andromeda Ascendant	443	456
+	Andromeda Ascendant	567	580
+Destination: Endor
+Enroute Time: 18
+Destination: Gamorr
+Enroute Time: 180
+Destination: Hoth
+Enroute Time: 27
+Destination: Sullust
+Enroute Time: 213
+Destination: Tatooine
+Enroute Time: 7
+	NSEA Protector	22	29
+	NSEA Protector	136	143
+	NSEA Protector	250	257
+	NSEA Protector	364	371
+	NSEA Protector	478	485
+Destination: Yavin
+Enroute Time: 5
+	Andromeda Ascendant	53	58
+	Andromeda Ascendant	177	182
+	Andromeda Ascendant	301	306
+	Andromeda Ascendant	425	430
+	Andromeda Ascendant	549	554
+
+Bespin: 
+11
+Destination: Alderaan
+Enroute Time: 8
+	NSEA Protector	10	18
+	NSEA Protector	124	132
+	NSEA Protector	238	246
+	NSEA Protector	352	360
+	NSEA Protector	466	474
+Destination: Corellia
+Enroute Time: 6
+	NSEA Protector	104	110
+	NSEA Protector	218	224
+	NSEA Protector	332	338
+	NSEA Protector	446	452
+	NSEA Protector	560	566
+Destination: Coruscant
+Enroute Time: 158
+Destination: Dagobah
+Enroute Time: 27
+Destination: Dantooine
+Enroute Time: 22
+Destination: Endor
+Enroute Time: 32
+Destination: Gamorr
+Enroute Time: 75
+Destination: Hoth
+Enroute Time: 4
+	Galactica	57	61
+	Galactica	171	175
+	Galactica	285	289
+	Galactica	399	403
+	Galactica	513	517
+Destination: Sullust
+Enroute Time: 268
+Destination: Tatooine
+Enroute Time: 16
+Destination: Yavin
+Enroute Time: 11
+
+Corellia: 
+29
+Destination: Alderaan
+Enroute Time: 6
+Destination: Bespin
+Enroute Time: 6
+	NSEA Protector	0	6
+	NSEA Protector	114	120
+	NSEA Protector	228	234
+	NSEA Protector	342	348
+	NSEA Protector	456	462
+Destination: Coruscant
+Enroute Time: 4
+Destination: Dagobah
+Enroute Time: 31
+Destination: Dantooine
+Enroute Time: 12
+Destination: Endor
+Enroute Time: 17
+Destination: Gamorr
+Enroute Time: 254
+Destination: Hoth
+Enroute Time: 21
+Destination: Sullust
+Enroute Time: 19
+Destination: Tatooine
+Enroute Time: 4
+	NSEA Protector	73	77
+	NSEA Protector	187	191
+	NSEA Protector	301	305
+	NSEA Protector	415	419
+	NSEA Protector	529	533
+Destination: Yavin
+Enroute Time: 15
+Destination: Brentaal
+Enroute Time: 3
+Destination: Chandrila
+Enroute Time: 2
+Destination: Corulag
+Enroute Time: 1
+Destination: Coruscant
+Enroute Time: 4
+Destination: Esseles
+Enroute Time: 4
+Destination: Rhinnal
+Enroute Time: 7
+Destination: Ralltiir
+Enroute Time: 9
+Destination: Coruscant
+Enroute Time: 4
+Destination: Kashyyyk
+Enroute Time: 36
+Destination: Myrkr
+Enroute Time: 81
+Destination: Wayland
+Enroute Time: 99
+Destination: Yaga Minor
+Enroute Time: 12
+	NSEA Protector	41	53
+	NSEA Protector	155	167
+	NSEA Protector	269	281
+	NSEA Protector	383	395
+	NSEA Protector	497	509
+Destination: Bakura
+Enroute Time: 52
+Destination: Corporate Sector
+Enroute Time: 9
+Destination: Coruscant
+Enroute Time: 4
+	Red Dwarf	0	4
+	Red Dwarf	104	108
+	Red Dwarf	208	212
+	Red Dwarf	312	316
+	Red Dwarf	416	420
+Destination: Hapes Cluster
+Enroute Time: 21
+Destination: Kessel
+Enroute Time: 10
+Destination: Mon Calamari
+Enroute Time: 6
+
+Coruscant: 
+29
+Destination: Alderaan
+Enroute Time: 16
+Destination: Bespin
+Enroute Time: 158
+Destination: Corellia
+Enroute Time: 4
+Destination: Dagobah
+Enroute Time: 302
+Destination: Dantooine
+Enroute Time: 19
+Destination: Endor
+Enroute Time: 156
+Destination: Gamorr
+Enroute Time: 387
+Destination: Hoth
+Enroute Time: 81
+Destination: Sullust
+Enroute Time: 194
+Destination: Tatooine
+Enroute Time: 542
+Destination: Yavin
+Enroute Time: 128
+Destination: Brentaal
+Enroute Time: 7
+Destination: Chandrila
+Enroute Time: 5
+Destination: Corellia
+Enroute Time: 4
+Destination: Corulag
+Enroute Time: 6
+	Red Dwarf	42	48
+	Red Dwarf	146	152
+	Red Dwarf	250	256
+	Red Dwarf	354	360
+	Red Dwarf	458	464
+Destination: Esseles
+Enroute Time: 8
+Destination: Rhinnal
+Enroute Time: 10
+Destination: Ralltiir
+Enroute Time: 12
+Destination: Corellia
+Enroute Time: 4
+Destination: Kashyyyk
+Enroute Time: 43
+Destination: Myrkr
+Enroute Time: 108
+Destination: Wayland
+Enroute Time: 58
+Destination: Yaga Minor
+Enroute Time: 15
+Destination: Bakura
+Enroute Time: 77
+Destination: Corellia
+Enroute Time: 4
+	Red Dwarf	96	100
+	Red Dwarf	200	204
+	Red Dwarf	304	308
+	Red Dwarf	408	412
+	Red Dwarf	512	516
+Destination: Corporate Sector
+Enroute Time: 15
+Destination: Hapes Cluster
+Enroute Time: 39
+Destination: Kessel
+Enroute Time: 27
+Destination: Mon Calamari
+Enroute Time: 13
+	Red Dwarf	8	21
+	Red Dwarf	62	75
+	Red Dwarf	112	125
+	Red Dwarf	166	179
+	Red Dwarf	216	229
+	Red Dwarf	270	283
+	Red Dwarf	320	333
+	Red Dwarf	374	387
+	Red Dwarf	424	437
+	Red Dwarf	478	491
+
+Dagobah: 
+11
+Destination: Alderaan
+Enroute Time: 30
+Destination: Bespin
+Enroute Time: 27
+Destination: Corellia
+Enroute Time: 31
+Destination: Coruscant
+Enroute Time: 302
+Destination: Dantooine
+Enroute Time: 32
+	Andromeda Ascendant	0	32
+	Andromeda Ascendant	124	156
+	Andromeda Ascendant	248	280
+	Andromeda Ascendant	372	404
+	Andromeda Ascendant	496	528
+Destination: Endor
+Enroute Time: 97
+Destination: Gamorr
+Enroute Time: 656
+Destination: Hoth
+Enroute Time: 89
+Destination: Sullust
+Enroute Time: 78
+Destination: Tatooine
+Enroute Time: 28
+Destination: Yavin
+Enroute Time: 314
+
+Dantooine: 
+11
+Destination: Alderaan
+Enroute Time: 13
+	Andromeda Ascendant	36	49
+	Andromeda Ascendant	160	173
+	Andromeda Ascendant	284	297
+	Andromeda Ascendant	408	421
+	Andromeda Ascendant	532	545
+Destination: Bespin
+Enroute Time: 22
+Destination: Corellia
+Enroute Time: 12
+Destination: Coruscant
+Enroute Time: 19
+Destination: Dagobah
+Enroute Time: 32
+	Andromeda Ascendant	88	120
+	Andromeda Ascendant	212	244
+	Andromeda Ascendant	336	368
+	Andromeda Ascendant	460	492
+	Andromeda Ascendant	584	616
+Destination: Endor
+Enroute Time: 21
+Destination: Gamorr
+Enroute Time: 86
+Destination: Hoth
+Enroute Time: 28
+Destination: Sullust
+Enroute Time: 126
+Destination: Tatooine
+Enroute Time: 20
+Destination: Yavin
+Enroute Time: 12
+
+Endor: 
+11
+Destination: Alderaan
+Enroute Time: 18
+Destination: Bespin
+Enroute Time: 32
+Destination: Corellia
+Enroute Time: 17
+Destination: Coruscant
+Enroute Time: 156
+Destination: Dagobah
+Enroute Time: 97
+Destination: Dantooine
+Enroute Time: 21
+Destination: Gamorr
+Enroute Time: 341
+Destination: Hoth
+Enroute Time: 60
+Destination: Sullust
+Enroute Time: 19
+	Galactica	0	19
+	Galactica	114	133
+	Galactica	228	247
+	Galactica	342	361
+	Galactica	456	475
+Destination: Tatooine
+Enroute Time: 24
+Destination: Yavin
+Enroute Time: 10
+
+Gamorr: 
+11
+Destination: Alderaan
+Enroute Time: 180
+Destination: Bespin
+Enroute Time: 75
+Destination: Corellia
+Enroute Time: 254
+Destination: Coruscant
+Enroute Time: 387
+Destination: Dagobah
+Enroute Time: 656
+Destination: Dantooine
+Enroute Time: 86
+Destination: Endor
+Enroute Time: 341
+Destination: Hoth
+Enroute Time: 346
+Destination: Sullust
+Enroute Time: 74
+Destination: Tatooine
+Enroute Time: 40
+	USSC Discovery One	0	40
+	USSC Discovery One	88	128
+	USSC Discovery One	176	216
+	USSC Discovery One	264	304
+	USSC Discovery One	352	392
+	USSC Discovery One	440	480
+Destination: Yavin
+Enroute Time: 55
+
+Hoth: 
+11
+Destination: Alderaan
+Enroute Time: 27
+Destination: Bespin
+Enroute Time: 4
+	Galactica	49	53
+	Galactica	163	167
+	Galactica	277	281
+	Galactica	391	395
+	Galactica	505	509
+Destination: Corellia
+Enroute Time: 21
+Destination: Coruscant
+Enroute Time: 81
+Destination: Dagobah
+Enroute Time: 89
+Destination: Dantooine
+Enroute Time: 28
+Destination: Endor
+Enroute Time: 60
+Destination: Gamorr
+Enroute Time: 346
+Destination: Sullust
+Enroute Time: 22
+	Galactica	65	87
+	Galactica	179	201
+	Galactica	293	315
+	Galactica	407	429
+	Galactica	521	543
+Destination: Tatooine
+Enroute Time: 56
+Destination: Yavin
+Enroute Time: 39
+
+Sullust: 
+11
+Destination: Alderaan
+Enroute Time: 213
+Destination: Bespin
+Enroute Time: 268
+Destination: Corellia
+Enroute Time: 19
+Destination: Coruscant
+Enroute Time: 194
+Destination: Dagobah
+Enroute Time: 78
+Destination: Dantooine
+Enroute Time: 126
+Destination: Endor
+Enroute Time: 19
+	Galactica	91	110
+	Galactica	205	224
+	Galactica	319	338
+	Galactica	433	452
+	Galactica	547	566
+Destination: Gamorr
+Enroute Time: 74
+Destination: Hoth
+Enroute Time: 22
+	Galactica	23	45
+	Galactica	137	159
+	Galactica	251	273
+	Galactica	365	387
+	Galactica	479	501
+Destination: Tatooine
+Enroute Time: 38
+Destination: Yavin
+Enroute Time: 17
+
+Tatooine: 
+11
+Destination: Alderaan
+Enroute Time: 7
+	NSEA Protector	81	88
+	NSEA Protector	195	202
+	NSEA Protector	309	316
+	NSEA Protector	423	430
+	NSEA Protector	537	544
+Destination: Bespin
+Enroute Time: 16
+Destination: Corellia
+Enroute Time: 4
+	NSEA Protector	33	37
+	NSEA Protector	147	151
+	NSEA Protector	261	265
+	NSEA Protector	375	379
+	NSEA Protector	489	493
+Destination: Coruscant
+Enroute Time: 542
+Destination: Dagobah
+Enroute Time: 28
+Destination: Dantooine
+Enroute Time: 20
+Destination: Endor
+Enroute Time: 24
+Destination: Gamorr
+Enroute Time: 40
+	USSC Discovery One	44	84
+	USSC Discovery One	132	172
+	USSC Discovery One	220	260
+	USSC Discovery One	308	348
+	USSC Discovery One	396	436
+	USSC Discovery One	484	524
+Destination: Hoth
+Enroute Time: 56
+Destination: Sullust
+Enroute Time: 38
+Destination: Yavin
+Enroute Time: 15
+
+Yavin: 
+11
+Destination: Alderaan
+Enroute Time: 5
+	Andromeda Ascendant	62	67
+	Andromeda Ascendant	186	191
+	Andromeda Ascendant	310	315
+	Andromeda Ascendant	434	439
+	Andromeda Ascendant	558	563
+Destination: Bespin
+Enroute Time: 11
+Destination: Corellia
+Enroute Time: 15
+Destination: Coruscant
+Enroute Time: 128
+Destination: Dagobah
+Enroute Time: 314
+Destination: Dantooine
+Enroute Time: 12
+Destination: Endor
+Enroute Time: 10
+Destination: Gamorr
+Enroute Time: 55
+Destination: Hoth
+Enroute Time: 39
+Destination: Sullust
+Enroute Time: 17
+Destination: Tatooine
+Enroute Time: 15
+
+Brentaal: 
+7
+Destination: Chandrila
+Enroute Time: 1
+Destination: Corellia
+Enroute Time: 3
+Destination: Corulag
+Enroute Time: 2
+Destination: Coruscant
+Enroute Time: 7
+Destination: Esseles
+Enroute Time: 2
+Destination: Rhinnal
+Enroute Time: 5
+	Heart of Gold	6	11
+	Heart of Gold	49	54
+	Heart of Gold	92	97
+	Heart of Gold	135	140
+	Heart of Gold	178	183
+	Heart of Gold	221	226
+	Heart of Gold	264	269
+	Heart of Gold	307	312
+	Heart of Gold	350	355
+	Heart of Gold	393	398
+Destination: Ralltiir
+Enroute Time: 7
+
+Chandrila: 
+7
+Destination: Brentaal
+Enroute Time: 1
+Destination: Corellia
+Enroute Time: 2
+Destination: Corulag
+Enroute Time: 1
+Destination: Coruscant
+Enroute Time: 5
+Destination: Esseles
+Enroute Time: 3
+	Heart of Gold	28	31
+	Heart of Gold	71	74
+	Heart of Gold	114	117
+	Heart of Gold	157	160
+	Heart of Gold	200	203
+	Heart of Gold	243	246
+	Heart of Gold	286	289
+	Heart of Gold	329	332
+	Heart of Gold	372	375
+	Heart of Gold	415	418
+Destination: Rhinnal
+Enroute Time: 2
+Destination: Ralltiir
+Enroute Time: 4
+
+Corulag: 
+7
+Destination: Brentaal
+Enroute Time: 2
+	Heart of Gold	0	2
+	Heart of Gold	43	45
+	Heart of Gold	86	88
+	Heart of Gold	129	131
+	Heart of Gold	172	174
+	Heart of Gold	215	217
+	Heart of Gold	258	260
+	Heart of Gold	301	303
+	Heart of Gold	344	346
+	Heart of Gold	387	389
+Destination: Chandrila
+Enroute Time: 1
+Destination: Corellia
+Enroute Time: 1
+Destination: Coruscant
+Enroute Time: 6
+	Red Dwarf	52	58
+	Red Dwarf	156	162
+	Red Dwarf	260	266
+	Red Dwarf	364	370
+	Red Dwarf	468	474
+Destination: Esseles
+Enroute Time: 4
+Destination: Rhinnal
+Enroute Time: 8
+Destination: Ralltiir
+Enroute Time: 11
+
+Esseles: 
+7
+Destination: Brentaal
+Enroute Time: 2
+Destination: Chandrila
+Enroute Time: 3
+Destination: Corellia
+Enroute Time: 4
+Destination: Corulag
+Enroute Time: 4
+	Heart of Gold	35	39
+	Heart of Gold	78	82
+	Heart of Gold	121	125
+	Heart of Gold	164	168
+	Heart of Gold	207	211
+	Heart of Gold	250	254
+	Heart of Gold	293	297
+	Heart of Gold	336	340
+	Heart of Gold	379	383
+	Heart of Gold	422	426
+Destination: Coruscant
+Enroute Time: 8
+Destination: Rhinnal
+Enroute Time: 2
+Destination: Ralltiir
+Enroute Time: 4
+
+Rhinnal: 
+7
+Destination: Brentaal
+Enroute Time: 5
+Destination: Chandrila
+Enroute Time: 2
+Destination: Corellia
+Enroute Time: 7
+Destination: Corulag
+Enroute Time: 8
+Destination: Coruscant
+Enroute Time: 10
+Destination: Esseles
+Enroute Time: 2
+Destination: Ralltiir
+Enroute Time: 1
+	Heart of Gold	15	16
+	Heart of Gold	58	59
+	Heart of Gold	101	102
+	Heart of Gold	144	145
+	Heart of Gold	187	188
+	Heart of Gold	230	231
+	Heart of Gold	273	274
+	Heart of Gold	316	317
+	Heart of Gold	359	360
+	Heart of Gold	402	403
+
+Ralltiir: 
+7
+Destination: Brentaal
+Enroute Time: 7
+Destination: Chandrila
+Enroute Time: 4
+	Heart of Gold	20	24
+	Heart of Gold	63	67
+	Heart of Gold	106	110
+	Heart of Gold	149	153
+	Heart of Gold	192	196
+	Heart of Gold	235	239
+	Heart of Gold	278	282
+	Heart of Gold	321	325
+	Heart of Gold	364	368
+	Heart of Gold	407	411
+Destination: Corellia
+Enroute Time: 9
+Destination: Corulag
+Enroute Time: 11
+Destination: Coruscant
+Enroute Time: 12
+Destination: Esseles
+Enroute Time: 4
+Destination: Rhinnal
+Enroute Time: 1
+
+Kashyyyk: 
+5
+Destination: Corellia
+Enroute Time: 36
+Destination: Coruscant
+Enroute Time: 43
+Destination: Myrkr
+Enroute Time: 55
+Destination: Wayland
+Enroute Time: 54
+Destination: Yaga Minor
+Enroute Time: 53
+	Serenity	57	110
+	Serenity	171	224
+	Serenity	285	338
+	Serenity	399	452
+	Serenity	513	566
+
+Myrkr: 
+5
+Destination: Corellia
+Enroute Time: 81
+Destination: Coruscant
+Enroute Time: 108
+Destination: Kashyyyk
+Enroute Time: 55
+Destination: Wayland
+Enroute Time: 21
+	USS Enterprise	59	80
+	USS Enterprise	177	198
+	USS Enterprise	295	316
+	USS Enterprise	413	434
+	USS Enterprise	531	552
+Destination: Yaga Minor
+Enroute Time: 55
+
+Wayland: 
+5
+Destination: Corellia
+Enroute Time: 99
+Destination: Coruscant
+Enroute Time: 58
+Destination: Kashyyyk
+Enroute Time: 54
+Destination: Myrkr
+Enroute Time: 21
+	USS Enterprise	34	55
+	USS Enterprise	152	173
+	USS Enterprise	270	291
+	USS Enterprise	388	409
+	USS Enterprise	506	527
+Destination: Yaga Minor
+Enroute Time: 30
+	USS Enterprise	84	114
+	USS Enterprise	202	232
+	USS Enterprise	320	350
+	USS Enterprise	438	468
+	USS Enterprise	556	586
+
+Yaga Minor: 
+5
+Destination: Corellia
+Enroute Time: 12
+	NSEA Protector	57	69
+	NSEA Protector	171	183
+	NSEA Protector	285	297
+	NSEA Protector	399	411
+	NSEA Protector	513	525
+Destination: Coruscant
+Enroute Time: 15
+Destination: Kashyyyk
+Enroute Time: 53
+	Serenity	0	53
+	Serenity	114	167
+	Serenity	228	281
+	Serenity	342	395
+	Serenity	456	509
+Destination: Myrkr
+Enroute Time: 55
+Destination: Wayland
+Enroute Time: 30
+	USS Enterprise	0	30
+	USS Enterprise	118	148
+	USS Enterprise	236	266
+	USS Enterprise	354	384
+	USS Enterprise	472	502
+
+Bakura: 
+6
+Destination: Corellia
+Enroute Time: 52
+Destination: Corporate Sector
+Enroute Time: 60
+Destination: Coruscant
+Enroute Time: 77
+Destination: Hapes Cluster
+Enroute Time: 11
+Destination: Kessel
+Enroute Time: 27
+	Millenium Falcon	31	58
+	Millenium Falcon	93	120
+	Millenium Falcon	155	182
+	Millenium Falcon	217	244
+	Millenium Falcon	279	306
+	Millenium Falcon	341	368
+	Millenium Falcon	403	430
+	Millenium Falcon	465	492
+	Millenium Falcon	527	554
+	Millenium Falcon	589	616
+Destination: Mon Calamari
+Enroute Time: 22
+
+Corporate Sector: 
+6
+Destination: Bakura
+Enroute Time: 60
+Destination: Corellia
+Enroute Time: 9
+Destination: Coruscant
+Enroute Time: 15
+Destination: Hapes Cluster
+Enroute Time: 7
+	Moya	28	35
+	Moya	138	145
+	Moya	248	255
+	Moya	358	365
+	Moya	468	475
+	Moya	578	585
+	Moya	688	695
+	Moya	798	805
+	Moya	908	915
+	Moya	1018	1025
+Destination: Kessel
+Enroute Time: 9
+Destination: Mon Calamari
+Enroute Time: 24
+	Moya	82	106
+	Moya	192	216
+	Moya	302	326
+	Moya	412	436
+	Moya	522	546
+	Moya	632	656
+	Moya	742	766
+	Moya	852	876
+	Moya	962	986
+	Moya	1072	1096
+
+Hapes Cluster: 
+6
+Destination: Bakura
+Enroute Time: 11
+Destination: Corellia
+Enroute Time: 21
+Destination: Corporate Sector
+Enroute Time: 7
+	Moya	71	78
+	Moya	181	188
+	Moya	291	298
+	Moya	401	408
+	Moya	511	518
+	Moya	621	628
+	Moya	731	738
+	Moya	841	848
+	Moya	951	958
+	Moya	1061	1068
+Destination: Coruscant
+Enroute Time: 39
+Destination: Kessel
+Enroute Time: 12
+	Moya	39	51
+	Moya	149	161
+	Moya	259	271
+	Moya	369	381
+	Moya	479	491
+	Moya	589	601
+	Moya	699	711
+	Moya	809	821
+	Moya	919	931
+	Moya	1029	1041
+Destination: Mon Calamari
+Enroute Time: 18
+
+Kessel: 
+6
+Destination: Bakura
+Enroute Time: 27
+	Millenium Falcon	0	27
+	Millenium Falcon	62	89
+	Millenium Falcon	124	151
+	Millenium Falcon	186	213
+	Millenium Falcon	248	275
+	Millenium Falcon	310	337
+	Millenium Falcon	372	399
+	Millenium Falcon	434	461
+	Millenium Falcon	496	523
+	Millenium Falcon	558	585
+Destination: Corellia
+Enroute Time: 10
+Destination: Corporate Sector
+Enroute Time: 9
+Destination: Coruscant
+Enroute Time: 27
+Destination: Hapes Cluster
+Enroute Time: 12
+	Moya	55	67
+	Moya	165	177
+	Moya	275	287
+	Moya	385	397
+	Moya	495	507
+	Moya	605	617
+	Moya	715	727
+	Moya	825	837
+	Moya	935	947
+	Moya	1045	1057
+Destination: Mon Calamari
+Enroute Time: 9
+
+Mon Calamari: 
+6
+Destination: Bakura
+Enroute Time: 22
+Destination: Corellia
+Enroute Time: 6
+Destination: Corporate Sector
+Enroute Time: 24
+	Moya	0	24
+	Moya	110	134
+	Moya	220	244
+	Moya	330	354
+	Moya	440	464
+	Moya	550	574
+	Moya	660	684
+	Moya	770	794
+	Moya	880	904
+	Moya	990	1014
+Destination: Coruscant
+Enroute Time: 13
+	Red Dwarf	25	38
+	Red Dwarf	79	92
+	Red Dwarf	129	142
+	Red Dwarf	183	196
+	Red Dwarf	233	246
+	Red Dwarf	287	300
+	Red Dwarf	337	350
+	Red Dwarf	391	404
+	Red Dwarf	441	454
+	Red Dwarf	495	508
+Destination: Hapes Cluster
+Enroute Time: 18
+Destination: Kessel
+Enroute Time: 9
+
+Alderaan 22 29 Tatooine 33 37 Corellia 104 108 Coruscant 112 125 Mon Calamari 220 244 Corporate Sector 248 255 Hapes Cluster 259 271 Kessel 310 337 Bakura 
+Arrival Time: 337
+Enroute Time: 315
+Time in Space: 98
+
+Bespin 10 18 Alderaan 22 29 Tatooine 33 37 Corellia 104 108 Coruscant 112 125 Mon Calamari 220 244 Corporate Sector 248 255 Hapes Cluster 259 271 Kessel 310 337 Bakura 
+Arrival Time: 337
+Enroute Time: 327
+Time in Space: 106
+
+Corellia 104 108 Coruscant 112 125 Mon Calamari 220 244 Corporate Sector 248 255 Hapes Cluster 259 271 Kessel 310 337 Bakura 
+Arrival Time: 337
+Enroute Time: 233
+Time in Space: 87
+
+Coruscant 96 100 Corellia 155 167 Yaga Minor 236 266 Wayland 270 291 Myrkr 
+Arrival Time: 291
+Enroute Time: 195
+Time in Space: 67
+
+Dagobah 124 156 Dantooine 160 173 Alderaan 206 214 Bespin 218 224 Corellia 312 316 Coruscant 320 333 Mon Calamari 440 464 Corporate Sector 468 475 Hapes Cluster 479 491 Kessel 496 523 Bakura 
+Arrival Time: 523
+Enroute Time: 399
+Time in Space: 146
+
+Dantooine 36 49 Alderaan 92 100 Bespin 104 110 Corellia 208 212 Coruscant 216 229 Mon Calamari 330 354 Corporate Sector 358 365 Hapes Cluster 369 381 Kessel 434 461 Bakura 
+Arrival Time: 461
+Enroute Time: 425
+Time in Space: 114
+
+Endor 114 133 Sullust 137 159 Hoth 163 167 Bespin 218 224 Corellia 312 316 Coruscant 320 333 Mon Calamari 440 464 Corporate Sector 468 475 Hapes Cluster 479 491 Kessel 496 523 Bakura 
+Arrival Time: 523
+Enroute Time: 409
+Time in Space: 138
+
+Gamorr 88 128 Tatooine 147 151 Corellia 208 212 Coruscant 216 229 Mon Calamari 330 354 Corporate Sector 358 365 Hapes Cluster 369 381 Kessel 434 461 Bakura 
+Arrival Time: 461
+Enroute Time: 373
+Time in Space: 131
+
+Hoth 49 53 Bespin 104 110 Corellia 208 212 Coruscant 216 229 Mon Calamari 330 354 Corporate Sector 358 365 Hapes Cluster 369 381 Kessel 434 461 Bakura 
+Arrival Time: 461
+Enroute Time: 412
+Time in Space: 97
+
+Sullust 23 45 Hoth 49 53 Bespin 104 110 Corellia 208 212 Coruscant 216 229 Mon Calamari 330 354 Corporate Sector 358 365 Hapes Cluster 369 381 Kessel 434 461 Bakura 
+Arrival Time: 461
+Enroute Time: 438
+Time in Space: 119
+
+Tatooine 33 37 Corellia 104 108 Coruscant 112 125 Mon Calamari 220 244 Corporate Sector 248 255 Hapes Cluster 259 271 Kessel 310 337 Bakura 
+Arrival Time: 337
+Enroute Time: 304
+Time in Space: 91
+
+Yavin 62 67 Alderaan 92 100 Bespin 104 110 Corellia 208 212 Coruscant 216 229 Mon Calamari 330 354 Corporate Sector 358 365 Hapes Cluster 369 381 Kessel 434 461 Bakura 
+Arrival Time: 461
+Enroute Time: 399
+Time in Space: 106
+
+Brentaal 6 11 Rhinnal 15 16 Ralltiir 20 24 Chandrila 28 31 Esseles 35 39 Corulag 52 58 Coruscant 96 100 Corellia 155 167 Yaga Minor 236 266 Wayland 270 291 Myrkr 
+Arrival Time: 291
+Enroute Time: 285
+Time in Space: 90
+
+Chandrila 28 31 Esseles 35 39 Corulag 52 58 Coruscant 96 100 Corellia 155 167 Yaga Minor 236 266 Wayland 270 291 Myrkr 
+Arrival Time: 291
+Enroute Time: 263
+Time in Space: 80
+
+Corulag 52 58 Coruscant 96 100 Corellia 155 167 Yaga Minor 236 266 Wayland 270 291 Myrkr 
+Arrival Time: 291
+Enroute Time: 239
+Time in Space: 73
+
+Esseles 35 39 Corulag 52 58 Coruscant 96 100 Corellia 155 167 Yaga Minor 236 266 Wayland 270 291 Myrkr 
+Arrival Time: 291
+Enroute Time: 256
+Time in Space: 77
+
+Rhinnal 15 16 Ralltiir 20 24 Chandrila 28 31 Esseles 35 39 Corulag 52 58 Coruscant 96 100 Corellia 155 167 Yaga Minor 236 266 Wayland 270 291 Myrkr 
+Arrival Time: 291
+Enroute Time: 276
+Time in Space: 85
+
+Ralltiir 20 24 Chandrila 28 31 Esseles 35 39 Corulag 52 58 Coruscant 96 100 Corellia 155 167 Yaga Minor 236 266 Wayland 270 291 Myrkr 
+Arrival Time: 291
+Enroute Time: 271
+Time in Space: 84
+
+Kashyyyk 57 110 Yaga Minor 171 183 Corellia 208 212 Coruscant 216 229 Mon Calamari 330 354 Corporate Sector 358 365 Hapes Cluster 369 381 Kessel 434 461 Bakura 
+Arrival Time: 461
+Enroute Time: 404
+Time in Space: 152
+
+Myrkr 59 80 Wayland 84 114 Yaga Minor 171 183 Corellia 208 212 Coruscant 216 229 Mon Calamari 330 354 Corporate Sector 358 365 Hapes Cluster 369 381 Kessel 434 461 Bakura 
+Arrival Time: 461
+Enroute Time: 402
+Time in Space: 150
+
+Wayland 84 114 Yaga Minor 171 183 Corellia 208 212 Coruscant 216 229 Mon Calamari 330 354 Corporate Sector 358 365 Hapes Cluster 369 381 Kessel 434 461 Bakura 
+Arrival Time: 461
+Enroute Time: 377
+Time in Space: 129
+
+Yaga Minor 57 69 Corellia 104 108 Coruscant 112 125 Mon Calamari 220 244 Corporate Sector 248 255 Hapes Cluster 259 271 Kessel 310 337 Bakura 
+Arrival Time: 337
+Enroute Time: 280
+Time in Space: 99
+
+Bakura 31 58 Kessel 165 177 Hapes Cluster 181 188 Corporate Sector 192 216 Mon Calamari 233 246 Coruscant 304 308 Corellia 383 395 Yaga Minor 472 502 Wayland 506 527 Myrkr 
+Arrival Time: 527
+Enroute Time: 496
+Time in Space: 150
+
+Corporate Sector 82 106 Mon Calamari 129 142 Coruscant 200 204 Corellia 269 281 Yaga Minor 354 384 Wayland 388 409 Myrkr 
+Arrival Time: 409
+Enroute Time: 327
+Time in Space: 104
+
+Hapes Cluster 71 78 Corporate Sector 82 106 Mon Calamari 129 142 Coruscant 200 204 Corellia 269 281 Yaga Minor 354 384 Wayland 388 409 Myrkr 
+Arrival Time: 409
+Enroute Time: 338
+Time in Space: 111
+
+Kessel 55 67 Hapes Cluster 71 78 Corporate Sector 82 106 Mon Calamari 129 142 Coruscant 200 204 Corellia 269 281 Yaga Minor 354 384 Wayland 388 409 Myrkr 
+Arrival Time: 409
+Enroute Time: 354
+Time in Space: 123
+
+Mon Calamari 25 38 Coruscant 96 100 Corellia 155 167 Yaga Minor 236 266 Wayland 270 291 Myrkr 
+Arrival Time: 291
+Enroute Time: 266
+Time in Space: 80
+

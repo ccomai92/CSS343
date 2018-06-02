@@ -23,12 +23,23 @@ void Itinerary::print(Fleet& fleet) {
         std::cout << arrival_time << std::endl;
     }
 
-    std::cout << "Arrival Time: " << this->legs[0].arrival_time << std::endl;
+    std::cerr << "Arrival Time: " << this->legs[0].arrival_time << std::endl;
 
     int enroute_time = this->legs[0].arrival_time - this->legs[size - 1].departure_time;
-    std::cout << "Enroute Time: " << enroute_time << std::endl;
+    std::cerr << "Enroute Time: " << enroute_time << std::endl;
 
     
-    std::cout << "Time in Space: " << time_in_space << std::endl;
-    std::cout << std::endl; 
+    std::cerr << "Time in Space: " << time_in_space << std::endl;
+    std::cerr << std::endl; 
 }
+
+void Edge::dump(Galaxy* galaxy) {
+    std::cerr << "Destination: " << this->destination->name << std::endl; 
+    std::cerr << "Enroute Time: " << this->time << std::endl;
+    for (auto& leg: this->departures) {
+        std::cerr << "\t" << galaxy->fleet.name(leg.id) << "\t"
+                    << leg.departure_time << "\t" 
+                    << leg.arrival_time << std::endl; 
+	}
+}
+

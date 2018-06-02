@@ -7,7 +7,7 @@ int main() {
     int time = 0; 
 
     // ship 1; 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 5; i++) {
         cout << "Andromeda Ascendant" << "\t"; 
         cout << "Dagobah" << "\t"; 
         cout << time << "\t"; 
@@ -59,7 +59,7 @@ int main() {
 
     // ship2 
     time = 0; 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 6; i++) {
         cout << "USSC Discovery One" << "\t"; 
         cout << "Gamorr" << "\t"; 
         cout << time << "\t"; 
@@ -79,7 +79,7 @@ int main() {
 
     // ship3 
     time = 0; 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 5; i++) {
         cout << "Galactica" << "\t"; 
         cout << "Endor" << "\t"; 
         cout << time << "\t"; 
@@ -131,7 +131,7 @@ int main() {
 
     // ship 4 
     time = 0; 
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 10; i++) {
         cout << "Heart of Gold" << "\t"; 
         cout << "Corulag" << "\t"; 
         cout << time << "\t"; 
@@ -183,7 +183,7 @@ int main() {
 
     // ship5 
     time = 0; 
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 10; i++) {
         cout << "Millenium Falcon" << "\t"; 
         cout << "Kessel" << "\t"; 
         cout << time << "\t"; 
@@ -203,12 +203,12 @@ int main() {
 
     // ship6 
     time = 0; 
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 10; i++) {
         cout << "Moya" << "\t"; 
         cout << "Mon Calamari" << "\t"; 
         cout << time << "\t"; 
         cout << "Corporate Sector" << "\t"; 
-        time += 1; 
+        time += 24; 
         cout << time << endl; 
         time += 4; // layover 
 
@@ -248,14 +248,14 @@ int main() {
         cout << "Corporate Sector" << "\t"; 
         cout << time << "\t"; 
         cout << "Mon Calamari" << "\t"; 
-        time += 1; 
+        time += 24; 
         cout << time << endl; 
         time += 4; // layover 
     }
 
     // ship7 
     time = 0; 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 5; i++) {
         cout << "NSEA Protector" << "\t"; 
         cout << "Corellia" << "\t"; 
         cout << time << "\t"; 
@@ -339,7 +339,7 @@ int main() {
 
     // ship8
     time = 0; 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 5; i++) {
         cout << "Red Dwarf" << "\t"; 
         cout << "Corellia" << "\t"; 
         cout << time << "\t"; 
@@ -407,7 +407,7 @@ int main() {
 
     // ship9 
     time = 0; 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 5; i++) {
         cout << "Serenity" << "\t"; 
         cout << "Yaga Minor" << "\t"; 
         cout << time << "\t"; 
@@ -427,7 +427,7 @@ int main() {
 
     // ship10 
     time = 0; 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 5; i++) {
         cout << "USS Enterprise" << "\t"; 
         cout << "Yaga Minor" << "\t"; 
         cout << time << "\t"; 

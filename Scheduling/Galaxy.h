@@ -10,7 +10,7 @@
 //
 // Copyright 2013, 2018 Systems Deployment, LLC
 // Author: Morris Bernstein (morris@systems-deployment.com)
-// Modified by Kris Kwon for CSS 343 assignment 3 
+// Modified by Kris Kwon
 
 #ifndef GALAXY_H
 #define GALAXY_H
@@ -113,9 +113,7 @@ public:
 		std::sort(this->departures.begin(), this->departures.end(), Leg::less_than); 
 	}
 
-	void dump(Galaxy* galaxy) {
-		
-	}
+	void dump(Galaxy* galaxy); 
 
 	Time time; 
 	Planet* destination;
@@ -130,6 +128,14 @@ class Planet {
 public:
 	Planet(const std::string& name): name(name), best_leg(Leg{}),
 									 predecessor(nullptr), priority(0) {}
+
+	~Planet() {
+		for (auto& edge: edges) {
+			delete edge; 
+			edge = nullptr; 
+		}
+	}
+
 	void add(Edge* e) {
 		edges.push_back(e);
 	}
@@ -150,11 +156,12 @@ public:
 		queue.reduce(this); 
 		while(!queue.empty()) {
 			Planet* current = queue.pop(); 
-			//assert(current->arrival_time() != MAX_TIME); 
+			if (current->arrival_time() == MAX_TIME) {
+				exit(EXIT_FAILURE); 
+			}
+
 			if (current->arrival_time() > furthest->arrival_time()) {
-				furthest = current; 
-				//std::cerr << current->name << std::endl; 
-				//std::cerr << current->arrival_time() << std::endl; 
+				furthest = current;  
 			} 
 			current->relax_neighbors(queue);
 		}
@@ -183,13 +190,13 @@ public:
 	}
 
 	// Debug-friendly output.
-	void dump() { //Galaxy* galaxy
+	void dump(Galaxy* galaxy) {
 		std::cerr << this->name <<  ": " << std::endl; 
-		int size = this->edges.size(); 
-		std::cerr << size << std::endl; 
-		for (int i = 0; i < size; i++) {
-			std::cerr << this->edges[i]->destination->name << std::endl; 
-		}
+    	int size = this->edges.size(); 
+    	std::cerr << size << std::endl; 
+    	for (int i = 0; i < size; i++) {
+        	this->edges[i]->dump(galaxy); 
+    	}
 	}
 
 	// Functions for priority queue:
@@ -226,6 +233,7 @@ private:
 			edge->sort(); 
 			int size = edge->departures.size();
 			Leg bestLeg; 
+
 			for (int i = 0; i < size; i++) {
 				Leg current = edge->departures[i];
 				if (current.departure_time >= min_next_departure
@@ -233,6 +241,7 @@ private:
 					bestLeg = current; 
 				}
 			} 
+
 			if (Leg::less_than(bestLeg, destination->best_leg)) {
 				destination->predecessor = this; 
 				destination->best_leg = bestLeg;
@@ -259,7 +268,12 @@ private:
 class Galaxy {
 public:
 	Galaxy(): planets(), fleet() {}
-	~Galaxy() {}
+	~Galaxy() {
+		for (auto& planet: this->planets) {
+			delete planet; 
+			planet = nullptr; 
+		}
+	}
 
 	void add(Planet* planet) {
 		this->planets.push_back(planet);
@@ -285,7 +299,7 @@ public:
 				priorityQ.push_back(this->planets[i]);  
 			}
 			Planet* furthest = this->planets[i]->search(priorityQ); // passing priority queue 
-			//this->dump_routes(this->planets[i], furthest, std::cerr); 
+			this->dump_routes(this->planets[i], furthest, std::cerr); 
 			Itinerary* result = this->planets[i]->make_itinerary(furthest); 
 			result->print(this->fleet); 
 			this->reset(); 
@@ -297,13 +311,31 @@ public:
 		std::cerr << "size " << size << std::endl; 
 		for (int i = 0; i < size; i++) {
 			Planet* temp = this->planets[i]; 
-			temp->dump(); 
+			temp->dump(this); 
 			std::cerr << std::endl; 
 		}
 	}
 
 	void dump_routes(Planet* origin, Planet* destination, std::ostream& out = std::cerr) {
+		std::vector<Leg> legs; 
+		std::vector<Planet*> planets; 
+		Planet* current = destination; 
+		Planet* predecessor = current->getPredecessor(); 
+		while (predecessor != nullptr) {
+			legs.push_back(current->getLeg());
+			planets.push_back(current);  
+			current = predecessor; 
+			predecessor = current->getPredecessor(); 
+		}
 		
+		out << origin->name << " "; 
+		int size = planets.size();  
+		for (int i = size - 1; i >= 0; i--) {
+			out << legs[i].departure_time << " " 
+					<< legs[i].arrival_time << " ";
+			out << planets[i]->name << " ";
+		}
+		out << std::endl; 
 	}
 
 	Fleet fleet;
