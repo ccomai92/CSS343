@@ -45,6 +45,7 @@ int main(int argc, char* argv[]) {
 	Reader reader(input, constraints); 
 	Galaxy* galaxy = reader.load(); 
 	galaxy->dump(); 
+	//galaxy->dump_routes();
 	galaxy->search(); 
 
 	input.close(); 

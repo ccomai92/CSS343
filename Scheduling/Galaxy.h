@@ -88,8 +88,7 @@ public:
 class Itinerary {
 public:
 	Itinerary(Planet* origin) : origin(origin) {}
-	void print(Fleet& fleet, std::ostream& out = std::cout); 
-	void dump(); 
+	void print(Fleet& fleet); 
 
 	Planet* origin;
 	std::vector<Planet*> destinations;
@@ -114,7 +113,9 @@ public:
 		std::sort(this->departures.begin(), this->departures.end(), Leg::less_than); 
 	}
 
-	void dump(Galaxy* galaxy);
+	void dump(Galaxy* galaxy) {
+		
+	}
 
 	Time time; 
 	Planet* destination;
@@ -286,7 +287,7 @@ public:
 			Planet* furthest = this->planets[i]->search(priorityQ); // passing priority queue 
 			//this->dump_routes(this->planets[i], furthest, std::cerr); 
 			Itinerary* result = this->planets[i]->make_itinerary(furthest); 
-			result->dump(); 
+			result->print(this->fleet); 
 			this->reset(); 
 		}
 	}
@@ -302,25 +303,7 @@ public:
 	}
 
 	void dump_routes(Planet* origin, Planet* destination, std::ostream& out = std::cerr) {
-		std::vector<Leg> legs; 
-		std::vector<Planet*> planets; 
-		Planet* current = destination; 
-		Planet* predecessor = current->getPredecessor(); 
-		while (predecessor != nullptr) {
-			legs.push_back(current->getLeg());
-			planets.push_back(current);  
-			current = predecessor; 
-			predecessor = current->getPredecessor(); 
-		}
 		
-		out << origin->name << " "; 
-		int size = planets.size();  
-		for (int i = size - 1; i >= 0; i--) {
-			out << legs[i].departure_time << " " 
-					<< legs[i].arrival_time << " ";
-			out << planets[i]->name << " ";
-		}
-		out << std::endl; 
 	}
 
 	Fleet fleet;
