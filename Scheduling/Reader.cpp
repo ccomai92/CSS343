@@ -90,28 +90,62 @@ void Reader::createGalaxy() {
 bool Reader::get_record() {
 	std::string ship;
 	while (input >> ship) {
+		if (input.bad() || input.fail()) {
+			exit(EXIT_FAILURE); 
+		}
 		while (input.get() == ' ') {
+			if (input.bad() || input.fail()) {
+				exit(EXIT_FAILURE); 
+			}
 			std::string temp; 
 			input >> temp; 
+			if (input.bad() || input.fail()) {
+				exit(EXIT_FAILURE); 
+			}
 			ship += " " + temp; 
 		}
 		std::string departure;
 		input >> departure; 
+		if (input.bad() || input.fail()) {
+			exit(EXIT_FAILURE); 
+		}
 		while (input.get() == ' ') {
+			if (input.bad() || input.fail()) {
+				exit(EXIT_FAILURE); 
+			}
 			std::string temp; 
 			input >> temp; 
+			if (input.bad() || input.fail()) {
+				exit(EXIT_FAILURE); 
+			}
 			departure += " " + temp; 
 		} 
 		input >> this->departure_time; 
+
+		if (input.bad() || input.fail()) {
+			exit(EXIT_FAILURE); 
+		}
 		
 		std::string destination;
 		input >> destination; 
+		if (input.bad() || input.fail()) {
+			exit(EXIT_FAILURE); 
+		}
 		while (input.get() == ' ') {
+			if (input.bad() || input.fail()) {
+				exit(EXIT_FAILURE); 
+			}
 			std::string temp; 
 			input >> temp; 
+			if (input.bad() || input.fail()) {
+				exit(EXIT_FAILURE); 
+			}
 			destination += " " + temp; 
 		} 
 		input >> this->arrival_time;
+		if (input.bad() || input.fail()) {
+			exit(EXIT_FAILURE); 
+		}
 
 		if (this->ships.count(ship) == 0) {
 			this->ship_id = this->galaxy->fleet.add(ship);
