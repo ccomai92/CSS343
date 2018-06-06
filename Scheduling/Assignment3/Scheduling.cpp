@@ -55,9 +55,6 @@ int main(int argc, char* argv[]) {
 void readConduits(ifstream& input, Travel_Times* constraints) {
 	string start;
 	while (input >> start) {
-		if (input.fail() || input.bad()) {
-			exit(EXIT_FAILURE); 
-		}
 		while (input.get() == ' ') {
 			if (input.fail() || input.bad()) {
 				exit(EXIT_FAILURE); 
@@ -72,14 +69,8 @@ void readConduits(ifstream& input, Travel_Times* constraints) {
 		string destination; 
 		int time;  
 		input >> destination;
-		if (input.fail() || input.bad()) {
-			exit(EXIT_FAILURE);
-		}
 
 		while (input.get() == ' ') {
-			if (input.fail() || input.bad()) {
-				exit(EXIT_FAILURE);
-			}
 			string temp; 
 			input >> temp; 
 			if (input.fail() || input.bad()) {
@@ -88,9 +79,6 @@ void readConduits(ifstream& input, Travel_Times* constraints) {
 			destination += " " + temp; 
 		} 
 		input >> time;
-		if (input.fail() || input.bad()) {
-			exit(EXIT_FAILURE);
-		}
 
 		// put input into Travel_Times data structure
 		constraints->starts.push_back(start); 

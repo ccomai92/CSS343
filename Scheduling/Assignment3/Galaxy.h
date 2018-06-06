@@ -157,6 +157,7 @@ public:
 		while(!queue.empty()) {
 			Planet* current = queue.pop(); 
 			if (current->arrival_time() == MAX_TIME) {
+				std::cerr << "Can't get to " << current->name << std::endl;
 				exit(EXIT_FAILURE); 
 			}
 

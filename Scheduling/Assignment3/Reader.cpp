@@ -90,62 +90,29 @@ void Reader::createGalaxy() {
 bool Reader::get_record() {
 	std::string ship;
 	while (input >> ship) {
-		if (input.bad() || input.fail()) {
-			exit(EXIT_FAILURE); 
-		}
 		while (input.get() == ' ') {
-			if (input.bad() || input.fail()) {
-				exit(EXIT_FAILURE); 
-			}
 			std::string temp; 
 			input >> temp; 
-			if (input.bad() || input.fail()) {
-				exit(EXIT_FAILURE); 
-			}
 			ship += " " + temp; 
 		}
 		std::string departure;
 		input >> departure; 
-		if (input.bad() || input.fail()) {
-			exit(EXIT_FAILURE); 
-		}
 		while (input.get() == ' ') {
-			if (input.bad() || input.fail()) {
-				exit(EXIT_FAILURE); 
-			}
 			std::string temp; 
 			input >> temp; 
-			if (input.bad() || input.fail()) {
-				exit(EXIT_FAILURE); 
-			}
 			departure += " " + temp; 
 		} 
 		input >> this->departure_time; 
-
-		if (input.bad() || input.fail()) {
-			exit(EXIT_FAILURE); 
-		}
 		
 		std::string destination;
 		input >> destination; 
-		if (input.bad() || input.fail()) {
-			exit(EXIT_FAILURE); 
-		}
+
 		while (input.get() == ' ') {
-			if (input.bad() || input.fail()) {
-				exit(EXIT_FAILURE); 
-			}
 			std::string temp; 
 			input >> temp; 
-			if (input.bad() || input.fail()) {
-				exit(EXIT_FAILURE); 
-			}
 			destination += " " + temp; 
 		} 
 		input >> this->arrival_time;
-		if (input.bad() || input.fail()) {
-			exit(EXIT_FAILURE); 
-		}
 
 		if (this->ships.count(ship) == 0) {
 			this->ship_id = this->galaxy->fleet.add(ship);
@@ -177,17 +144,19 @@ void Reader::dumpRoutes() {
 }
 
 bool Reader::validate() {
-
 	if (this->previous_ship_id == this->ship_id) {
 		if (this->previous_destination_planet != this->departure_planet) {
+			std::cerr << "Invalid route structure (ship teleporting)" << std::endl; 
 			exit(EXIT_FAILURE); 
 		}	
 		if (this->departure_time < (this->previous_arrival_time + MIN_LAYOVER_TIME)) {
+			std::cerr << "Invalid route structure (layover time)" << std::endl;
 			exit(EXIT_FAILURE); 
 		}
 		
 		std::map<const Planet*, Edge*> temp = this->edges[this->departure_planet]; 
 		if (temp.count(this->destination_planet) == 0) {
+			std::cerr << "Invalid route structure (can't get there)" << std::endl;
 			exit(EXIT_FAILURE); 
 		}
 	}
