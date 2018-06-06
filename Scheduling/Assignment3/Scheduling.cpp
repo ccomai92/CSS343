@@ -55,36 +55,29 @@ int main(int argc, char* argv[]) {
 void readConduits(ifstream& input, Travel_Times* constraints) {
 	string start;
 	while (input >> start) {
-		while (input.get() == ' ') {
-			if (input.fail() || input.bad()) {
-				exit(EXIT_FAILURE); 
+		if (start != "#") {
+			while (input.get() == ' ') {
+				string temp; 
+				input >> temp; 
+				start += " " + temp; 
 			}
-			string temp; 
-			input >> temp; 
-			if (input.fail() || input.bad()) {
-				exit(EXIT_FAILURE); 
-			}
-			start += " " + temp; 
+			string destination; 
+			int time;  
+			input >> destination;
+
+			while (input.get() == ' ') {
+				string temp; 
+				input >> temp; 
+				destination += " " + temp; 
+			} 
+			input >> time;
+
+			// put input into Travel_Times data structure
+			constraints->starts.push_back(start); 
+			constraints->destinations.push_back(destination); 
+			constraints->times.push_back(time);  
+			constraints->size++;
 		}
-		string destination; 
-		int time;  
-		input >> destination;
-
-		while (input.get() == ' ') {
-			string temp; 
-			input >> temp; 
-			if (input.fail() || input.bad()) {
-				exit(EXIT_FAILURE);
-			}
-			destination += " " + temp; 
-		} 
-		input >> time;
-
-		// put input into Travel_Times data structure
-		constraints->starts.push_back(start); 
-		constraints->destinations.push_back(destination); 
-		constraints->times.push_back(time);  
-		constraints->size++;
 	}
 } 
 

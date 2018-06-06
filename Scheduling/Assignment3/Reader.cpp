@@ -90,29 +90,30 @@ void Reader::createGalaxy() {
 bool Reader::get_record() {
 	std::string ship;
 	while (input >> ship) {
-		while (input.get() == ' ') {
-			std::string temp; 
-			input >> temp; 
-			ship += " " + temp; 
-		}
-		std::string departure;
-		input >> departure; 
-		while (input.get() == ' ') {
-			std::string temp; 
-			input >> temp; 
-			departure += " " + temp; 
-		} 
-		input >> this->departure_time; 
-		
-		std::string destination;
-		input >> destination; 
+		if (ship != "#") {
+			while (input.get() == ' ') {
+				std::string temp; 
+				input >> temp; 
+				ship += " " + temp; 
+			}
+			std::string departure;
+			input >> departure; 
+			while (input.get() == ' ') {
+				std::string temp; 
+				input >> temp; 
+				departure += " " + temp; 
+			} 
+			input >> this->departure_time; 
+			
+			std::string destination;
+			input >> destination; 
 
-		while (input.get() == ' ') {
-			std::string temp; 
-			input >> temp; 
-			destination += " " + temp; 
-		} 
-		input >> this->arrival_time;
+			while (input.get() == ' ') {
+				std::string temp; 
+				input >> temp; 
+				destination += " " + temp; 
+			} 
+			input >> this->arrival_time;
 
 		if (this->ships.count(ship) == 0) {
 			this->ship_id = this->galaxy->fleet.add(ship);
@@ -133,6 +134,7 @@ bool Reader::get_record() {
 		this->previous_ship_id = this->ship_id; 
 		this->previous_destination_planet = this->destination_planet; 
 		this->previous_arrival_time = this->arrival_time; 
+		}
 	} 
 	return true;
 }

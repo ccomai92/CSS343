@@ -15,6 +15,7 @@ The log_file.txt contains galaxy format with schedules, arrival time,
 total enroute time, and time in space.  
 
 Input Format: 
+'#' in the first column or blank line will be ignored.
 conduits.txt
     Planet name \t Planet name \t Time 
 
